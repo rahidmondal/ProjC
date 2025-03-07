@@ -1,32 +1,29 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import { account } from "@/app/appwrite";
 import { useRouter } from "next/navigation";
+import { getCurrentUser } from "@/app/services/auth";
 
-const ProtectedRoute = ({ children }: { children: React.ReactNode }) => {
-  const [loading, setLoading] = useState(true);
-  const [user, setUser] = useState(null);
+const ProtectedRoute = ({ children }: { children: (user: any) => React.ReactNode }) => {
+  const [user, setUser] = useState<any>(null);
   const router = useRouter();
-    
+
   useEffect(() => {
     const checkAuth = async () => {
-      try {
-        const userData = await account.get();
-        setUser(userData);
-      } catch (error) {
-        console.log("User not logged in. Redirecting...");
+      const userData = await getCurrentUser();
+      if (!userData) {
         router.push("/login");
-      } finally {
-        setLoading(false);
+      } else {
+        setUser(userData);
       }
     };
 
     checkAuth();
   }, [router]);
 
-  if (loading) return <p>Loading...</p>;
-  return <>{user && children}</>;
+  if (!user) return <p>Loading...</p>;
+
+  return <>{children(user)}</>;
 };
 
 export default ProtectedRoute;

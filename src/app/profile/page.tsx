@@ -1,32 +1,27 @@
 "use client";
 
-import ProtectedRoute from "@/components/ProtectedRoute"; 
-import { account } from "../appwrite";
-import { useEffect, useState } from "react";
+import { logout } from "@/app/services/auth";
+import Button from "@/components/Button";
+import ProtectedRoute from "@/components/ProtectedRoute";
 
 const ProfilePage = () => {
-  const [user, setUser] = useState<any>(null);
-
-  useEffect(() => {
-    const fetchUser = async () => {
-      const userData = await account.get();
-      setUser(userData);
-    };
-
-    fetchUser();
-  }, []);
+  const handleLogout = async () => {
+    await logout();
+    window.location.href = "/login";
+  };
 
   return (
     <ProtectedRoute>
-      <div>
-        <h1>Profile Page</h1>
-        {user && (
-          <div>
+      {(user) => (
+        <div className="flex flex-col items-center justify-center h-screen">
+          <h1 className="text-xl mb-4">Profile</h1>
+          <div className="text-center">
             <p><strong>Name:</strong> {user.name}</p>
             <p><strong>Email:</strong> {user.email}</p>
           </div>
-        )}
-      </div>
+          <Button label="Logout" onClick={handleLogout} />
+        </div>
+      )}
     </ProtectedRoute>
   );
 };
