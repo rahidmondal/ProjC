@@ -2,6 +2,7 @@
 import { useEffect, useState } from "react";
 import { login, getCurrentUser } from "@/app/services/auth";
 import { useRouter } from "next/navigation";
+import Image from "next/image";
 
 export default function LoginPage() {
     const [email, setEmail] = useState("");
@@ -12,34 +13,45 @@ export default function LoginPage() {
     useEffect(() => {
         async function checkUser() {
             const user = await getCurrentUser();
-            if (user) router.push("/profile"); // Redirect if already logged in
+            if (user) router.push("/profile");
         }
         checkUser();
     }, []);
 
     async function handleLogin(e) {
         e.preventDefault();
-        setError(""); // Reset error state
+        setError("");
         try {
             await login(email, password);
-            router.push("/profile"); // Redirect after login
+            router.push("/profile");
         } catch (err) {
-            setError(err.message); // Display error message
+            setError(err.message);
         }
     }
 
     return (
-        <div className="h-screen flex items-center justify-center bg-[#f8f8f8]">
-            <div className="w-96 p-6 bg-white shadow-lg rounded-lg">
-                <h2 className="text-2xl font-bold mb-4 text-center">Login</h2>
+        <div className="flex h-screen">
+            {/* Left Section (Banner) */}
+            <div className="w-1/2 bg-purple-500 flex items-center justify-center">
+                <Image src="/assets/login_banner.png" alt="Login Banner" width={500} height={500} />
+            </div>
+
+            {/* Right Section (Form) */}
+            <div className="w-2/3 flex flex-col justify-center items-center p-8 bg-white shadow-lg rounded-lg">
+                {/* Project Logo */}
+                <Image src="/assets/Dark_logo_projc _1.png" alt="Project Logo" width={300} height={150} className="mb-6" />
+
+                <h2 className="text-3xl font-semibold text-gray-800 mb-4">Login</h2>
                 {error && <p className="text-red-500 text-sm text-center mb-2">{error}</p>}
-                <form onSubmit={handleLogin} className="flex flex-col gap-3">
-                    <input type="email" placeholder="Email" className="p-2 border rounded" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <input type="password" placeholder="Password" className="p-2 border rounded" value={password} onChange={(e) => setPassword(e.target.value)} required />
-                    <button type="submit" className="bg-blue-500 text-white py-2 rounded">Login</button>
+
+                <form onSubmit={handleLogin} className="w-80 space-y-4">
+                    <input type="email" placeholder="Email" className="w-full p-3 border border-gray-400 rounded-md focus:ring-2 focus:ring-purple-500 outline-none shadow-md" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="password" placeholder="Password" className="w-full p-3 border border-gray-400 rounded-md focus:ring-2 focus:ring-purple-500 outline-none shadow-md" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <button type="submit" className="w-full bg-purple-500 text-white py-3 rounded-md hover:bg-purple-600 shadow-lg">Login</button>
                 </form>
-                <p className="mt-4 text-center">
-                    Don't have an account? <a href="/register" className="text-blue-500">Register</a>
+
+                <p className="mt-4 text-gray-600">
+                    New here? <a href="/register" className="text-purple-500 font-semibold">Create an account</a>
                 </p>
             </div>
         </div>
