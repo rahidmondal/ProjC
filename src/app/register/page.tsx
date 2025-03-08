@@ -42,9 +42,9 @@ export default function RegisterPage() {
                 {error && <p className="text-red-500 text-sm text-center mb-2">{error}</p>}
 
                 <form onSubmit={handleRegister} className="w-80 space-y-4">
-                    <input type="text" placeholder="Enter Name" className="w-full p-3 border rounded-md" value={name} onChange={(e) => setName(e.target.value)} required />
-                    <input type="email" placeholder="Enter Email" className="w-full p-3 border rounded-md" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <input type="password" placeholder="Create Password" className="w-full p-3 border rounded-md" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <input type="text" placeholder="Enter Name" className="w-full p-3  text-slate-900 border rounded-md" value={name} onChange={(e) => setName(e.target.value)} required />
+                    <input type="email" placeholder="Enter Email" className="w-full p-3  text-slate-900 border rounded-md" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="password" placeholder="Create Password" className="w-full p-3 text-slate-900 border rounded-md" value={password} onChange={(e) => setPassword(e.target.value)} required />
                     <button type="submit" className="w-full bg-purple-500 text-white py-3 rounded-md hover:bg-purple-600">Sign up</button>
                 </form>
 

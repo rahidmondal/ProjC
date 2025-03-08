@@ -45,8 +45,8 @@ export default function LoginPage() {
                 {error && <p className="text-red-500 text-sm text-center mb-2">{error}</p>}
 
                 <form onSubmit={handleLogin} className="w-80 space-y-4">
-                    <input type="email" placeholder="Email" className="w-full p-3 border border-gray-400 rounded-md focus:ring-2 focus:ring-purple-500 outline-none shadow-md" value={email} onChange={(e) => setEmail(e.target.value)} required />
-                    <input type="password" placeholder="Password" className="w-full p-3 border border-gray-400 rounded-md focus:ring-2 focus:ring-purple-500 outline-none shadow-md" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <input type="email" placeholder="Email" className="w-full p-3  text-slate-900 border border-gray-400 rounded-md focus:ring-2 focus:ring-purple-500 outline-none shadow-md" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input type="password" placeholder="Password" className="w-full p-3  text-slate-900 border border-gray-400 rounded-md focus:ring-2 focus:ring-purple-500 outline-none shadow-md" value={password} onChange={(e) => setPassword(e.target.value)} required />
                     <button type="submit" className="w-full bg-purple-500 text-white py-3 rounded-md hover:bg-purple-600 shadow-lg">Login</button>
                 </form>
 
