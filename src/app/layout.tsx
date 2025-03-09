@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   title: "Proj.C",
-  description: "A networking platform for coding students.",
+  description: "Connect, Collaborate, and Code Together!",
 };
 
 export default function RootLayout({
