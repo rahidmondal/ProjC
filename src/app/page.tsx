@@ -1,101 +1,94 @@
+"use client";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
 
-export default function Home() {
-  return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+export default function HomePage() {
+    const router = useRouter();
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+    return (
+        <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 text-gray-900">
+            {/* Navbar */}
+            <nav className="w-full py-4 px-6 flex justify-between items-center bg-white shadow-md">
+                <Image src="/assets/Dark_logo_projc _1.png" alt="Proj.C Logo" width={120} height={50} />
+                <div>
+                    <button
+                        onClick={() => router.push("/login")}
+                        className="px-6 py-2 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition"
+                    >
+                        Login
+                    </button>
+                </div>
+            </nav>
+
+            {/* Hero Section */}
+            <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-6 py-16">
+                {/* Left Content */}
+                <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
+                    <h1 className="text-4xl font-bold text-purple-700 leading-tight">
+                        Connect, Collaborate, and Code Together!
+                    </h1>
+                    <p className="text-gray-700 text-lg">
+                        Proj.C is the ultimate networking platform for students learning to code. 
+                        Connect with peers, collaborate on projects, and gain real-world experience in 
+                        a supportive environment.
+                    </p>
+                    <div className="flex justify-center md:justify-start space-x-4">
+                        <button
+                            onClick={() => router.push("/register")}
+                            className="px-6 py-3 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition"
+                        >
+                            Get Started
+                        </button>
+                        <button
+                            onClick={() => router.push("/login")}
+                            className="px-6 py-3 border border-purple-500 text-purple-500 font-semibold rounded-lg hover:bg-purple-500 hover:text-white transition"
+                        >
+                            Login
+                        </button>
+                    </div>
+                </div>
+
+                {/* Right Image */}
+                <div className="w-full md:w-1/2 flex justify-center">
+                    <Image
+                        src="/assets/homepage_png.png"
+                        alt="Collaboration Illustration"
+                        width={500}
+                        height={500}
+                        className="rounded-lg shadow-lg"
+                    />
+                </div>
+            </section>
+
+            {/* Features Section */}
+            <section className="w-full max-w-6xl px-6 py-16 text-center">
+                <h2 className="text-3xl font-bold text-gray-800 mb-8">Why Join Proj.C?</h2>
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="p-6 bg-white shadow-md rounded-lg">
+                        <h3 className="text-xl font-semibold text-purple-700">Find Your Team</h3>
+                        <p className="text-gray-600 mt-2">
+                            Connect with like-minded students and build real projects together.
+                        </p>
+                    </div>
+                    <div className="p-6 bg-white shadow-md rounded-lg">
+                        <h3 className="text-xl font-semibold text-purple-700">Learn & Grow</h3>
+                        <p className="text-gray-600 mt-2">
+                            Gain hands-on experience, improve your skills, and collaborate on coding challenges.
+                        </p>
+                    </div>
+                    <div className="p-6 bg-white shadow-md rounded-lg">
+                        <h3 className="text-xl font-semibold text-purple-700">Showcase Your Work</h3>
+                        <p className="text-gray-600 mt-2">
+                            Build a portfolio by working on projects that make a difference.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            {/* Footer */}
+            <footer className="w-full py-6 bg-purple-500 text-white text-center">
+                <p className="text-sm">Copyright © 2025 Proj.C | All rights reserved</p>
+            </footer>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
-  );
+    );
 }

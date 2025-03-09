@@ -33,9 +33,20 @@ yarn-error.log*
 # env files (can opt-in for committing if needed)
 .env*
 
+# env.example include explicitly 
+!.env.example 
+
+
 # vercel
 .vercel
 
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+#eslint 
+.eslintcache
+
+
+#vscode 
+.vscode/
