@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
-import { getCurrentUser } from "@/app/services/auth";
+import { getCurrentUser } from "../services/auth";
 
 interface ProtectedRouteProps {
   children: React.ReactNode | ((user: any) => React.ReactNode);

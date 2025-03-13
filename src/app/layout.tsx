@@ -1,8 +1,7 @@
-"use client";
-import { ThemeProvider } from "next-themes";
-import { ReactNode, useEffect, useState } from "react";
+import type { Metadata } from "next";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
-import Navbar from "./components/Navbar"; // ✅ Navbar remains in layout
+import Navbar from "./Components/Navbar"; // ✅ Navbar remains in layout
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -26,9 +25,13 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+      <body
+        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      >
         <Navbar /> {/* ✅ Moved out of conditional logic to avoid mismatches */}
-        <main className="min-h-screen pt-16"> {/* ✅ Adjusted padding to avoid overlap */}
+        <main className="min-h-screen pt-16">
+          {" "}
+          {/* ✅ Adjusted padding to avoid overlap */}
           {children}
         </main>
       </body>

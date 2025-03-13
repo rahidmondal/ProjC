@@ -1,6 +1,6 @@
 "use client";
 
-import { account, ID } from "@/app/appwrite";
+import { account, ID } from "../appwrite";
 
 export const getCurrentUser = async () => {
   try {

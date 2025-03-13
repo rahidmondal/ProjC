@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { login, getCurrentUser } from "@/app/services/auth";
+import { login, getCurrentUser } from "../services/auth";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useTheme } from "next-themes";
