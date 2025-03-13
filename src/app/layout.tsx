@@ -2,27 +2,35 @@
 import { ThemeProvider } from "next-themes";
 import { ReactNode, useEffect, useState } from "react";
 import "./globals.css";
+import Navbar from "./components/Navbar"; // ✅ Navbar remains in layout
 
-interface LayoutProps {
-  children: ReactNode;
-}
+const geistSans = Geist({
+  variable: "--font-geist-sans",
+  subsets: ["latin"],
+});
 
-export default function RootLayout({ children }: LayoutProps) {
-  const [mounted, setMounted] = useState(false);
+const geistMono = Geist_Mono({
+  variable: "--font-geist-mono",
+  subsets: ["latin"],
+});
 
-  // ✅ Ensure component is only rendered after mounting
-  useEffect(() => {
-    setMounted(true);
-  }, []);
+export const metadata: Metadata = {
+  title: "Proj.C",
+  description: "Connect, Collaborate, and Code Together!",
+};
 
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className="bg-background text-foreground transition-colors duration-300">
-        {mounted ? (
-          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-            {children}
-          </ThemeProvider>
-        ) : null}
+    <html lang="en">
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
+        <Navbar /> {/* ✅ Moved out of conditional logic to avoid mismatches */}
+        <main className="min-h-screen pt-16"> {/* ✅ Adjusted padding to avoid overlap */}
+          {children}
+        </main>
       </body>
     </html>
   );
