@@ -2,18 +2,19 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Default light mode variables */
 :root {
   --background: #ffffff;
   --foreground: #171717;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Dark mode variables (applied when the .dark class is added to <html>) */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
 }
 
+/* Apply colors globally */
 body {
   color: var(--foreground);
   background: var(--background);
@@ -28,3 +29,4 @@ main {
   min-height: 100vh;
   padding-top: 4rem; /* Adjust this to match navbar height */
 }
+

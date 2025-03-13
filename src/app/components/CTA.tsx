@@ -2,8 +2,8 @@ import Image from 'next/image';
 
 const CTA = () => {
   return (
-    <section className="w-full bg-[#1E1E1E] text-white py-12">
-      <div className="max-w-6xl mx-auto px-8 grid grid-cols-5 gap-16 items-start">
+    <section className="w-full bg-[#1E1E1E] text-white py-12 dark:bg-gray-950">
+      <div className="max-w-6xl mx-auto px-8 grid grid-cols-5 gap-28 items-start">
         
         <div className="col-span-1 flex items-start justify-start">
           <Image src="/images/Lightlogo.png" alt="PROJ.C Logo" width={120} height={50} />
