@@ -12,7 +12,7 @@ export default function Features() {
         <div className="flex flex-col md:flex-row items-center justify-center gap-12">
           <div className="w-full md:w-1/2 flex justify-center">
             <Image
-              src="/images/Collaboration-amico.png"
+              src="/assets/Collaboration-amico.png"
               alt="Feature Image"
               width={400}
               height={400}
@@ -29,19 +29,19 @@ export default function Features() {
         </div>
         <div className="flex flex-col md:flex-row justify-center items-center gap-36 mt-12">
           <div className="flex flex-col items-center text-center w-40">
-            <Image src="/images/icon1.png" alt="Task Management" width={120} height={120} />
+            <Image src="/assets/icon1.png" alt="Task Management" width={120} height={120} />
             <p className="mt-4 font-semibold text-gray-800 text-lg dark:text-white first-letter:leading-tight">
               Tasks and Project <br /> Management
             </p>
           </div>
           <div className="flex flex-col items-center text-center w-40">
-            <Image src="/images/icon2.png" alt="Collaborate" width={120} height={120} />
+            <Image src="/assets/icon2.png" alt="Collaborate" width={120} height={120} />
             <p className="mt-4 font-semibold text-gray-800 text-lg dark:text-white leading-tight">
               Collaborate and <br /> Communicate
             </p>
           </div>
           <div className="flex flex-col items-center text-center w-40">
-            <Image src="/images/icon3.png" alt="Workload" width={120} height={120} />
+            <Image src="/assets/icon3.png" alt="Workload" width={120} height={120} />
             <p className="mt-4 font-semibold text-gray-800 text-lg dark:text-white leading-tight">
               Workload and <br /> Productivity
             </p>

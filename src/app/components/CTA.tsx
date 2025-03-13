@@ -6,7 +6,7 @@ const CTA = () => {
       <div className="max-w-6xl mx-auto px-8 grid grid-cols-5 gap-28 items-start">
         
         <div className="col-span-1 flex items-start justify-start">
-          <Image src="/images/Lightlogo.png" alt="PROJ.C Logo" width={120} height={50} />
+          <Image src="/assets/Lightlogo.png" alt="PROJ.C Logo" width={120} height={50} />
         </div>
 
         
