@@ -101,6 +101,25 @@ This feature allows users to track time more efficiently.
 Closes #123
 ```
 
+##### Merge Commit Format
+Merge commits should follow this format:
+```
+merge(<target-branch>): merge <source-branch> into <target-branch>
+
+<Brief reason for the merge> (optional)
+
+Related issues: #<issue-number> (if applicable)
+```
+
+Example:
+```
+merge(dev): merge feature/auth into dev
+
+Adds JWT-based authentication.
+
+Related issues: #42
+```
+
 
 ## Version Bumping
 
