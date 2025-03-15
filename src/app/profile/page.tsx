@@ -1,8 +1,8 @@
 "use client";
 
-import { logout } from "@/app/services/auth";
-import Button from "@/components/Button";
-import ProtectedRoute from "@/components/ProtectedRoute";
+import { logout } from "../services/auth";
+import Button from "../Components/Button";
+import ProtectedRoute from "../Components/ProtectedRoute";
 import Image from "next/image";
 
 const ProfilePage = () => {

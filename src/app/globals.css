@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* Default light mode variables */
+/* Default (Light Mode) */
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -12,6 +13,16 @@
 html.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+}
+/* Dark Mode */
+.dark {
+  --background: #171717; /* Dark background */
+  --foreground: #ffffff; /* Light text */
+}
+
+/* Apply Smooth Transition */
+html {
+  @apply transition-colors duration-300;
 }
 
 /* Apply colors globally */

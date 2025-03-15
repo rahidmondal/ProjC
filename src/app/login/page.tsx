@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useState } from "react";
-import { login, getCurrentUser } from "@/app/services/auth";
+import { login, getCurrentUser } from "../services/auth";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useTheme } from "next-themes";
@@ -42,9 +42,9 @@ export default function LoginPage() {
     return (
         <div className="flex h-screen bg-gray-100 dark:bg-gray-900">
             {/* Left Section (Banner) */}
-            <div className="relative w-1/2 overflow-hidden flex items-center justify-center bg-white dark:bg-gray-900 p-8">
-                <div className="absolute inset-0 bg-[rgba(162,64,204,255)] clip-custom"></div>
-                <Image src="/assets/login_banner.png" alt="Login Banner" width={650} height={570} className="relative z-10" />
+            <div className="relative w-1/2 overflow-hidden flex items-center justify-center bg-white dark:bg-gray-900 ">
+                <div className="absolute inset-0  clip-custom"></div>
+                <Image src="/assets/login_banner.png" alt="Login Banner" width={650} height={700} className="relative z-10" />
             </div>
 
             {/* Right Section (Form) */}
