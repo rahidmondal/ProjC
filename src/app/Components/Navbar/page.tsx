@@ -60,7 +60,7 @@ const Navbar = () => {
   }, []);
 
   const menuItems = [
-    { name: "Home", path: "/home-page" },
+    { name: "Home", path: "/home" },
     { name: "Notifications", path: "/notifications" },
     { name: "Explore", path: "/project-explore" },
     { name: "Profile", path: "/user-profile" },
@@ -69,7 +69,7 @@ const Navbar = () => {
   const dropdownItems = [
     {
       name: "Home",
-      path: "/home-page",
+      path: "/home",
       icon: <Home className="w-5 h-5 mr-3 text-gray-500" />,
     },
     {
@@ -84,7 +84,7 @@ const Navbar = () => {
     },
     {
       name: "Logout",
-      path: "/logout",
+      path: "/login",
       icon: <LogOut className="w-5 h-5 mr-3 text-red-500" />,
     },
   ];

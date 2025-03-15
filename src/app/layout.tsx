@@ -29,7 +29,7 @@ export default function RootLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Navbar /> {/* ✅ Moved out of conditional logic to avoid mismatches */}
-        <main className="min-h-screen pt-16">
+        <main className="min-h-screen  pt-0">
           {" "}
           {/* ✅ Adjusted padding to avoid overlap */}
           {children}
