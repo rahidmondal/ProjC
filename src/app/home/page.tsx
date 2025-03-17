@@ -8,9 +8,7 @@ import Mission_curve from "../Components/Mission_curve";
 import Mission from "../Components/Mission";
 import SkillAssessment from "../Components/SkillAssessment";
 import ImageSection from "../Components/ImageSection";
-import CTA from "../Components/CTA";
-import Footer from "../Components/Footer";
-import HeroCurve from "../Components/herocurve";
+import HeroCurve from "../Components/Herocurve";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
@@ -30,8 +28,6 @@ export default function HomePage() {
       <Mission />
       <SkillAssessment />
       <ImageSection />
-      <CTA />
-      <Footer />
     </div>
   );
 }
