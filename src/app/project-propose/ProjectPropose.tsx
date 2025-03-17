@@ -1,7 +1,5 @@
 "use client";
 import { useState } from "react";
-import Navbar from "../Components/Navbar/page";
-import Footer from "../Components/Footer";
 
 const ProjectPropose = () => {
   const [skills, setSkills] = useState(["React.js", "Tailwind", "SQL"]);
@@ -22,7 +20,7 @@ const ProjectPropose = () => {
 
   return (
     <>
-      <Navbar />
+      {/* <Navbar /> */}
       <div className="w-full sm:w-2/5  mx-auto m-10 bg-gray-50 dark:bg-gray-800 border border-black dark:border-gray-500 p-5 rounded-lg shadow-lg">
         {/* Header */}
         <h2 className="text-2xl font-bold mb-2">Add Project</h2>
@@ -151,7 +149,7 @@ const ProjectPropose = () => {
           </button>
         </div>
       </div>
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 };

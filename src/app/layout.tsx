@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import Navbar from "./Components/Navbar"; // ✅ Navbar remains in layout
+import Footer from "./Components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -34,6 +35,7 @@ export default function RootLayout({
           {/* ✅ Adjusted padding to avoid overlap */}
           {children}
         </main>
+        <Footer/>
       </body>
     </html>
   );

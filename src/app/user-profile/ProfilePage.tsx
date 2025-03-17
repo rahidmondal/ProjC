@@ -60,7 +60,7 @@ const ProfilePage: React.FC = () => {
   // Drag & Drop handlers
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) =>
     e.preventDefault();
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => { 
     e.preventDefault();
     const file = e.dataTransfer.files[0];
     if (file) setFormData({ ...formData, profilePicture: file });
@@ -84,7 +84,7 @@ const ProfilePage: React.FC = () => {
   return (
     <>
       <div className={`${isModalOpen ? "opacity-50 pointer-events-none" : ""}`}>
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
       <div className="my-14 flex justify-center items-center dark:text-white">
         <div className="w-full max-w-6xl bg-[#dfdfdf] dark:bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row gap-6 border border-gray-400 dark:border-gray-600 shadow-lg">
@@ -368,7 +368,6 @@ const ProfilePage: React.FC = () => {
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };

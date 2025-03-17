@@ -7,19 +7,6 @@ export default function HomePage() {
 
     return (
         <div className="min-h-screen flex flex-col items-center justify-center bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white transition-colors duration-300">
-            {/* Navbar */}
-            {/*<nav className="w-full py-4 px-6 flex justify-between items-center bg-white shadow-md">
-                <Image src="/assets/Dark_logo_projc _1.png" alt="Proj.C Logo" width={120} height={50} />
-                <div>
-                    <button
-                        onClick={() => router.push("/login")}
-                        className="px-6 py-2 bg-purple-500 text-white font-semibold rounded-lg hover:bg-purple-600 transition"
-                    >
-                        Login
-                    </button>
-                </div>
-            </nav> */}
-            {/* Hero Section */}
             <section className="flex flex-col md:flex-row items-center justify-between w-full max-w-6xl px-6 py-16 pt-32">
                 {/* Left Content */}
                 <div className="w-full md:w-1/2 text-center md:text-left space-y-6">
@@ -92,10 +79,7 @@ export default function HomePage() {
                 </div>
             </section>
 
-            {/* Footer */}
-            <footer className="w-full py-6 bg-[#2D2D2D] text-white dark:bg-[#1E1E1E] text-center">
-                <p className="text-sm">Copyright © 2025 Proj.C | All rights reserved</p>
-            </footer>
+
         </div>
     );
 }
