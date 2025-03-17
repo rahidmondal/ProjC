@@ -8,7 +8,7 @@ const Footer = () => {
         {/* Logo Column */}
         <div>
           <Image
-            src="/Light_logo_projc.png"
+            src="/assets/Light_logo_projc.png"
             alt="Proj.C Logo"
             width={150}
             height={50}
