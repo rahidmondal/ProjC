@@ -1,19 +1,24 @@
 "use client";
 
+import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import Link from "next/link";
-import Image from "next/image";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
-import { useEffect, useState } from "react";
+import { Home, User, Settings, LogOut, Menu, X } from "lucide-react";
+import { useTheme } from "next-themes";
+import Image from "next/image";
+import { getCurrentUser, logout } from "../services/auth";
 
 const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
-
-  // State to track dark mode
+  const { theme, setTheme } = useTheme();
+  const [menuOpen, setMenuOpen] = useState(false);
+  const [dropdownOpen, setDropdownOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
+  const [user, setUser] = useState(null);
+  const dropdownRef = useRef(null);
+  const navRef = useRef(null);
 
-  // Check localStorage for theme preference
   useEffect(() => {
     if (typeof window !== "undefined") {
       const theme = localStorage.getItem("theme");
@@ -22,9 +27,33 @@ const Navbar = () => {
         setDarkMode(true);
       }
     }
+
+    getCurrentUser().then(setUser);
+
+    const handleClickOutside = (event) => {
+      if (
+        dropdownRef.current &&
+        !dropdownRef.current.contains(event.target)
+      ) {
+        setDropdownOpen(false);
+      }
+      if (navRef.current && !navRef.current.contains(event.target)) {
+        setMenuOpen(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
   }, []);
 
-  // Toggle dark mode
+  const handleLogout = async () => {
+    await logout();
+    setUser(null);
+    router.push("/login");
+  };
+
   const toggleDarkMode = () => {
     if (darkMode) {
       document.documentElement.classList.remove("dark");
@@ -36,13 +65,18 @@ const Navbar = () => {
     setDarkMode(!darkMode);
   };
 
+  const menuItems = [
+    { name: "Home", path: "/home" },
+    { name: "Notifications", path: "#" },
+    { name: "Explore", path: "/project-explore" },
+    { name: "Profile", path: "/user-profile" },
+  ];
+
   return (
     <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-12 py-4 bg-white dark:bg-gray-900 shadow-md z-50 h-16">
       <div className="flex items-center">
         <Image
-          src={
-            darkMode ? "/assets/Lightlogo.png" : "/assets/Dark_logo_projc_1.png"
-          }
+          src={darkMode ? "/assets/Light_logo_projc.png" : "/assets/Dark_logo_projc.png"}
           alt="Proj.C Logo"
           width={160}
           height={70}
@@ -50,58 +84,71 @@ const Navbar = () => {
         />
       </div>
 
-      {pathname === "/home" && (
-        <div className="hidden md:flex flex-1 justify-center space-x-10 text-gray-900 dark:text-white font-medium">
-          <Link
-            href="/home"
-            className="relative font-semibold hover:text-purple-600 dark:hover:text-purple-400 transition-all"
-          >
-            Home
-            {pathname === "/home" && (
-              <span className="absolute left-0 bottom-[-4px] w-full h-[2px] bg-purple-600 dark:bg-purple-400"></span>
-            )}
-          </Link>
-          <Link
-            href="#"
-            className="hover:text-purple-600 dark:hover:text-purple-400 transition-all font-semibold"
-          >
-            Notifications
-          </Link>
-          <Link
-            href="/project-explore"
-            className="hover:text-purple-600 dark:hover:text-purple-400 transition-all font-semibold"
-          >
-            Explore
-          </Link>
-          <Link
-            href="/user-profile"
-            className="hover:text-purple-600 dark:hover:text-purple-400 transition-all font-semibold"
-          >
-            Profile
-          </Link>
-        </div>
-      )}
+      <div className="hidden md:flex flex-1 justify-center space-x-10 text-gray-900 dark:text-white font-medium">
+        {menuItems.map((item) => (
+          <a key={item.path} href={item.path} className="hover:text-purple-600 dark:hover:text-purple-400 font-semibold">
+            {item.name}
+          </a>
+        ))}
+      </div>
 
       <div className="flex items-center space-x-6">
-        {/* Toggle between sun and moon icon */}
         {darkMode ? (
           <IoSunnyOutline
             onClick={toggleDarkMode}
-            className="text-2xl cursor-pointer text-yellow-400 hover:text-yellow-500 transition-all"
+            className="text-2xl cursor-pointer text-yellow-400 hover:text-yellow-500"
           />
         ) : (
           <IoMoonOutline
             onClick={toggleDarkMode}
-            className="text-2xl cursor-pointer text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400 transition-all"
+            className="text-2xl cursor-pointer text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
           />
         )}
 
-        <button
-          onClick={() => router.push("/login")}
-          className="bg-purple-600 dark:bg-purple-700 text-white px-5 py-2 rounded-md hover:bg-purple-700 dark:hover:bg-purple-800 font-semibold shadow-md transition-all"
-        >
-          Login
-        </button>
+        {user ? (
+          <div className="relative" ref={dropdownRef}>
+            <button
+              onClick={() => setDropdownOpen(!dropdownOpen)}
+              className="flex items-center space-x-2"
+            >
+              <img
+                src={user?.avatar || "/assets/avatar_icon.png"}
+                alt="Profile"
+                className="w-8 h-8 rounded-full border"
+              />
+            </button>
+
+            {dropdownOpen && (
+              <div className="absolute right-0 mt-3 w-36 bg-white dark:bg-gray-800 shadow-md rounded-md p-2 z-50">
+                {[{ name: "Profile", path: "/user-profile", icon: <User className="w-5 h-5 mr-3" /> },
+                  { name: "Logout", onClick: handleLogout, icon: <LogOut className="w-5 h-5 mr-3 text-red-500" /> }].map((item) => (
+                  <button
+                    key={item.path || item.name}
+                    className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
+                    onClick={() => {
+                      setDropdownOpen(false);
+                      if (item.onClick) {
+                        item.onClick();
+                      } else {
+                        router.push(item.path);
+                      }
+                    }}
+                  >
+                    {item.icon}
+                    {item.name}
+                  </button>
+                ))}
+              </div>
+            )}
+          </div>
+        ) : (
+          <button
+            onClick={() => router.push("/login")}
+            className="bg-purple-600 dark:bg-purple-700 text-white px-5 py-2 rounded-md hover:bg-purple-700 dark:hover:bg-purple-800 font-semibold shadow-md"
+          >
+            Login
+          </button>
+        )}
       </div>
     </nav>
   );
