@@ -67,7 +67,6 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "Home", path: "/home" },
-    { name: "Notifications", path: "#" },
     { name: "Explore", path: "/project-explore" },
     { name: "Profile", path: "/user-profile" },
   ];
@@ -83,14 +82,22 @@ const Navbar = () => {
           priority
         />
       </div>
-
       <div className="hidden md:flex flex-1 justify-center space-x-10 text-gray-900 dark:text-white font-medium">
         {menuItems.map((item) => (
-          <a key={item.path} href={item.path} className="hover:text-purple-600 dark:hover:text-purple-400 font-semibold">
+          <a
+            key={item.path}
+            href={item.path}
+            className={`hover:text-purple-600 dark:hover:text-purple-400 font-semibold ${pathname.startsWith(item.path)
+                ? "text-purple-600 dark:text-purple-400 border-b-2 border-purple-600 dark:border-purple-400"
+                : ""
+              }`}
+          >
             {item.name}
           </a>
         ))}
       </div>
+
+
 
       <div className="flex items-center space-x-6">
         {darkMode ? (
@@ -121,7 +128,7 @@ const Navbar = () => {
             {dropdownOpen && (
               <div className="absolute right-0 mt-3 w-36 bg-white dark:bg-gray-800 shadow-md rounded-md p-2 z-50">
                 {[{ name: "Profile", path: "/user-profile", icon: <User className="w-5 h-5 mr-3" /> },
-                  { name: "Logout", onClick: handleLogout, icon: <LogOut className="w-5 h-5 mr-3 text-red-500" /> }].map((item) => (
+                { name: "Logout", onClick: handleLogout, icon: <LogOut className="w-5 h-5 mr-3 text-red-500" /> }].map((item) => (
                   <button
                     key={item.path || item.name}
                     className="flex items-center w-full text-left px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-700 rounded-md"
