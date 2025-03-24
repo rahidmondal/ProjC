@@ -11,7 +11,7 @@ export default function LoginPage() {
     const [password, setPassword] = useState("");
     const [error, setError] = useState("");
     const router = useRouter();
-    
+
     // Ensure client-side rendering before using the theme
     const [mounted, setMounted] = useState(false);
     useEffect(() => setMounted(true), []);
@@ -19,7 +19,7 @@ export default function LoginPage() {
     useEffect(() => {
         async function checkUser() {
             const user = await getCurrentUser();
-            if (user) router.push("/profile");
+            if (user) router.push("/user-profile");
         }
         checkUser();
     }, [router]);
@@ -29,7 +29,7 @@ export default function LoginPage() {
         setError("");
         try {
             await login(email, password);
-            router.push("/profile");
+            router.push("/user-profile");
         } catch (err) {
             if (err instanceof Error) {
                 setError(err.message);
