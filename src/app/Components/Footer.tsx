@@ -96,10 +96,10 @@ const Footer = () => {
       <div className="bg-gray-800 flex items-center justify-between mt-5  pt-6 px-8 text-center text-gray-300">
         <p className=" pb-6">© 2025 Proj.C. All rights reserved.</p>
         <div className=" flex justify-center items-center pb-6 space-x-6">
-          <a href="#" className="hover:text-white">
+          <a href="./terms-of-service" className="hover:text-white">
             Terms of Service
           </a>
-          <a href="#" className="hover:text-white">
+          <a href="./privacy-policy" className="hover:text-white">
             Privacy Policy
           </a>
         </div>
