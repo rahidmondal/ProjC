@@ -4,6 +4,7 @@ import { login, getCurrentUser } from "../services/auth";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import Link from "next/link";
 
 export default function LoginPage() {
     const { theme } = useTheme();
@@ -23,7 +24,14 @@ export default function LoginPage() {
         }
         checkUser();
     }, [router]);
-
+        // ✅ Add class to body to hide Navbar/Footer
+        useEffect(() => {
+            document.body.classList.add("hide-nav-footer");
+            return () => {
+                document.body.classList.remove("hide-nav-footer");
+            };
+        }, []);
+    
     async function handleLogin(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
         setError("");
@@ -50,13 +58,16 @@ export default function LoginPage() {
             {/* Right Section (Form) */}
             <div className="w-1/2 flex flex-col justify-center items-center bg-white dark:bg-gray-900 p-8 shadow-lg">
                 {mounted && (
-                    <Image
+                    <Link href="/">
+                        <Image
                         src={theme === "dark" ? "/assets/Lightlogo.png" : "/assets/Dark_logo_projc_1.png"}
                         alt="Project Logo"
                         width={300}
                         height={150}
                         className="mb-6"
                     />
+                    </Link>
+
                 )}
 
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Login</h2>
