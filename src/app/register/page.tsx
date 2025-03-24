@@ -4,8 +4,12 @@ import { register, getCurrentUser } from "../services/auth";
 import { useRouter } from "next/navigation";
 import Image from "next/image";
 import { useTheme } from "next-themes";
+import Link from "next/link";
+
 
 export default function RegisterPage() {
+  const [agreed, setAgreed] = useState(false);
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
@@ -42,6 +46,12 @@ export default function RegisterPage() {
       }
     }
   }
+  useEffect(() => {
+    document.body.classList.add("hide-nav-footer");
+    return () => {
+      document.body.classList.remove("hide-nav-footer");
+    };
+  }, []);
 
   return (
     <div className="flex h-screen">
@@ -49,14 +59,16 @@ export default function RegisterPage() {
       <div className="w-1/2 flex flex-col justify-center items-center bg-white dark:bg-gray-900">
         {/* ✅ Render logo only when mounted to avoid hydration errors */}
         {mounted && (
-          <Image
-            src={currentTheme === "dark" ? lightLogo : darkLogo}
-            alt="Project Logo"
-            width={300}
-            height={150}
-            className="mb-6"
-            priority
-          />
+          <Link href="/">
+            <Image
+              src={currentTheme === "dark" ? lightLogo : darkLogo}
+              alt="Project Logo"
+              width={300}
+              height={150}
+              className="mb-6 cursor-pointer"
+              priority
+            />
+          </Link>
         )}
 
         <h2 className="text-3xl font-semibold text-gray-800 dark:text-white mb-4">
@@ -91,13 +103,36 @@ export default function RegisterPage() {
             onChange={(e) => setPassword(e.target.value)}
             required
           />
+          <div className="flex items-center space-x-2">
+            <input
+              type="checkbox"
+              id="terms"
+              className="w-4 h-4 accent-purple-500 cursor-pointer"
+              checked={agreed}
+              onChange={() => setAgreed(!agreed)}
+            />
+            <label htmlFor="terms" className="text-sm text-gray-600 dark:text-gray-300">
+              I agree to the{" "}
+              <a href="/terms-of-service" className="text-purple-500 font-semibold hover:underline">
+                Terms of Service
+              </a>{" "}
+              and{" "}
+              <a href="/privacy-policy" className="text-purple-500 font-semibold hover:underline">
+                Privacy Policy
+              </a>
+            </label>
+          </div>
+
           <button
             type="submit"
-            className="w-full bg-purple-500 text-white py-3 rounded-md hover:bg-purple-600"
+            className={`w-full py-3 rounded-md text-white ${agreed ? "bg-purple-500 hover:bg-purple-600" : "bg-gray-400 cursor-not-allowed"
+              }`}
+            disabled={!agreed}
           >
             Sign up
           </button>
         </form>
+
 
         <p className="mt-4 text-gray-600 dark:text-gray-300">
           Already a member?{" "}
