@@ -14,12 +14,11 @@ import {
   NotebookPen,
   X,
 } from "lucide-react";
-import Navbar from "../Components/Navbar/page";
-import Footer from "../Components/Footer";
-import { getCurrentUser } from "../services/auth"; // Import function to get user
+
+import { getCurrentUser } from "../services/auth"; 
 
 const ProfilePage: React.FC = () => {
-  const [skills] = useState(["React.js", "Tailwind", "Express.js", "MongoDB"]);
+  const [skills] = useState(["Null"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState<any>(null); // Store user data
 
@@ -36,12 +35,12 @@ const ProfilePage: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    title: "Full Stack Developer",
-    website: "https://myprashant.tech",
-    github: "https://github.com/pkprashantkr",
-    linkedin: "https://www.linkedin.com/in/prashant-kumar-ln/",
-    instagram: "phobioc_prashant",
-    facebook: "phobioc_prashant",
+    title: "",
+    website: "",
+    github: "",
+    linkedin: "",
+    instagram: "",
+    facebook: "",
     profilePicture: null,
   });
 
@@ -91,17 +90,19 @@ const ProfilePage: React.FC = () => {
           {/* Left Sidebar - Profile Section */}
           <div className="w-full md:w-1/3 bg-white dark:bg-gray-700 shadow-md p-6 rounded-lg border border-gray-400 dark:border-gray-400">
             <div className="flex flex-col items-center">
-              <img
-                src="/assets/avatar_icon.png"
-                alt="Profile"
-                className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
+              <Image
+              src={formData.profilePicture ? URL.createObjectURL(formData.profilePicture) : "/assets/avatar_icon.png"}
+              alt="Profile"
+              width={112}
+              height={112}
+              className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
               />
               <h2 className="text-xl font-semibold mt-4">{formData.name}</h2>
               <p className="text-gray-600 dark:text-gray-300">
-                {formData.title}
+              {formData.title}
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                {formData.email}
+              {formData.email}
               </p>
             </div>
 
@@ -326,9 +327,11 @@ const ProfilePage: React.FC = () => {
           <div className="w-full md:w-2/3 py-3 px-6 bg-white dark:bg-gray-700 border border-gray-400 dark:border-gray-400 rounded-lg">
             <div className="flex justify-between items-center">
               <h2 className="text-2xl font-bold">About</h2>
-              <button className="bg-purple-600 text-white mt-2 px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition">
-                Take Quiz
-              </button>
+                <Link href="/skill-test">
+                  <button className="bg-purple-600 text-white mt-2 px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition">
+                    Skill Test
+                  </button>
+                </Link>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
               UI/UX Designer, Web Designer
