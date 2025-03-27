@@ -1,7 +1,7 @@
 "use client";
 
 import { useTheme } from "next-themes"; 
-import Hero from "../Components/hero";
+import Hero from "../Components/Hero";
 import SupportedBy from "../Components/SupportedBy";
 import Features from "../Components/Features";
 import Mission_curve from "../Components/Mission_curve";
