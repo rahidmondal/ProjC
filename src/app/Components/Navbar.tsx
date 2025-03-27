@@ -3,15 +3,13 @@
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
 import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
-import { Home, User, Settings, LogOut, Menu, X } from "lucide-react";
-import { useTheme } from "next-themes";
+import { User, LogOut } from "lucide-react";
 import Image from "next/image";
 import { getCurrentUser, logout } from "../services/auth";
 
 const Navbar = () => {
   const pathname = usePathname();
   const router = useRouter();
-  const { theme, setTheme } = useTheme();
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
@@ -118,10 +116,12 @@ const Navbar = () => {
               onClick={() => setDropdownOpen(!dropdownOpen)}
               className="flex items-center space-x-2"
             >
-              <img
-                src={user?.avatar || "/assets/avatar_icon.png"}
-                alt="Profile"
-                className="w-8 h-8 rounded-full border"
+              <Image
+              src={user?.avatar || "/assets/avatar_icon.png"}
+              alt="Profile"
+              width={32}
+              height={32}
+              className="rounded-full border"
               />
             </button>
 
