@@ -11,7 +11,6 @@ import {
   Facebook,
   Upload,
   FolderOpen,
-  NotebookPen,
   X,
 } from "lucide-react";
 
@@ -334,7 +333,7 @@ const ProfilePage: React.FC = () => {
                 </Link>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              UI/UX Designer, Web Designer
+              Null 
             </p>
 
             {/* Skills Section */}
@@ -350,24 +349,10 @@ const ProfilePage: React.FC = () => {
               ))}
             </div>
 
-            {/* Experience Section */}
-            <h3 className="mt-6 text-xl font-semibold">Experience</h3>
-            <div className="bg-gray-100 dark:bg-gray-600 p-4 rounded-lg mt-2 border border-gray-300 dark:border-gray-600 shadow-sm">
-              <h4 className="font-bold">IBM Skillsbuild (Internship)</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Jul 24 - Aug 24
-              </p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                diam nonummy nibh.
-              </p>
-            </div>
-
             {/* Activity & Projects */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-              <ActivitySection />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <ProjectsSection />
-            </div>
+            </div> 
           </div>
         </div>
       </div>
@@ -398,27 +383,6 @@ const ProfileLink: React.FC<{
   </div>
 );
 
-const ActivitySection: React.FC = () => (
-  <div className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700">
-    <div className="flex gap-2">
-      <NotebookPen />
-      <h3 className="text-lg font-bold mb-2"> Activity</h3>
-    </div>
-    {["Joined new project", "New team member added", "Joined new project"].map(
-      (activity, index) => (
-        <div
-          key={index}
-          className="flex items-center space-x-3 py-2 border-b last:border-0"
-        >
-          <div className="bg-gray-800 text-white px-2 py-1 rounded text-xs">
-            Jun 29
-          </div>
-          <p className="text-gray-700 dark:text-gray-300 text-sm">{activity}</p>
-        </div>
-      )
-    )}
-  </div>
-);
 
 const ProjectsSection: React.FC = () => (
   <div className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-lg border border-gray-300 dark:border-gray-600">
@@ -427,9 +391,7 @@ const ProjectsSection: React.FC = () => (
       <h3 className="text-lg font-bold mb-2"> Projects</h3>
     </div>
     {[
-      { name: "Food Donation Website", color: "red" },
-      { name: "E-commerce Website", color: "green" },
-      { name: "AI Trip Planner", color: "blue" },
+      { name: "Null", color: "gray" },
     ].map((project, index) => (
       <div
         key={index}
