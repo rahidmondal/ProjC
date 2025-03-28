@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import { usePathname, useRouter } from "next/navigation";
-import { IoMoonOutline, IoSunnyOutline } from "react-icons/io5";
+import { IoMoonOutline, IoSunnyOutline, IoMenu, IoClose } from "react-icons/io5";
 import { User, LogOut } from "lucide-react";
 import Image from "next/image";
 import { getCurrentUser, logout } from "../services/auth";
@@ -29,10 +29,7 @@ const Navbar = () => {
     getCurrentUser().then(setUser);
 
     const handleClickOutside = (event) => {
-      if (
-        dropdownRef.current &&
-        !dropdownRef.current.contains(event.target)
-      ) {
+      if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setDropdownOpen(false);
       }
       if (navRef.current && !navRef.current.contains(event.target)) {
@@ -70,8 +67,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="sticky top-0 left-0 w-full flex items-center justify-between px-12 py-4 bg-white dark:bg-gray-900 shadow-md z-50 h-16">
-
+    <nav className="sticky top-0 left-0 w-full flex items-center justify-between px-6 md:px-12 py-4 bg-white dark:bg-gray-900 shadow-md z-50 h-16" ref={navRef}>
       <div className="flex items-center">
         <Image
           src={darkMode ? "/assets/Light_logo_projc.png" : "/assets/Dark_logo_projc.png"}
@@ -87,18 +83,29 @@ const Navbar = () => {
             key={item.path}
             href={item.path}
             className={`hover:text-purple-600 dark:hover:text-purple-400 font-semibold ${pathname.startsWith(item.path)
-                ? "text-purple-600 dark:text-purple-400 border-b-2 border-purple-600 dark:border-purple-400"
-                : ""
+              ? "text-purple-600 dark:text-purple-400 border-b-2 border-purple-600 dark:border-purple-400"
+              : ""
               }`}
           >
             {item.name}
           </a>
         ))}
       </div>
+      <div className="md:hidden flex items-center">
+        {menuOpen ? (
+          <IoClose
+            className="text-3xl cursor-pointer text-gray-900 dark:text-white"
+            onClick={() => setMenuOpen(false)}
+          />
+        ) : (
+          <IoMenu
+            className="text-3xl cursor-pointer text-gray-900 dark:text-white"
+            onClick={() => setMenuOpen(true)}
+          />
+        )}
+      </div>
 
-
-
-      <div className="flex items-center space-x-6">
+      <div className="hidden md:flex items-center space-x-6">
         {darkMode ? (
           <IoSunnyOutline
             onClick={toggleDarkMode}
@@ -110,7 +117,6 @@ const Navbar = () => {
             className="text-2xl cursor-pointer text-gray-900 dark:text-white hover:text-purple-600 dark:hover:text-purple-400"
           />
         )}
-
         {user ? (
           <div className="relative" ref={dropdownRef}>
             <button
@@ -118,14 +124,13 @@ const Navbar = () => {
               className="flex items-center space-x-2"
             >
               <Image
-              src={user?.avatar || "/assets/avatar_icon.png"}
-              alt="Profile"
-              width={32}
-              height={32}
-              className="rounded-full border"
+                src={user?.avatar || "/assets/avatar_icon.png"}
+                alt="Profile"
+                width={32}
+                height={32}
+                className="rounded-full border"
               />
             </button>
-
             {dropdownOpen && (
               <div className="absolute right-0 mt-3 w-36 bg-white dark:bg-gray-800 shadow-md rounded-md p-2 z-50">
                 {[{ name: "Profile", path: "/user-profile", icon: <User className="w-5 h-5 mr-3" /> },
@@ -158,6 +163,24 @@ const Navbar = () => {
           </button>
         )}
       </div>
+
+      {menuOpen && (
+        <div className="absolute top-16 left-0 w-full bg-white dark:bg-gray-900 shadow-md p-4 flex flex-col items-center space-y-4 md:hidden">
+          {menuItems.map((item) => (
+            <a key={item.path} href={item.path} className="text-gray-900 dark:text-white font-medium" onClick={() => setMenuOpen(false)}>
+              {item.name}
+            </a>
+          ))}
+          <button onClick={toggleDarkMode} className="text-gray-900 dark:text-white font-medium">
+            {darkMode ? "Light Mode" : "Dark Mode"}
+          </button>
+          {user && (
+            <button onClick={handleLogout} className="text-red-500 font-medium">
+              Logout
+            </button>
+          )}
+        </div>
+      )}
     </nav>
   );
 };
