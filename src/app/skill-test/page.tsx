@@ -1,5 +1,5 @@
 import React from 'react';
-import ProtectedRoute from '../Components/ProtectedRoute';
+import ProtectedRoute from '../components/ProtectedRoute';
 
 
 function SkillTestPage() {

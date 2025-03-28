@@ -1,4 +1,4 @@
-import ProtectedRoute from "../Components/ProtectedRoute";
+import ProtectedRoute from "../components/ProtectedRoute";
 import ProjectExplorePage from "./ProjectExplore";
 
 export default function ProjectExplore() {

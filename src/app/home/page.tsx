@@ -1,14 +1,14 @@
 "use client";
 
 import { useTheme } from "next-themes"; 
-import Hero from "../Components/Hero";
-import SupportedBy from "../Components/SupportedBy";
-import Features from "../Components/Features";
-import Mission_curve from "../Components/Mission_curve";
-import Mission from "../Components/Mission";
-import SkillAssessment from "../Components/SkillAssessment";
-import ImageSection from "../Components/ImageSection";
-import HeroCurve from "../Components/Herocurve";
+import Hero from "../components/Hero";
+import SupportedBy from "../components/SupportedBy";
+import Features from "../components/Features";
+import Mission_curve from "../components/Mission_curve";
+import Mission from "../components/Mission";
+import SkillAssessment from "../components/SkillAssessment";
+import ImageSection from "../components/ImageSection";
+import HeroCurve from "../components/Herocurve";
 import { useEffect, useState } from "react";
 
 export default function HomePage() {
