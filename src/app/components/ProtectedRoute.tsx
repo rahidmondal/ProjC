@@ -3,9 +3,10 @@
 import { useEffect, useState } from "react";
 import { useRouter, usePathname } from "next/navigation";
 import { getCurrentUser } from "../services/auth";
+import { User } from "../types/user";
 
 interface ProtectedRouteProps {
-  children: React.ReactNode | ((user: any) => React.ReactNode);
+  children: React.ReactNode | ((user: User) => React.ReactNode);
   redirectTo?: string;
 }
 
@@ -13,7 +14,7 @@ const ProtectedRoute = ({
   children,
   redirectTo = "/login",
 }: ProtectedRouteProps) => {
-  const [user, setUser] = useState<any>(null);
+  const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const router = useRouter();
   const pathname = usePathname(); // Get current route

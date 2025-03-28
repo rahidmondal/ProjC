@@ -15,11 +15,12 @@ import {
 } from "lucide-react";
 
 import { getCurrentUser } from "../services/auth"; 
+import { User } from "../types/user";
 
 const ProfilePage: React.FC = () => {
   const [skills] = useState(["Null"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [user, setUser] = useState<any>(null); // Store user data
+  const [user, setUser] = useState<User | null>(null); // Store user data
 
   useEffect(() => {
     const fetchUser = async () => {
