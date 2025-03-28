@@ -70,7 +70,8 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 w-full flex items-center justify-between px-12 py-4 bg-white dark:bg-gray-900 shadow-md z-50 h-16">
+    <nav className="sticky top-0 left-0 w-full flex items-center justify-between px-12 py-4 bg-white dark:bg-gray-900 shadow-md z-50 h-16">
+
       <div className="flex items-center">
         <Image
           src={darkMode ? "/assets/Light_logo_projc.png" : "/assets/Dark_logo_projc.png"}

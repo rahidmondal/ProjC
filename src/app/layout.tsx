@@ -25,14 +25,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html  lang="en">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <Navbar /> {/* ✅ Moved out of conditional logic to avoid mismatches */}
+        <Navbar />
         <main className="min-h-screen  pt-0">
           {" "}
-          {/* ✅ Adjusted padding to avoid overlap */}
           {children}
         </main>
         <Footer/>
