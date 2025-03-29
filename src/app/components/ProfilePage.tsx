@@ -11,17 +11,16 @@ import {
   Facebook,
   Upload,
   FolderOpen,
-  NotebookPen,
   X,
 } from "lucide-react";
-import Navbar from "../Components/Navbar/page";
-import Footer from "../Components/Footer";
-import { getCurrentUser } from "../services/auth"; // Import function to get user
+
+import { getCurrentUser } from "../services/auth"; 
+import { User } from "../types/user";
 
 const ProfilePage: React.FC = () => {
-  const [skills] = useState(["React.js", "Tailwind", "Express.js", "MongoDB"]);
+  const [skills] = useState(["Null"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
-  const [user, setUser] = useState<any>(null); // Store user data
+  const [user, setUser] = useState<User | null>(null); // Store user data
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -36,12 +35,12 @@ const ProfilePage: React.FC = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    title: "Full Stack Developer",
-    website: "https://myprashant.tech",
-    github: "https://github.com/pkprashantkr",
-    linkedin: "https://www.linkedin.com/in/prashant-kumar-ln/",
-    instagram: "phobioc_prashant",
-    facebook: "phobioc_prashant",
+    title: "",
+    website: "",
+    github: "",
+    linkedin: "",
+    instagram: "",
+    facebook: "",
     profilePicture: null,
   });
 
@@ -60,7 +59,7 @@ const ProfilePage: React.FC = () => {
   // Drag & Drop handlers
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) =>
     e.preventDefault();
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => { 
     e.preventDefault();
     const file = e.dataTransfer.files[0];
     if (file) setFormData({ ...formData, profilePicture: file });
@@ -84,24 +83,26 @@ const ProfilePage: React.FC = () => {
   return (
     <>
       <div className={`${isModalOpen ? "opacity-50 pointer-events-none" : ""}`}>
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
       <div className="my-14 flex justify-center items-center dark:text-white">
         <div className="w-full max-w-6xl bg-[#dfdfdf] dark:bg-gray-800 rounded-lg p-6 flex flex-col md:flex-row gap-6 border border-gray-400 dark:border-gray-600 shadow-lg">
           {/* Left Sidebar - Profile Section */}
           <div className="w-full md:w-1/3 bg-white dark:bg-gray-700 shadow-md p-6 rounded-lg border border-gray-400 dark:border-gray-400">
             <div className="flex flex-col items-center">
-              <img
-                src="/assets/avatar_icon.png"
-                alt="Profile"
-                className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
+              <Image
+              src={formData.profilePicture ? URL.createObjectURL(formData.profilePicture) : "/assets/avatar_icon.png"}
+              alt="Profile"
+              width={112}
+              height={112}
+              className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
               />
               <h2 className="text-xl font-semibold mt-4">{formData.name}</h2>
               <p className="text-gray-600 dark:text-gray-300">
-                {formData.title}
+              {formData.title}
               </p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-                {formData.email}
+              {formData.email}
               </p>
             </div>
 
@@ -326,12 +327,14 @@ const ProfilePage: React.FC = () => {
           <div className="w-full md:w-2/3 py-3 px-6 bg-white dark:bg-gray-700 border border-gray-400 dark:border-gray-400 rounded-lg">
             <div className="flex justify-between items-center">
               <h2 className="text-2xl font-bold">About</h2>
-              <button className="bg-purple-600 text-white mt-2 px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition">
-                Take Quiz
-              </button>
+                <Link href="/skill-test">
+                  <button className="bg-purple-600 text-white mt-2 px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition">
+                    Skill Test
+                  </button>
+                </Link>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              UI/UX Designer, Web Designer
+              Null 
             </p>
 
             {/* Skills Section */}
@@ -347,28 +350,13 @@ const ProfilePage: React.FC = () => {
               ))}
             </div>
 
-            {/* Experience Section */}
-            <h3 className="mt-6 text-xl font-semibold">Experience</h3>
-            <div className="bg-gray-100 dark:bg-gray-600 p-4 rounded-lg mt-2 border border-gray-300 dark:border-gray-600 shadow-sm">
-              <h4 className="font-bold">IBM Skillsbuild (Internship)</h4>
-              <p className="text-gray-600 dark:text-gray-300 text-sm">
-                Jul 24 - Aug 24
-              </p>
-              <p className="text-gray-500 dark:text-gray-400 mt-2 text-sm">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                diam nonummy nibh.
-              </p>
-            </div>
-
             {/* Activity & Projects */}
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
-              <ActivitySection />
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <ProjectsSection />
-            </div>
+            </div> 
           </div>
         </div>
       </div>
-      <Footer />
     </>
   );
 };
@@ -396,27 +384,6 @@ const ProfileLink: React.FC<{
   </div>
 );
 
-const ActivitySection: React.FC = () => (
-  <div className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-lg border border-gray-300 dark:border-gray-600 text-gray-700">
-    <div className="flex gap-2">
-      <NotebookPen />
-      <h3 className="text-lg font-bold mb-2"> Activity</h3>
-    </div>
-    {["Joined new project", "New team member added", "Joined new project"].map(
-      (activity, index) => (
-        <div
-          key={index}
-          className="flex items-center space-x-3 py-2 border-b last:border-0"
-        >
-          <div className="bg-gray-800 text-white px-2 py-1 rounded text-xs">
-            Jun 29
-          </div>
-          <p className="text-gray-700 dark:text-gray-300 text-sm">{activity}</p>
-        </div>
-      )
-    )}
-  </div>
-);
 
 const ProjectsSection: React.FC = () => (
   <div className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-lg border border-gray-300 dark:border-gray-600">
@@ -425,9 +392,7 @@ const ProjectsSection: React.FC = () => (
       <h3 className="text-lg font-bold mb-2"> Projects</h3>
     </div>
     {[
-      { name: "Food Donation Website", color: "red" },
-      { name: "E-commerce Website", color: "green" },
-      { name: "AI Trip Planner", color: "blue" },
+      { name: "Null", color: "gray" },
     ].map((project, index) => (
       <div
         key={index}

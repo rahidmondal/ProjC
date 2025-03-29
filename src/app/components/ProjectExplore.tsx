@@ -1,11 +1,11 @@
 "use client";
 
 import React, { useState } from "react";
-import Navbar from "../Components/Navbar/page";
-import Footer from "../Components/Footer";
+// import Navbar from "../Components/Navbar/page";
+// import Footer from "../Components/Footer";
 import { Search } from "lucide-react";
-import Card from "../Components/Card";
-import Pagination from "../Components/Pagination";
+import Card from "../components/Card";
+import Pagination from "../components/Pagination";
 
 export default function ProjectExplore() {
   const projects = Array.from({ length: 18 }, (_, index) => index + 1); // ✅ 18 projects (3 pages)
@@ -31,7 +31,7 @@ export default function ProjectExplore() {
   return (
     <>
       {/* Navbar */}
-      <Navbar />
+      {/* <Navbar /> */}
 
       {/* Search & Filter Section */}
       <section className="flex flex-col md:flex-row items-center justify-center gap-6 md:gap-12 w-full max-w-[95%] sm:max-w-[90%] md:max-w-[85%] lg:max-w-[87%] mx-auto mt-10 px-6">
@@ -86,7 +86,7 @@ export default function ProjectExplore() {
       </div>
 
       {/* Footer */}
-      <Footer />
+      {/* <Footer /> */}
     </>
   );
 }

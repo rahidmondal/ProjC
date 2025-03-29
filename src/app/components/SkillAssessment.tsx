@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 export default function SkillAssessment() {
   return (
@@ -7,9 +8,11 @@ export default function SkillAssessment() {
         <p className="text-xl md:text-2xl font-medium max-w-3xl mx-auto leading-relaxed">
           &ldquo;Skills grow stronger when put to the test challenges reveal not just what you know, but what you&apos;re truly capable of.&rdquo;
         </p>
+        <Link href="/skill-test">
         <button className="mt-6 px-6 py-3 bg-white text-black text-lg font-semibold rounded-full shadow-md hover:bg-gray-200 transition">
           Take the test
         </button>
+        </Link>
       </div>
     </section>
   );

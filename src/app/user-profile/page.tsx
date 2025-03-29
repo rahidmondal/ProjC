@@ -1,5 +1,5 @@
-import ProtectedRoute from "../Components/ProtectedRoute"; // Import ProtectedRoute
-import ProfilePage from "./ProfilePage"; // Import ProfilePage component
+import ProtectedRoute from "../components/ProtectedRoute"; 
+import ProfilePage from "../components/ProfilePage"; 
 
 export default function UserProfile() {
   return (
