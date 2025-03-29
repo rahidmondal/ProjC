@@ -14,8 +14,10 @@ import {
 
 import { getCurrentUser } from "../services/auth"; 
 import { User } from "../types/user";
+import { useSearchParams } from "next/navigation";
 
 const ProfilePage: React.FC = () => {
+  const searchParams = useSearchParams();
   const [skills] = useState(["Null"]);
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null); // Store user data
@@ -29,6 +31,12 @@ const ProfilePage: React.FC = () => {
     };
     fetchUser();
   }, []);
+
+  useEffect(() => {
+    if (searchParams.get("edit") === "true") {
+      setIsModalOpen(true);
+    }
+  }, [searchParams]);
 
   const [formData, setFormData] = useState({
     name: "",
@@ -66,6 +74,8 @@ const ProfilePage: React.FC = () => {
   // Save form data
   const handleSave = () => {
     setIsModalOpen(false);
+    window.history.replaceState(null, "", "/user-profile");
+
   };
 
   useEffect(() => {
