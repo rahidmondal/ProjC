@@ -7,8 +7,6 @@ import {
   Globe,
   Github,
   Linkedin,
-  Instagram,
-  Facebook,
   Upload,
   FolderOpen,
   X,
@@ -39,9 +37,9 @@ const ProfilePage: React.FC = () => {
     website: "",
     github: "",
     linkedin: "",
-    instagram: "",
-    facebook: "",
     profilePicture: null,
+    skills: [],
+    description: "",
   });
 
   // Handle input change
@@ -137,16 +135,6 @@ const ProfilePage: React.FC = () => {
                 Icon={Linkedin}
                 label="LinkedIn"
                 link={formData.linkedin}
-              />
-              <ProfileLink
-                Icon={Instagram}
-                label="Instagram"
-                link={formData.instagram}
-              />
-              <ProfileLink
-                Icon={Facebook}
-                label="Facebook"
-                link={formData.facebook}
               />
             </div>
           </div>
@@ -272,34 +260,8 @@ const ProfilePage: React.FC = () => {
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
                         />
                       </div>
+                      
 
-                      <div>
-                        <label className="text-sm font-semibold">
-                          Instagram
-                        </label>
-                        <input
-                          type="url"
-                          name="instagram"
-                          value={formData.instagram}
-                          onChange={handleChange}
-                          placeholder="https://instagram.com/username"
-                          className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
-                        />
-                      </div>
-
-                      <div>
-                        <label className="text-sm font-semibold">
-                          Facebook
-                        </label>
-                        <input
-                          type="url"
-                          name="facebook"
-                          value={formData.facebook}
-                          onChange={handleChange}
-                          placeholder="https://facebook.com/username"
-                          className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
-                        />
-                      </div>
                     </div>
                   </div>
                 </form>
@@ -332,9 +294,10 @@ const ProfilePage: React.FC = () => {
                     Skill Test
                   </button>
                 </Link>
+
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Null 
+            {formData.description || "No description provided."}
             </p>
 
             {/* Skills Section */}
