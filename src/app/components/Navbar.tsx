@@ -63,8 +63,8 @@ const Navbar = () => {
   const menuItems = [
     { name: "Home", path: "/home" },
     { name: "Explore", path: "/project-explore" },
-    { name: "Profile", path: "/user-profile" },
     { name: "Skill Hub", path: "/skill-hub" },
+    { name: "Profile", path: "/user-profile" },
   ];
 
   return (
