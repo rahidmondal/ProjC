@@ -1,5 +1,5 @@
 import ProtectedRoute from "../components/ProtectedRoute";
-import ProjectProposePage from "./ProjectPropose";
+import ProjectProposePage from "../components/ProjectPropose";
 
 export default function ProjectPropose() {
   return (

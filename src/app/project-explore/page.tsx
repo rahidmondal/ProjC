@@ -1,5 +1,5 @@
 import ProtectedRoute from "../components/ProtectedRoute";
-import ProjectExplorePage from "./ProjectExplore";
+import ProjectExplorePage from "../components/ProjectExplore";
 
 export default function ProjectExplore() {
   return (
