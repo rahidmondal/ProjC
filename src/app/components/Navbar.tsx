@@ -6,6 +6,7 @@ import { IoMoonOutline, IoSunnyOutline, IoMenu, IoClose } from "react-icons/io5"
 import { User, LogOut } from "lucide-react";
 import Image from "next/image";
 import { getCurrentUser, logout } from "../services/auth";
+import { getUserImageUrl, getUser } from "../services/users"; // Import getUser
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -13,7 +14,7 @@ const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const [darkMode, setDarkMode] = useState(false);
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState<any>(null); // Type user as any
   const dropdownRef = useRef(null);
   const navRef = useRef(null);
 
@@ -26,7 +27,24 @@ const Navbar = () => {
       }
     }
 
-    getCurrentUser().then(setUser);
+    const fetchUser = async () => {
+      try {
+        const currentUser = await getCurrentUser();
+        if (currentUser) {
+          // Fetch user data from the database
+          const existingUser = await getUser(currentUser.$id);
+          if (existingUser) {
+            setUser(existingUser); // Set the user data from the database
+          } else {
+            setUser(currentUser)
+          }
+        }
+      } catch (error) {
+        console.error("Error fetching user:", error);
+      }
+    };
+
+    fetchUser();
 
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
@@ -125,7 +143,7 @@ const Navbar = () => {
               className="flex items-center space-x-2"
             >
               <Image
-                src={user?.avatar || "/assets/avatar_icon.png"}
+                src={user?.image ? getUserImageUrl(user.image) : "/assets/avatar_icon.png"}
                 alt="Profile"
                 width={32}
                 height={32}
