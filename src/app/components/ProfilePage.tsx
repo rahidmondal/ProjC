@@ -18,7 +18,8 @@ import {
   getUser,
   updateUser,
   uploadUserImage,
-  getUserImageUrl
+  getUserImageUrl,
+  deleteUserImage
 } from "../services/users";
 import { User } from "../types/user";
 import { useSearchParams } from "next/navigation";
@@ -108,65 +109,76 @@ const ProfilePage: React.FC = () => {
   };
 
   // Save form data
-  const handleSave = async () => {
-    setIsModalOpen(false);
-    window.history.replaceState(null, "", "/user-profile");
 
-    if (!user) {
-      console.error("User not logged in.");
-      return;
+// ...
+
+const handleSave = async () => {
+  setIsModalOpen(false);
+  window.history.replaceState(null, "", "/user-profile");
+
+  if (!user) {
+    console.error("User not logged in.");
+    return;
+  }
+
+  try {
+    let imageId = null;
+    // Delete previous image if a new one is being uploaded
+    if (formData.profilePicture && formData.image) {
+      try {
+        await deleteUserImage(formData.image);
+        console.log("Previous image deleted successfully.");
+      } catch (deleteError) {
+        console.error("Error deleting previous image:", deleteError);
+        // Handle the error appropriately (e.g., show an error message)
+      }
     }
 
-    try {
-      let imageId = null;
-      if (formData.profilePicture) {
-        // Upload the image
-        const uploadResponse = await uploadUserImage(formData.profilePicture);
-        imageId = uploadResponse.$id;
-      }
-
-      const userData = {
-        userId: user.$id, // Use the correct user ID from auth
-        name: formData.name,
-        email: formData.email,
-        title: formData.title,
-        website: formData.website,
-        github: formData.github,
-        linkedin: formData.linkedin,
-        description: formData.description,
-        skills: formData.skills, // Include skills in user data
-        image: imageId, // Save the image ID
-      };
-
-      let updatedUser;
-
-      // Check if the user already exists in the database
-      if (documentId) {
-        // Update the existing user
-        updatedUser = await updateUser(documentId, userData);
-        console.log("User updated successfully.");
-      } else {
-        // Create a new user
-        updatedUser = await createUser(userData, imageId);
-        console.log("User created successfully.");
-        // If creating a new user, you might want to set the documentId
-        setDocumentId(updatedUser.$id);
-      }
-
-      // Fetch the updated user data
-      const fetchedUser = await getUser(user.$id);
-
-      if (fetchedUser) {
-        // Update local state with the new data
-        setFormData(fetchedUser);
-        setUser(user);
-      }
-
-    } catch (error) {
-      console.error("Error saving profile:", error);
-      // Handle error (e.g., display an error message)
+    if (formData.profilePicture) {
+      const uploadResponse = await uploadUserImage(formData.profilePicture);
+      imageId = uploadResponse.$id;
+    } else {
+      imageId = formData.image;
     }
-  };
+
+    const userData = {
+      userId: user.$id,
+      name: formData.name,
+      email: formData.email,
+      title: formData.title,
+      website: formData.website,
+      github: formData.github,
+      linkedin: formData.linkedin,
+      description: formData.description,
+      skills: formData.skills,
+      image: imageId,
+    };
+
+    let updatedUser;
+
+    if (documentId) {
+      // Update the existing user
+      updatedUser = await updateUser(documentId, userData);
+      console.log("User updated successfully.");
+    } else {
+      // Create a new user
+      updatedUser = await createUser(userData, imageId);
+      console.log("User created successfully.");
+      setDocumentId(updatedUser.$id);
+    }
+
+    // Fetch the updated user data
+    const fetchedUser = await getUser(user.$id);
+
+    if (fetchedUser) {
+      // Update local state with the new data
+      setFormData(fetchedUser);
+      setUser(user);
+    }
+  } catch (error) {
+    console.error("Error saving profile:", error);
+  }
+};
   return (
     <>
       <div className={`${isModalOpen ? "opacity-50 pointer-events-none" : ""}`}>
@@ -177,17 +189,17 @@ const ProfilePage: React.FC = () => {
           {/* Left Sidebar - Profile Section */}
           <div className="w-full md:w-1/3 bg-white dark:bg-gray-700 shadow-md p-6 rounded-lg border border-gray-400 dark:border-gray-400">
             <div className="flex flex-col items-center">
-            <Image
-  src={
-    formData.image
-      ? getUserImageUrl(formData.image)
-      : "/assets/avatar_icon.png"
-  }
-  alt="Profile"
-  width={112}
-  height={112}
-  className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
-/>
+              <Image
+                src={
+                  formData.image
+                    ? getUserImageUrl(formData.image)
+                    : "/assets/avatar_icon.png"
+                }
+                alt="Profile"
+                width={112}
+                height={112}
+                className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
+              />
               <h2 className="text-xl font-semibold mt-4">{formData.name}</h2>
               <p className="text-gray-600 dark:text-gray-300">{formData.title}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
@@ -357,7 +369,7 @@ const ProfilePage: React.FC = () => {
                         <input
                           type="text"
                           name="skills"
-                          value={formData.skills ? formData.skills.join(", ") : ""} // Display as comma-separated
+                          value={formData.skills ? formData.skills.join(", ") : ""} 
                           onChange={handleSkillsChange}
                           placeholder="e.g., React, Node.js, JavaScript"
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"

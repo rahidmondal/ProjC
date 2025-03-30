@@ -60,3 +60,13 @@ export const uploadUserImage = async (file: File) => {
 export const getUserImageUrl = (fileId: string) => {
     return storage.getFilePreview(storageId, fileId);
 };
+
+export const deleteUserImage = async (fileId: string) => {
+    try {
+        await storage.deleteFile(storageId, fileId);
+        console.log("Image deleted successfully.");
+    } catch (error) {
+        console.error("Error deleting image:", error);
+        throw error;
+    }
+};
