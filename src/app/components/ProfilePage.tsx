@@ -298,6 +298,7 @@ const handleSave = async () => {
                           value={formData.name}
                           onChange={handleChange}
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
+                          disabled
                         />
                       </div>
 
@@ -310,6 +311,7 @@ const handleSave = async () => {
                           value={formData.email}
                           onChange={handleChange}
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
+                          disabled
                         />
                       </div>
 
@@ -390,6 +392,9 @@ const handleSave = async () => {
                   </div>
                 </form>
 
+                <p className="text-sm text-gray-500 dark:text-gray-300 italic">
+                  Contact Support For Name and Email Change
+                </p>
                 {/* Buttons */}
                 <div className="flex justify-end gap-3 mt-4">
                   <button
