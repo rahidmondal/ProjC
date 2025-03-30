@@ -7,41 +7,76 @@ import {
   Globe,
   Github,
   Linkedin,
-  Instagram,
-  Facebook,
   Upload,
   FolderOpen,
   X,
 } from "lucide-react";
 
-import { getCurrentUser } from "../services/auth"; 
+import { getCurrentUser } from "../services/auth";
+import {
+  createUser,
+  getUser,
+  updateUser,
+  uploadUserImage,
+  getUserImageUrl,
+  deleteUserImage
+} from "../services/users";
 import { User } from "../types/user";
+import { useSearchParams } from "next/navigation";
 
 const ProfilePage: React.FC = () => {
-  const [skills] = useState(["Null"]);
+  const searchParams = useSearchParams();
   const [isModalOpen, setIsModalOpen] = useState(false);
   const [user, setUser] = useState<User | null>(null); // Store user data
+  const [documentId, setDocumentId] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchUser = async () => {
-      const userData = await getCurrentUser(); // Get user from register.tsx
+      const userData = await getCurrentUser(); // Get user from auth.ts
       if (userData) {
         setUser(userData);
+
+        // Fetch user data from the database
+        const existingUser = await getUser(userData.$id);
+        if (existingUser) {
+          setFormData(existingUser);
+          setDocumentId(existingUser.$id);
+        } else {
+          // Initialize form with basic user info from auth
+          setFormData({
+            userId: userData.$id,
+            name: userData.name || "",
+            email: userData.email || "",
+            title: "",
+            website: "",
+            github: "",
+            linkedin: "",
+            profilePicture: null,
+            skills: [],
+            description: "",
+          });
+        }
       }
     };
     fetchUser();
   }, []);
 
-  const [formData, setFormData] = useState({
+  useEffect(() => {
+    if (searchParams.get("edit") === "true") {
+      setIsModalOpen(true);
+    }
+  }, [searchParams]);
+
+  const [formData, setFormData] = useState<any>({
     name: "",
     email: "",
     title: "",
     website: "",
     github: "",
     linkedin: "",
-    instagram: "",
-    facebook: "",
     profilePicture: null,
+    skills: [],
+    description: "",
   });
 
   // Handle input change
@@ -59,27 +94,91 @@ const ProfilePage: React.FC = () => {
   // Drag & Drop handlers
   const handleDragOver = (e: React.DragEvent<HTMLDivElement>) =>
     e.preventDefault();
-  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => { 
+  const handleDrop = (e: React.DragEvent<HTMLDivElement>) => {
     e.preventDefault();
     const file = e.dataTransfer.files[0];
     if (file) setFormData({ ...formData, profilePicture: file });
   };
 
-  // Save form data
-  const handleSave = () => {
-    setIsModalOpen(false);
+  // Handle skills change
+  const handleSkillsChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const value = e.target.value;
+    // Assuming skills are comma-separated
+    const skillsArray = value.split(",").map((skill) => skill.trim());
+    setFormData((prev) => ({ ...prev, skills: skillsArray }));
   };
 
-  useEffect(() => {
-    if (user) {
-      setFormData((prev) => ({
-        ...prev,
-        name: user.name || "User",
-        email: user.email || "user@example.com",
-      }));
-    }
-  }, [user]);
+  // Save form data
 
+// ...
+
+const handleSave = async () => {
+  setIsModalOpen(false);
+  window.history.replaceState(null, "", "/user-profile");
+
+  if (!user) {
+    console.error("User not logged in.");
+    return;
+  }
+
+  try {
+    let imageId = null;
+    // Delete previous image if a new one is being uploaded
+    if (formData.profilePicture && formData.image) {
+      try {
+        await deleteUserImage(formData.image);
+        console.log("Previous image deleted successfully.");
+      } catch (deleteError) {
+        console.error("Error deleting previous image:", deleteError);
+        // Handle the error appropriately (e.g., show an error message)
+      }
+    }
+
+    if (formData.profilePicture) {
+      const uploadResponse = await uploadUserImage(formData.profilePicture);
+      imageId = uploadResponse.$id;
+    } else {
+      imageId = formData.image;
+    }
+
+    const userData = {
+      userId: user.$id,
+      name: formData.name,
+      email: formData.email,
+      title: formData.title,
+      website: formData.website,
+      github: formData.github,
+      linkedin: formData.linkedin,
+      description: formData.description,
+      skills: formData.skills,
+      image: imageId,
+    };
+
+    let updatedUser;
+
+    if (documentId) {
+      // Update the existing user
+      updatedUser = await updateUser(documentId, userData);
+      console.log("User updated successfully.");
+    } else {
+      // Create a new user
+      updatedUser = await createUser(userData, imageId);
+      console.log("User created successfully.");
+      setDocumentId(updatedUser.$id);
+    }
+
+    // Fetch the updated user data
+    const fetchedUser = await getUser(user.$id);
+
+    if (fetchedUser) {
+      // Update local state with the new data
+      setFormData(fetchedUser);
+      setUser(user);
+    }
+  } catch (error) {
+    console.error("Error saving profile:", error);
+  }
+};
   return (
     <>
       <div className={`${isModalOpen ? "opacity-50 pointer-events-none" : ""}`}>
@@ -91,18 +190,20 @@ const ProfilePage: React.FC = () => {
           <div className="w-full md:w-1/3 bg-white dark:bg-gray-700 shadow-md p-6 rounded-lg border border-gray-400 dark:border-gray-400">
             <div className="flex flex-col items-center">
               <Image
-              src={formData.profilePicture ? URL.createObjectURL(formData.profilePicture) : "/assets/avatar_icon.png"}
-              alt="Profile"
-              width={112}
-              height={112}
-              className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
+                src={
+                  formData.image
+                    ? getUserImageUrl(formData.image)
+                    : "/assets/avatar_icon.png"
+                }
+                alt="Profile"
+                width={112}
+                height={112}
+                className="w-28 h-28 rounded-full border-4 border-gray-300 dark:border-gray-400"
               />
               <h2 className="text-xl font-semibold mt-4">{formData.name}</h2>
-              <p className="text-gray-600 dark:text-gray-300">
-              {formData.title}
-              </p>
+              <p className="text-gray-600 dark:text-gray-300">{formData.title}</p>
               <p className="text-sm text-gray-500 dark:text-gray-400">
-              {formData.email}
+                {formData.email}
               </p>
             </div>
 
@@ -137,16 +238,6 @@ const ProfilePage: React.FC = () => {
                 Icon={Linkedin}
                 label="LinkedIn"
                 link={formData.linkedin}
-              />
-              <ProfileLink
-                Icon={Instagram}
-                label="Instagram"
-                link={formData.instagram}
-              />
-              <ProfileLink
-                Icon={Facebook}
-                label="Facebook"
-                link={formData.facebook}
               />
             </div>
           </div>
@@ -207,6 +298,7 @@ const ProfilePage: React.FC = () => {
                           value={formData.name}
                           onChange={handleChange}
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
+                          disabled
                         />
                       </div>
 
@@ -219,6 +311,7 @@ const ProfilePage: React.FC = () => {
                           value={formData.email}
                           onChange={handleChange}
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
+                          disabled
                         />
                       </div>
 
@@ -272,38 +365,36 @@ const ProfilePage: React.FC = () => {
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
                         />
                       </div>
-
+                      {/* Skills */}
                       <div>
-                        <label className="text-sm font-semibold">
-                          Instagram
-                        </label>
+                        <label className="text-sm font-semibold">Skills</label>
                         <input
-                          type="url"
-                          name="instagram"
-                          value={formData.instagram}
-                          onChange={handleChange}
-                          placeholder="https://instagram.com/username"
-                          className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
-                        />
-                      </div>
-
-                      <div>
-                        <label className="text-sm font-semibold">
-                          Facebook
-                        </label>
-                        <input
-                          type="url"
-                          name="facebook"
-                          value={formData.facebook}
-                          onChange={handleChange}
-                          placeholder="https://facebook.com/username"
+                          type="text"
+                          name="skills"
+                          value={formData.skills ? formData.skills.join(", ") : ""} 
+                          onChange={handleSkillsChange}
+                          placeholder="e.g., React, Node.js, JavaScript"
                           className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
                         />
                       </div>
                     </div>
                   </div>
+                  {/* Description */}
+                  <div>
+                    <label className="text-sm font-semibold">Description</label>
+                    <textarea
+                      name="description"
+                      value={formData.description}
+                      onChange={handleChange}
+                      placeholder="Write a short bio about yourself"
+                      className="w-full p-2 border rounded-md dark:bg-gray-700 dark:text-white"
+                    />
+                  </div>
                 </form>
 
+                <p className="text-sm text-gray-500 dark:text-gray-300 italic">
+                  Contact Support For Name and Email Change
+                </p>
                 {/* Buttons */}
                 <div className="flex justify-end gap-3 mt-4">
                   <button
@@ -327,20 +418,20 @@ const ProfilePage: React.FC = () => {
           <div className="w-full md:w-2/3 py-3 px-6 bg-white dark:bg-gray-700 border border-gray-400 dark:border-gray-400 rounded-lg">
             <div className="flex justify-between items-center">
               <h2 className="text-2xl font-bold">About</h2>
-                <Link href="/skill-test">
-                  <button className="bg-purple-600 text-white mt-2 px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition">
-                    Skill Test
-                  </button>
-                </Link>
+              <Link href="/skill-test">
+                <button className="bg-purple-600 text-white mt-2 px-4 py-2 rounded-lg hover:bg-purple-700 dark:bg-purple-500 dark:hover:bg-purple-600 transition">
+                  Skill Test
+                </button>
+              </Link>
             </div>
             <p className="text-gray-600 dark:text-gray-300 mt-2">
-              Null 
+              {formData.description || "No description provided."}
             </p>
 
             {/* Skills Section */}
             <h3 className="mt-4 text-xl font-semibold">Skills</h3>
             <div className="flex flex-wrap gap-2 mt-2">
-              {skills.map((skill, index) => (
+              {formData.skills && formData.skills.map((skill: string, index: number) => (
                 <span
                   key={index}
                   className="bg-purple-300 dark:bg-purple-700 px-4 py-1 rounded-full text-sm text-black dark:text-white"
@@ -351,9 +442,9 @@ const ProfilePage: React.FC = () => {
             </div>
 
             {/* Activity & Projects */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
               <ProjectsSection />
-            </div> 
+            </div>
           </div>
         </div>
       </div>
@@ -384,12 +475,11 @@ const ProfileLink: React.FC<{
   </div>
 );
 
-
 const ProjectsSection: React.FC = () => (
   <div className="bg-white dark:bg-gray-800 shadow-md p-4 rounded-lg border border-gray-300 dark:border-gray-600">
     <div className="flex gap-2 text-gray-700">
       <FolderOpen />
-      <h3 className="text-lg font-bold mb-2"> Projects</h3>
+      <h3 className="text-lg font-bold mb-2">Projects</h3>
     </div>
     {[
       { name: "Null", color: "gray" },

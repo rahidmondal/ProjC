@@ -37,7 +37,7 @@ export default function RegisterPage() {
     setError("");
     try {
       await register(name, email, password);
-      router.push("/user-profile");
+      router.push("/user-profile?edit=true");
     } catch (err) {
       if (err instanceof Error) {
         setError(err.message);
