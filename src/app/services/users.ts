@@ -1,14 +1,14 @@
-import { databases, ID, storage } from '../appwrite'; // Import Appwrite services
+import { databases, ID, storage } from '../appwrite';
 import { Query } from 'appwrite';
 
 const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!;
 const usersCollectionId = process.env.NEXT_PUBLIC_APPWRITE_USERS_COLLECTION_ID!;
 const storageId = process.env.NEXT_PUBLIC_APPWRITE_STORAGE_ID!;
 
-export const createUser = async (userData: any, imageId?: string) => { // Add imageId parameter
+export const createUser = async (userData: any, imageId?: string) => {
     try {
         if (imageId) {
-            userData.image = imageId; // Include imageId in userData
+            userData.image = imageId;
         }
         return await databases.createDocument(databaseId, usersCollectionId, ID.unique(), userData);
     } catch (error) {
@@ -20,15 +20,26 @@ export const createUser = async (userData: any, imageId?: string) => { // Add im
 export const getUser = async (userId: string) => {
     try {
         const response = await databases.listDocuments(databaseId, usersCollectionId, [Query.equal('userId', userId)]);
-        if (response.documents.length > 0) {
-            return response.documents[0];
-        }
-        return null;
+        return response.documents.length > 0 ? response.documents[0] : null;
     } catch (error) {
         console.error('Error getting user:', error);
         throw error;
     }
 };
+
+export const getUserSkills = async (userId: string) => {
+    try {
+        const user = await getUser(userId);
+        // Filter out empty strings and invalid values from skills
+        const skills = Array.isArray(user?.skills) ? user.skills.filter(skill => skill.trim() !== "") : [];
+        console.log("Final filtered skills:", skills); // Debugging
+        return skills;
+    } catch (error) {
+        console.error("Error fetching user skills:", error);
+        return [];
+    }
+};
+
 
 export const updateUser = async (documentId: string, userData: any) => {
     try {
@@ -64,9 +75,9 @@ export const getUserImageUrl = (fileId: string) => {
 export const deleteUserImage = async (fileId: string) => {
     try {
         await storage.deleteFile(storageId, fileId);
-        console.log("Image deleted successfully.");
+        console.log('Image deleted successfully.');
     } catch (error) {
-        console.error("Error deleting image:", error);
+        console.error('Error deleting image:', error);
         throw error;
     }
 };
