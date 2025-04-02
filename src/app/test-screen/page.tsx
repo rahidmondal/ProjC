@@ -5,6 +5,8 @@ import ProtectedRoute from "../components/ProtectedRoute";
 import { useRouter } from 'next/navigation';
 import GenAITestPlaceholder from "../components/GenAITestPlaceholder";
 import questionsData from './questions.json';
+import { getCurrentUser } from "../services/auth";
+import { saveTestResult } from "../services/skillTest";
 
 const TestScreen = () => {
   const searchParams = useSearchParams();
@@ -20,7 +22,16 @@ const TestScreen = () => {
   const [showReview, setShowReview] = useState(false);
   const [testFinished, setTestFinished] = useState(false);
   const [score, setScore] = useState(0);
+  const [userId, setUserId] = useState<string | null>(null);
 
+
+  useEffect(() => {
+    const fetchUser = async () => {
+      const user = await getCurrentUser();
+      setUserId(user?.$id || null);
+    };
+    fetchUser();
+  }, []);
 
   useEffect(() => {
     if (skill && level && type !== "GenAI(Experimental)") {
@@ -68,10 +79,28 @@ const TestScreen = () => {
   };
 
   const handleSubmit = async () => {
-    // Calculate score
     const correctAnswers = calculateScore();
     setTestFinished(true);
-    setTimer(0); // Stop the timer
+    setTimer(0);
+
+    if (userId) {
+      try {
+        await saveTestResult(
+          userId,
+          skill,
+          level,
+          score,
+          questions.length,
+          correctAnswers
+        );
+        console.log("Test result saved successfully.");
+      } catch (error) {
+        console.error("Error saving test result:", error);
+      }
+    } else {
+      console.warn("User ID is not available. Cannot save test result.");
+    }
+
     console.log("Test finished. Score:", correctAnswers);
   };
 
@@ -90,14 +119,14 @@ const TestScreen = () => {
   };
 
   const handleReturnToProfile = () => {
-    router.push('/user-profile'); //  route to your profile page
+    router.push('/user-profile');
   };
 
   if (!skill || !level) {
     alert("Please select a skill and level.");
     router.push('/skill-test');
   }
-  if(type === "GenAI(Experimental)"){
+  if (type === "GenAI(Experimental)") {
     return (
       <GenAITestPlaceholder />
     )
@@ -114,7 +143,7 @@ const TestScreen = () => {
 
   return (
     <ProtectedRoute>
-      <div  className="flex flex-col min-h-screen bg-gray-100">
+      <div className="flex flex-col min-h-screen bg-gray-100">
         {/* Timer */}
         <div className="flex justify-end p-4">
           <div
