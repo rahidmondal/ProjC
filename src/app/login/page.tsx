@@ -24,13 +24,14 @@ export default function LoginPage() {
         }
         checkUser();
     }, [router]);
-        // ✅ Add class to body to hide Navbar/Footer
-        useEffect(() => {
-            document.body.classList.add("hide-nav-footer");
-            return () => {
-                document.body.classList.remove("hide-nav-footer");
-            };
-        }, []);
+
+    // ✅ Hide Navbar/Footer on Login Page
+    useEffect(() => {
+        document.body.classList.add("hide-nav-footer");
+        return () => {
+            document.body.classList.remove("hide-nav-footer");
+        };
+    }, []);
     
     async function handleLogin(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
@@ -50,9 +51,19 @@ export default function LoginPage() {
     return (
         <div className="flex h-screen bg-gray-100 dark:bg-gray-900">
             {/* Left Section (Banner) */}
-            <div className="relative w-1/2 overflow-hidden flex items-center justify-center bg-white dark:bg-gray-900 ">
-                <div className="absolute inset-0  clip-custom"></div>
-                <Image src="/assets/login_banner.png" alt="Login Banner" width={650} height={700} className="relative z-10" />
+            <div className="relative w-1/2 h-full flex items-center justify-center">
+                {/* Background Fill */}
+                <div className="absolute inset-0 bg-white dark:bg-gray-900"></div>
+
+                {/* Image (Ensures Full Coverage) */}
+                <Image 
+                    src="/assets/login_banner.png" 
+                    alt="Login Banner" 
+                    fill
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                    style={{ objectFit: "cover" }} 
+                    className="relative z-10"
+                />
             </div>
 
             {/* Right Section (Form) */}
@@ -60,14 +71,13 @@ export default function LoginPage() {
                 {mounted && (
                     <Link href="/">
                         <Image
-                        src={theme === "dark" ? "/assets/Lightlogo.png" : "/assets/Dark_logo_projc_1.png"}
-                        alt="Project Logo"
-                        width={300}
-                        height={150}
-                        className="mb-6"
-                    />
+                            src={theme === "dark" ? "/assets/Lightlogo.png" : "/assets/Dark_logo_projc_1.png"}
+                            alt="Project Logo"
+                            width={300}
+                            height={150}
+                            className="mb-6"
+                        />
                     </Link>
-
                 )}
 
                 <h2 className="text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Login</h2>
@@ -99,12 +109,6 @@ export default function LoginPage() {
                     New here? <a href="/register" className="text-purple-500 font-semibold">Create an account</a>
                 </p>
             </div>
-
-            <style jsx>{`
-                .clip-custom {
-                    clip-path: ellipse(77% 100% at 7% 45%);
-                }
-            `}</style>
         </div>
     );
 }
