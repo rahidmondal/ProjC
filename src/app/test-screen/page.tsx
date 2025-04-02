@@ -1,13 +1,15 @@
 "use client";
-import React, { useState, useEffect, useRef, useCallback } from "react";
+import React, { useState, useEffect } from "react";
 import { useSearchParams } from "next/navigation";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { useRouter } from 'next/navigation';
+import GenAITestPlaceholder from "../components/GenAITestPlaceholder";
 
 const TestScreen = () => {
   const searchParams = useSearchParams();
   const skill = searchParams.get("skill");
   const level = searchParams.get("level");
+  const type = searchParams.get("type");
   const router = useRouter();
 
   const [questions, setQuestions] = useState([]);
@@ -17,10 +19,10 @@ const TestScreen = () => {
   const [showReview, setShowReview] = useState(false);
   const [testFinished, setTestFinished] = useState(false);
   const [score, setScore] = useState(0);
-  const testScreenRef = useRef(null);
+
 
   useEffect(() => {
-    if (skill && level) {
+    if (skill && level && type !== "GenAI(Experimental)") {
 
       // Currently it has Placeholder questions
       const loadedQuestions = [
@@ -79,6 +81,7 @@ const TestScreen = () => {
     }
   }, [skill, level]);
 
+
   useEffect(() => {
     let intervalId;
 
@@ -113,6 +116,7 @@ const TestScreen = () => {
     const correctAnswers = calculateScore();
     setTestFinished(true);
     setTimer(0); // Stop the timer
+    console.log("Test finished. Score:", correctAnswers);
   };
 
   const goToPreviousQuestion = () => {
@@ -134,7 +138,13 @@ const TestScreen = () => {
   };
 
   if (!skill || !level) {
-    return <div>Error: Skill and level must be selected.</div>;
+    alert("Please select a skill and level.");
+    router.push('/skill-test');
+  }
+  if(type === "GenAI(Experimental)"){
+    return (
+      <GenAITestPlaceholder />
+    )
   }
 
   if (questions.length === 0) {
@@ -144,9 +154,11 @@ const TestScreen = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
 
+
+
   return (
     <ProtectedRoute>
-      <div ref={testScreenRef} className="flex flex-col min-h-screen bg-gray-100">
+      <div  className="flex flex-col min-h-screen bg-gray-100">
         {/* Timer */}
         <div className="flex justify-end p-4">
           <div

@@ -6,29 +6,34 @@ const SkillSelection = () => {
   const router = useRouter();
   const [skill, setSkill] = useState("");
   const [level, setLevel] = useState("");
+  const [type, setType] = useState("");
 
   const skills = [
-    "JavaScript",
+    // "JavaScript",
     "Python",
     "Java",
-    "C++",
-    "C#",
-    "React",
-    "Angular",
-    "Node.js",
-    "HTML",
-    "CSS",
+    "Cpp",
+    // "C#",
+    // "React",
+    // "Angular",
+    // "Node.js",
+    // "HTML",
+    // "CSS",
   ];
   const levels = ["Beginner", "Intermediate", "Advanced"];
+
+  const types = ["Traditional","GenAI(Experimental)"];
+
 
   const handleSubmit = (e) => {
     e.preventDefault();
     if (skill && level) {
-      router.push(`/test-screen?skill=${skill}&level=${level}`);
+      router.push(`/test-screen?skill=${skill}&level=${level}&type=${type}`);
     } else {
       alert("Please select a skill and level.");
     }
   };
+
 
   return (
     <div className="flex flex-col items-center justify-center h-screen text-center px-6">
@@ -80,7 +85,29 @@ const SkillSelection = () => {
             ))}
           </select>
         </div>
-        <div className="flex items-center justify-between">
+        <div className="mb-6">
+          <label
+            htmlFor="type"
+            className="block text-gray-700 dark:text-gray-300 text-sm font-bold mb-2"
+          >
+            Type:
+          </label>
+          <select
+            id="type"
+            className="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 dark:bg-gray-800 dark:text-gray-300 leading-tight focus:outline-none focus:shadow-outline"
+            value={type}
+            onChange={(e) => setType(e.target.value)}
+            required
+          >
+            <option value="">Select a type</option>
+            {types.map((type) => (
+              <option key={type} value={type}>
+                {type}
+              </option>
+            ))}
+          </select>
+        </div>
+        <div className="flex items-center justify-center">
           <button
             className="bg-purple-500 hover:bg-purple-700 text-white font-bold py-2 px-4 rounded focus:outline-none focus:shadow-outline"
             type="submit"
