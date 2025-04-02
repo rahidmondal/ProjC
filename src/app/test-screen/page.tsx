@@ -4,6 +4,7 @@ import { useSearchParams } from "next/navigation";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { useRouter } from 'next/navigation';
 import GenAITestPlaceholder from "../components/GenAITestPlaceholder";
+import questionsData from './questions.json';
 
 const TestScreen = () => {
   const searchParams = useSearchParams();
@@ -23,63 +24,18 @@ const TestScreen = () => {
 
   useEffect(() => {
     if (skill && level && type !== "GenAI(Experimental)") {
+      const filteredQuestions = questionsData.find(
+        (item) => item.skill === skill && item.level === level
+      );
 
-      // Currently it has Placeholder questions
-      const loadedQuestions = [
-        {
-          question: "What is the purpose of the 'git clone' command?",
-          options: ["To create a new repository", "To copy a repository from a remote source", "To merge two branches", "To delete a repository"],
-          correctAnswer: "To copy a repository from a remote source",
-        },
-        {
-          question: "Which data structure follows the LIFO (Last In, First Out) principle?",
-          options: ["Queue", "Stack", "Linked List", "Tree"],
-          correctAnswer: "Stack",
-        },
-        {
-          question: "What is the time complexity of searching for an element in a balanced binary search tree?",
-          options: ["O(n)", "O(n log n)", "O(log n)", "O(1)"],
-          correctAnswer: "O(log n)",
-        },
-        {
-          question: "What is the role of a compiler?",
-          options: ["To interpret code line by line", "To translate high-level code to machine code", "To debug code", "To execute code directly"],
-          correctAnswer: "To translate high-level code to machine code",
-        },
-        {
-          question: "Which of the following is NOT a database management system?",
-          options: ["MySQL", "PostgreSQL", "MongoDB", "HTML"],
-          correctAnswer: "HTML",
-        },
-        {
-          question: "What is the purpose of a firewall?",
-          options: ["To speed up internet connection", "To protect a network from unauthorized access", "To cool down a computer", "To improve Wi-Fi signal"],
-          correctAnswer: "To protect a network from unauthorized access",
-        },
-        {
-          question: "What is cloud computing?",
-          options: ["Storing data on a local hard drive", "Delivering computing services over the internet", "Using a specific operating system", "Developing mobile applications"],
-          correctAnswer: "Delivering computing services over the internet",
-        },
-        {
-          question: "What is the primary function of an operating system?",
-          options: ["To run web browsers", "To manage hardware and software resources", "To create documents", "To play video games"],
-          correctAnswer: "To manage hardware and software resources",
-        },
-        {
-          question: "Which of the following is an example of an interpreted language?",
-          options: ["C", "C++", "Java", "Python"],
-          correctAnswer: "Python",
-        },
-        {
-          question: "What is the purpose of a version control system like Git?",
-          options: ["To write code faster", "To track changes to code over time", "To design user interfaces", "To manage databases"],
-          correctAnswer: "To track changes to code over time",
-        },
-      ];
-      setQuestions(loadedQuestions);
+      if (filteredQuestions) {
+        setQuestions(filteredQuestions.questionsJson);
+      } else {
+        console.log(`No questions found for skill: ${skill} and level: ${level}`);
+        setQuestions([]);
+      }
     }
-  }, [skill, level]);
+  }, [skill, level, type]);
 
 
   useEffect(() => {
