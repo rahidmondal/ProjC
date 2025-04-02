@@ -32,7 +32,7 @@ export const getUserSkills = async (userId: string) => {
         const user = await getUser(userId);
         // Filter out empty strings and invalid values from skills
         const skills = Array.isArray(user?.skills) ? user.skills.filter(skill => skill.trim() !== "") : [];
-        console.log("Final filtered skills:", skills); // Debugging
+        console.log("Final filtered skills:", skills);
         return skills;
     } catch (error) {
         console.error("Error fetching user skills:", error);
@@ -78,6 +78,65 @@ export const deleteUserImage = async (fileId: string) => {
         console.log('Image deleted successfully.');
     } catch (error) {
         console.error('Error deleting image:', error);
+        throw error;
+    }
+};
+
+
+export const updateUserSkillScore = async (
+    userId: string,
+    skill: string,
+    level: string,
+    score: number
+) => {
+    if (!userId || !skill || !level || score === undefined || score === null) {
+        console.error('Missing parameters for updateUserSkillScore');
+        throw new Error('Missing parameters for updating skill score.');
+    }
+
+    try {
+        // 1. Get the current user document
+        const userDoc = await getUser(userId);
+        if (!userDoc) {
+            console.error(`User document not found for userId: ${userId}`);
+            throw new Error('User not found.');
+        }
+
+        // 2. Prepare the new score string
+        const newScoreString = `${skill}:${level}:${score}`;
+
+        // 3. Get the current skillScores or initialize if null/undefined
+        const currentSkillScores: string[] = Array.isArray(userDoc.skillScore) ? [...userDoc.skillScore] : [];
+
+        // 4. Find if the skill already exists in the array
+        const existingIndex = currentSkillScores.findIndex(s => {
+            return s === skill + ':' + level + ':' + score; 
+        });
+
+        // 5. Update or add the score
+        if (existingIndex > -1) {
+            // Update the existing entry
+            currentSkillScores[existingIndex] = newScoreString;
+            console.log(`Updated skill score for ${skill}: ${newScoreString}`);
+        } else {
+            // Add the new entry
+            currentSkillScores.push(newScoreString);
+            console.log(`Added new skill score: ${newScoreString}`);
+        }
+
+        // 6. Update the user document with the modified skillScore array
+        await databases.updateDocument(
+            databaseId,
+            usersCollectionId,
+            userDoc.$id,
+            { skillScore: currentSkillScores } 
+        );
+
+        console.log(`Skill score updated successfully for user ${userId}`);
+        return currentSkillScores; 
+
+    } catch (error) {
+        console.error('Error updating user skill score:', error);
         throw error;
     }
 };
