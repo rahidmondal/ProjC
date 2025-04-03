@@ -110,7 +110,8 @@ export const updateUserSkillScore = async (
 
         // 4. Find if the skill already exists in the array
         const existingIndex = currentSkillScores.findIndex(s => {
-            return s === skill + ':' + level + ':' + score; 
+            const [existingSkill, existingLevel] = s.split(':');
+            return existingSkill === skill && existingLevel === level;
         });
 
         // 5. Update or add the score
