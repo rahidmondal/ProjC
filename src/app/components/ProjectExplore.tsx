@@ -6,7 +6,6 @@ import Card from "../components/Card";
 import Pagination from "../components/Pagination";
 import { databases } from "../appwrite";
 import { Models } from "appwrite";
-import Footer from "./Footer";
 
 interface Project {
   $id: string;
@@ -21,6 +20,7 @@ export default function ProjectExplore() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedFilter, setSelectedFilter] = useState("");
   const itemsPerPage = 6;
   const totalPages = Math.ceil(projects.length / itemsPerPage);
 
