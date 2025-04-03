@@ -21,8 +21,6 @@ export default function ProjectExplore() {
   const [projects, setProjects] = useState<Project[]>([]);
   const [loading, setLoading] = useState(true);
   const [currentPage, setCurrentPage] = useState(1);
-  const [selectedFilter, setSelectedFilter] = useState("Experienced");
-
   const itemsPerPage = 6;
   const totalPages = Math.ceil(projects.length / itemsPerPage);
 
