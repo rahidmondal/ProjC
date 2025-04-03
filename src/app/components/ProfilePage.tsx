@@ -30,8 +30,7 @@ const ProfilePage: React.FC = () => {
   const [isSaving, setIsSaving] = useState(false);
   const [saveError, setSaveError] = useState<string | null>(null);
 
-  // --- Get User Data from Context ---
-  // profileUser here implicitly has the ProfileUser type from the context definition
+ 
   const { authUser, profileUser, isLoading, refetchUser } = useUser();
 
   // --- Effects ---
@@ -53,7 +52,7 @@ const ProfilePage: React.FC = () => {
             description: profileUser.description || "",
             skillScore: Array.isArray(profileUser.skillScore) ? profileUser.skillScore : [],
         });
-        // Removed setDocumentId call
+
     } else if (!isLoading) {
         console.log("Profile user data is null after loading.");
     }
@@ -166,12 +165,7 @@ const ProfilePage: React.FC = () => {
       return ( <div className="flex justify-center items-center min-h-screen"><p>Loading Profile...</p></div> );
   }
 
-  // --- Render ---
-  // Note: ProtectedRoute should handle redirect if authUser is null after loading
-  // Render null briefly if !authUser && !isLoading? ProtectedRoute might cover this.
-  if (!authUser && !isLoading) {
-      return <div className="flex justify-center items-center min-h-screen"><p>Please log in to view your profile.</p></div>;
-  }
+
 
   return (
     <>
