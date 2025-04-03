@@ -77,7 +77,7 @@ export default function LoginPage() {
 
     return (
         <div className="flex h-screen bg-gray-100 dark:bg-gray-900">
-            {/* Left Section (Banner) - Consider hiding on smaller screens */}
+            {/* Left Section (Banner) -*/}
             <div className="hidden md:block relative w-1/2 h-full">
                 {/* Background Fill */}
                 <div className="absolute inset-0 bg-white dark:bg-gray-900"></div>
