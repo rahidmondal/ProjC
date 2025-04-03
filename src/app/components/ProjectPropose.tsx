@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { databases, ID } from "../appwrite";
+import { useRouter } from "next/navigation";
+
 
 const ProjectPropose = () => {
   const [projectName, setProjectName] = useState("");
@@ -11,7 +13,8 @@ const ProjectPropose = () => {
   const [skillInput, setSkillInput] = useState("");
   const [teamSize, setTeamSize] = useState(4);
   const [score, setScore] = useState("Intermediate");
-
+  const router = useRouter();
+  
   const addSkill = () => {
     if (skillInput.trim() !== "" && !skills.includes(skillInput)) {
       setSkills([...skills, skillInput]);
@@ -48,6 +51,7 @@ const ProjectPropose = () => {
       setSkills(["React.js", "Tailwind", "SQL"]);
       setTeamSize(4);
       setScore("Intermediate");
+      router.push("/projects");
     } catch (error) {
       console.error("Error adding project:", error);
       alert("Failed to add project.");

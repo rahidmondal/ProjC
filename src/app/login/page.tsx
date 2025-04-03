@@ -62,7 +62,7 @@ export default function LoginPage() {
             } else {
                  setError("Login seemed successful, but failed to retrieve user data.");
             }
-        } catch (err: unknown) { // Type the error
+        } catch (err: unknown) { 
             const message = err instanceof Error ? err.message : "An unexpected error occurred.";
              if (message.includes("Invalid credentials") || (err as any)?.code === 401) {
                  setError("Invalid email or password.");
