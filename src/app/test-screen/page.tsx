@@ -139,13 +139,15 @@ const TestScreen = () => {
     router.push('/user-profile'); 
   };
 
+  useEffect(() => {
+    if (!skill || !level) {
+      alert("Please select a skill and level.");
+      router.push('/skill-test');
+    }
+  }, [router, skill, level]);
+
   if (!skill || !level) {
-    
-     useEffect(() => {
-        alert("Please select a skill and level.");
-        router.push('/skill-test');
-     }, [router]);
-     return <div>Redirecting...</div>; 
+    return <div>Redirecting...</div>;
   }
 
   if (type === "GenAI(Experimental)") {
