@@ -1,7 +1,12 @@
 "use client";
+
 import { useState } from "react";
+import { databases, ID } from "../appwrite";
 
 const ProjectPropose = () => {
+  const [projectName, setProjectName] = useState("");
+  const [proposerName, setProposerName] = useState("");
+  const [description, setDescription] = useState("");
   const [skills, setSkills] = useState(["React.js", "Tailwind", "SQL"]);
   const [skillInput, setSkillInput] = useState("");
   const [teamSize, setTeamSize] = useState(4);
@@ -18,32 +23,76 @@ const ProjectPropose = () => {
     setSkills(skills.filter((skill) => skill !== skillToRemove));
   };
 
+  const handleSubmit = async () => {
+    if (!projectName || !description) {
+      alert("Project Name and Description are required");
+      return;
+    }
+    try {
+      await databases.createDocument(
+        process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
+        process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!,
+        ID.unique(),
+        {
+          projectName,
+          projectProposer: proposerName,
+          description,
+          skillsRequired: skills,
+          teamSize,
+          
+        }
+      );
+      alert("Project added successfully!");
+      setProjectName("");
+      setDescription("");
+      setSkills(["React.js", "Tailwind", "SQL"]);
+      setTeamSize(4);
+      setScore("Intermediate");
+    } catch (error) {
+      console.error("Error adding project:", error);
+      alert("Failed to add project.");
+    }
+  };
+
   return (
     <>
-      {/* <Navbar /> */}
-      <div className="w-full sm:w-2/5  mx-auto m-10 bg-gray-50 dark:bg-gray-800 border border-black dark:border-gray-500 p-5 rounded-lg shadow-lg">
-        {/* Header */}
+      <div className="w-full sm:w-2/5 mx-auto m-10 bg-gray-50 dark:bg-gray-800 border border-black dark:border-gray-500 p-5 rounded-lg shadow-lg">
         <h2 className="text-2xl font-bold mb-2">Add Project</h2>
-
         <hr className="w-full border-t-2 border-gray-400 mb-4" />
 
-        {/* Project Name */}
+        <div className="mb-4">
+          <label className="block text-gray-700 dark:text-gray-300 font-semibold">
+            Proposer Name
+          </label>
+          <input
+            type="text"
+            value={proposerName}
+            onChange={(e) => setProposerName(e.target.value)}
+            className="w-full border border-gray-400 dark:bg-gray-700 rounded-md px-3 py-2 mt-1 focus:border-black focus:ring-0"
+          />
+        </div>
+
         <div className="mb-4">
           <label className="block text-gray-700 dark:text-gray-300 font-semibold">
             Project Name
           </label>
           <input
             type="text"
-            className="w-full sm:w-96 border border-gray-400 dark:bg-gray-700 rounded-md px-3 py-2 mt-1 ml-4 focus:border-black focus:ring-0"
+            value={projectName}
+            onChange={(e) => setProjectName(e.target.value)}
+            className="w-full border border-gray-400 dark:bg-gray-700 rounded-md px-3 py-2 mt-1 focus:border-black focus:ring-0"
           />
         </div>
 
-        {/* Description */}
         <div className="mb-4">
           <label className="block text-gray-700 dark:text-gray-300 font-semibold">
             Description
           </label>
-          <textarea className="w-full sm:w-96 border border-gray-400 dark:bg-gray-700 rounded-md px-3 py-2 mt-1 ml-4 focus:border-black focus:ring-0"></textarea>
+          <textarea
+            value={description}
+            onChange={(e) => setDescription(e.target.value)}
+            className="w-full border border-gray-400 dark:bg-gray-700 rounded-md px-3 py-2 mt-1 focus:border-black focus:ring-0"
+          ></textarea>
         </div>
 
         {/* Skills Required */}
@@ -83,32 +132,16 @@ const ProjectPropose = () => {
           </div>
         </div>
 
-        {/* Project Duration */}
-        <div className="mb-4">
-          <label className="block text-gray-700 dark:text-gray-300 font-semibold">
-            Project Duration
-          </label>
-          <div className="flex flex-wrap gap-3 mt-2 px-4">
-            <select className="w-full sm:w-40 dark:bg-gray-700 border border-gray-400 rounded-md px-3 py-2 focus:border-black focus:ring-0">
-              <option>Month</option>
-            </select>
-            <select className="w-full sm:w-40 dark:bg-gray-700 border border-gray-400 rounded-md px-3 py-2 focus:border-black focus:ring-0">
-              <option>Year</option>
-            </select>
-          </div>
-        </div>
-
-        {/* Team Size */}
         <div className="mb-4">
           <label className="block text-gray-700 dark:text-gray-300 font-semibold">
             Team Size
           </label>
-          <div className="flex flex-wrap gap-3 mt-2 px-4">
+          <div className="flex gap-3 mt-2">
             {[2, 3, 4, 5].map((size) => (
               <button
                 key={size}
                 onClick={() => setTeamSize(size)}
-                className={`dark:text-white px-4 py-2 border rounded-full ${
+                className={`px-4 py-2 border rounded-full ${
                   teamSize === size
                     ? "bg-purple-600 text-white"
                     : "border-gray-500 text-gray-700"
@@ -120,17 +153,16 @@ const ProjectPropose = () => {
           </div>
         </div>
 
-        {/* Score Required */}
         <div className="mb-4">
           <label className="block text-gray-700 dark:text-gray-300 font-semibold">
             Score Required
           </label>
-          <div className="flex flex-wrap gap-3 mt-2 px-4">
+          <div className="flex gap-3 mt-2">
             {["Novice", "Intermediate", "Expert"].map((level) => (
               <button
                 key={level}
                 onClick={() => setScore(level)}
-                className={`dark:text-white px-4 py-2 border rounded-full ${
+                className={`px-4 py-2 border rounded-full ${
                   score === level
                     ? "bg-purple-600 text-white"
                     : "border-gray-500 text-gray-700"
@@ -142,14 +174,15 @@ const ProjectPropose = () => {
           </div>
         </div>
 
-        {/* Propose Button */}
         <div className="mt-6">
-          <button className="w-full bg-purple-600 text-white text-lg font-semibold px-6 py-3 rounded-md hover:bg-purple-700">
+          <button
+            onClick={handleSubmit}
+            className="w-full bg-purple-600 text-white text-lg font-semibold px-6 py-3 rounded-md hover:bg-purple-700"
+          >
             Propose
           </button>
         </div>
       </div>
-      {/* <Footer /> */}
     </>
   );
 };
