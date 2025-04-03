@@ -8,7 +8,7 @@ import { User, LogOut } from "lucide-react";
 import Image from "next/image";
 import { logout } from "../services/auth";
 import { getUserImageUrl } from "../services/users"; 
-import { useUser } from "./UserContext"; 
+import { useUser } from "../contexts/UserContext"; 
 
 const Navbar = () => {
   const pathname = usePathname();
