@@ -9,7 +9,7 @@ const SkillSelection = () => {
   const [type, setType] = useState("");
 
   const skills = [
-    // "JavaScript",
+    "JavaScript",
     "Python",
     "Java",
     "Cpp",
@@ -17,8 +17,8 @@ const SkillSelection = () => {
     // "React",
     // "Angular",
     // "Node.js",
-    // "HTML",
-    // "CSS",
+    "HTML",
+    "CSS",
   ];
   const levels = ["Beginner", "Intermediate", "Advanced"];
 

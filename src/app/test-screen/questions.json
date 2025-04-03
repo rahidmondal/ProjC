@@ -5,52 +5,102 @@
     "questionsJson": [
       {
         "question": "What is the output of std::cout << 2 + 2;?",
-        "options": ["22", "4", "0", "Error"],
+        "options": [
+          "22",
+          "4",
+          "0",
+          "Error"
+        ],
         "correctAnswer": "4"
       },
       {
         "question": "Which keyword is used to define a class in C++?",
-        "options": ["struct", "def", "class", "object"],
+        "options": [
+          "struct",
+          "def",
+          "class",
+          "object"
+        ],
         "correctAnswer": "class"
       },
       {
         "question": "What is the result of 5 % 2 in C++?",
-        "options": ["2.5", "1", "0", "3"],
+        "options": [
+          "2.5",
+          "1",
+          "0",
+          "3"
+        ],
         "correctAnswer": "1"
       },
       {
         "question": "Which data type is used to store a sequence of characters in C++?",
-        "options": ["integer", "float", "string", "char[]"],
+        "options": [
+          "integer",
+          "float",
+          "string",
+          "char[]"
+        ],
         "correctAnswer": "string"
       },
       {
         "question": "How do you write a single-line comment in C++?",
-        "options": ["// Comment", "/* Comment */", "# Comment", "-- Comment"],
+        "options": [
+          "// Comment",
+          "/* Comment */",
+          "# Comment",
+          "-- Comment"
+        ],
         "correctAnswer": "// Comment"
       },
       {
         "question": "What does the 'length()' method do for a std::string?",
-        "options": ["Adds two numbers", "Returns the length of a string", "Prints a message", "Converts to lowercase"],
+        "options": [
+          "Adds two numbers",
+          "Returns the length of a string",
+          "Prints a message",
+          "Converts to lowercase"
+        ],
         "correctAnswer": "Returns the length of a string"
       },
       {
         "question": "What is the output of int arr[] = {1, 2, 3}; std::cout << arr[1];?",
-        "options": ["1", "2", "3", "Error"],
+        "options": [
+          "1",
+          "2",
+          "3",
+          "Error"
+        ],
         "correctAnswer": "2"
       },
       {
         "question": "Which operator is used for assignment in C++?",
-        "options": ["=", "==", ":=", "->"],
+        "options": [
+          "=",
+          "==",
+          ":=",
+          "->"
+        ],
         "correctAnswer": "="
       },
       {
         "question": "What is a vector in C++?",
-        "options": ["An immutable sequence", "A mutable dynamic array", "A set of unique elements", "A dictionary"],
+        "options": [
+          "An immutable sequence",
+          "A mutable dynamic array",
+          "A set of unique elements",
+          "A dictionary"
+        ],
         "correctAnswer": "A mutable dynamic array"
       },
       {
         "question": "What is the result of bool b = (10 > 20); std::cout << std::boolalpha << b;?",
-        "options": ["true", "false", "Error", "None"],
+        "options": [
+          "true",
+          "false",
+          "Error",
+          "None"
+        ],
         "correctAnswer": "false"
       }
     ]
@@ -61,52 +111,102 @@
     "questionsJson": [
       {
         "question": "What is the purpose of the 'try-catch' block in C++?",
-        "options": ["Looping", "Exception handling", "Resource management", "String formatting"],
+        "options": [
+          "Looping",
+          "Exception handling",
+          "Resource management",
+          "String formatting"
+        ],
         "correctAnswer": "Exception handling"
       },
       {
         "question": "What is function overloading in C++?",
-        "options": ["A design pattern", "Defining multiple functions with the same name but different parameters", "A loop construct", "A data type"],
+        "options": [
+          "A design pattern",
+          "Defining multiple functions with the same name but different parameters",
+          "A loop construct",
+          "A data type"
+        ],
         "correctAnswer": "Defining multiple functions with the same name but different parameters"
       },
       {
         "question": "Explain the difference between '==' and '.compare()' for std::string objects.",
-        "options": ["'==' compares content, '.compare()' compares references", "'.compare()' compares content, '==' compares references", "They are the same", "They are not used for string objects"],
+        "options": [
+          "'==' compares content, '.compare()' compares references",
+          "'.compare()' compares content, '==' compares references",
+          "They are the same",
+          "They are not used for string objects"
+        ],
         "correctAnswer": "'.compare()' compares content, '==' compares references"
       },
       {
         "question": "What is the purpose of the 'constructor' in a C++ class?",
-        "options": ["To define a destructor", "To initialize an object", "To define a static method", "To define a private method"],
+        "options": [
+          "To define a destructor",
+          "To initialize an object",
+          "To define a static method",
+          "To define a private method"
+        ],
         "correctAnswer": "To initialize an object"
       },
       {
         "question": "How do you implement inheritance in C++?",
-        "options": ["Using 'implements'", "Using ':'", "Using 'include'", "Using 'inherit'"],
+        "options": [
+          "Using 'implements'",
+          "Using ':'",
+          "Using 'include'",
+          "Using 'inherit'"
+        ],
         "correctAnswer": "Using ':'"
       },
       {
         "question": "What is the purpose of the 'std::stringstream' class?",
-        "options": ["To filter a list", "To manipulate string streams", "To sort a list", "To reverse a list"],
+        "options": [
+          "To filter a list",
+          "To manipulate string streams",
+          "To sort a list",
+          "To reverse a list"
+        ],
         "correctAnswer": "To manipulate string streams"
       },
       {
         "question": "What is the purpose of the 'const' keyword in C++?",
-        "options": ["To create a loop", "To make a variable or method non-modifiable", "To create a thread", "To create a database connection"],
+        "options": [
+          "To create a loop",
+          "To make a variable or method non-modifiable",
+          "To create a thread",
+          "To create a database connection"
+        ],
         "correctAnswer": "To make a variable or method non-modifiable"
       },
       {
         "question": "What is the purpose of the 'static' keyword?",
-        "options": ["To manage virtual machines", "To create instance specific variables", "To create class level variables/methods", "To create databases"],
+        "options": [
+          "To manage virtual machines",
+          "To create instance specific variables",
+          "To create class level variables/methods",
+          "To create databases"
+        ],
         "correctAnswer": "To create class level variables/methods"
       },
       {
         "question": "What is the difference between virtual functions and pure virtual functions?",
-        "options": ["Virtual functions are abstract, pure virtual functions are concrete", "Pure virtual functions are abstract, virtual functions are concrete", "There is no difference", "Virtual functions are for variables, pure virtual functions for methods"],
+        "options": [
+          "Virtual functions are abstract, pure virtual functions are concrete",
+          "Pure virtual functions are abstract, virtual functions are concrete",
+          "There is no difference",
+          "Virtual functions are for variables, pure virtual functions for methods"
+        ],
         "correctAnswer": "Pure virtual functions are abstract, virtual functions are concrete"
       },
       {
         "question": "How to handle file input and output in C++?",
-        "options": ["Using system commands", "Using the 'File' class", "Using 'ifstream' and 'ofstream' classes", "using external libraries"],
+        "options": [
+          "Using system commands",
+          "Using the 'File' class",
+          "Using 'ifstream' and 'ofstream' classes",
+          "using external libraries"
+        ],
         "correctAnswer": "Using 'ifstream' and 'ofstream' classes"
       }
     ]
@@ -117,52 +217,102 @@
     "questionsJson": [
       {
         "question": "Explain the concept of RAII (Resource Acquisition Is Initialization) in C++.",
-        "options": ["Manual memory management", "Automatic resource management using destructors", "A security feature", "A debugging tool"],
+        "options": [
+          "Manual memory management",
+          "Automatic resource management using destructors",
+          "A security feature",
+          "A debugging tool"
+        ],
         "correctAnswer": "Automatic resource management using destructors"
       },
       {
         "question": "What is the difference between 'std::thread' and 'std::async'?",
-        "options": ["'std::thread' launches async tasks, 'std::async' launches threads", "'std::async' launches async tasks, 'std::thread' launches threads", "They are the same", "They are used for different data types"],
+        "options": [
+          "'std::thread' launches async tasks, 'std::async' launches threads",
+          "'std::async' launches async tasks, 'std::thread' launches threads",
+          "They are the same",
+          "They are used for different data types"
+        ],
         "correctAnswer": "'std::async' launches async tasks, 'std::thread' launches threads"
       },
       {
         "question": "What is C++ template metaprogramming?",
-        "options": ["A way to reflect on code quality", "A way to analyze memory usage", "A way to perform computations at compile time using templates", "A way to create GUIs"],
+        "options": [
+          "A way to reflect on code quality",
+          "A way to analyze memory usage",
+          "A way to perform computations at compile time using templates",
+          "A way to create GUIs"
+        ],
         "correctAnswer": "A way to perform computations at compile time using templates"
       },
       {
         "question": "Explain the concept of move semantics in C++.",
-        "options": ["Classes that define the behavior of other classes", "Classes that define the behavior of objects", "A way to transfer ownership of resources efficiently", "Classes that define the behavior of functions"],
+        "options": [
+          "Classes that define the behavior of other classes",
+          "Classes that define the behavior of objects",
+          "A way to transfer ownership of resources efficiently",
+          "Classes that define the behavior of functions"
+        ],
         "correctAnswer": "A way to transfer ownership of resources efficiently"
       },
       {
         "question": "What is the purpose of the C++ Standard Template Library (STL)?",
-        "options": ["Memory profiling", "Code profiling", "Network profiling", "A set of template classes and functions for common data structures and algorithms"],
+        "options": [
+          "Memory profiling",
+          "Code profiling",
+          "Network profiling",
+          "A set of template classes and functions for common data structures and algorithms"
+        ],
         "correctAnswer": "A set of template classes and functions for common data structures and algorithms"
       },
       {
         "question": "Explain the concept of smart pointers in C++.",
-        "options": ["Pointers that modify parameters", "Pointers that automatically manage memory", "Pointers that return parameters", "Pointers that filter parameters"],
+        "options": [
+          "Pointers that modify parameters",
+          "Pointers that automatically manage memory",
+          "Pointers that return parameters",
+          "Pointers that filter parameters"
+        ],
         "correctAnswer": "Pointers that automatically manage memory"
       },
       {
         "question": "How does C++ handle multithreading?",
-        "options": ["Using single thread execution", "Using the 'std::thread' class", "Using external libraries", "Using operating system threads only"],
+        "options": [
+          "Using single thread execution",
+          "Using the 'std::thread' class",
+          "Using external libraries",
+          "Using operating system threads only"
+        ],
         "correctAnswer": "Using the 'std::thread' class"
       },
       {
         "question": "What are C++ lambda expressions and how are they used?",
-        "options": ["To manage loops", "To create anonymous functions", "To manage exceptions", "To manage threads"],
+        "options": [
+          "To manage loops",
+          "To create anonymous functions",
+          "To manage exceptions",
+          "To manage threads"
+        ],
         "correctAnswer": "To create anonymous functions"
       },
       {
         "question": "Explain how to use C++ concepts.",
-        "options": ["To create GUI applications", "To create mobile apps", "To constrain template parameters", "To create web servers"],
+        "options": [
+          "To create GUI applications",
+          "To create mobile apps",
+          "To constrain template parameters",
+          "To create web servers"
+        ],
         "correctAnswer": "To constrain template parameters"
       },
       {
         "question": "What is the purpose of the C++ memory model?",
-        "options": ["A way to describe C++ code", "A way to describe C++ functions", "A way to describe attribute access", "A specification for how threads interact through memory"],
+        "options": [
+          "A way to describe C++ code",
+          "A way to describe C++ functions",
+          "A way to describe attribute access",
+          "A specification for how threads interact through memory"
+        ],
         "correctAnswer": "A specification for how threads interact through memory"
       }
     ]
@@ -173,52 +323,102 @@
     "questionsJson": [
       {
         "question": "What is the output of System.out.println(2 + 2);?",
-        "options": ["22", "4", "0", "Error"],
+        "options": [
+          "22",
+          "4",
+          "0",
+          "Error"
+        ],
         "correctAnswer": "4"
       },
       {
         "question": "Which keyword is used to define a class in Java?",
-        "options": ["struct", "def", "class", "object"],
+        "options": [
+          "struct",
+          "def",
+          "class",
+          "object"
+        ],
         "correctAnswer": "class"
       },
       {
         "question": "What is the result of 5 % 2 in Java?",
-        "options": ["2.5", "1", "0", "3"],
+        "options": [
+          "2.5",
+          "1",
+          "0",
+          "3"
+        ],
         "correctAnswer": "1"
       },
       {
         "question": "Which data type is used to store a sequence of characters in Java?",
-        "options": ["integer", "float", "string", "String"],
+        "options": [
+          "integer",
+          "float",
+          "string",
+          "String"
+        ],
         "correctAnswer": "String"
       },
       {
         "question": "How do you write a single-line comment in Java?",
-        "options": ["// Comment", "/* Comment */", "# Comment", "-- Comment"],
+        "options": [
+          "// Comment",
+          "/* Comment */",
+          "# Comment",
+          "-- Comment"
+        ],
         "correctAnswer": "// Comment"
       },
       {
         "question": "What does the 'length()' method do for a String?",
-        "options": ["Adds two numbers", "Returns the length of a string", "Prints a message", "Converts to lowercase"],
+        "options": [
+          "Adds two numbers",
+          "Returns the length of a string",
+          "Prints a message",
+          "Converts to lowercase"
+        ],
         "correctAnswer": "Returns the length of a string"
       },
       {
         "question": "What is the output of int[] arr = {1, 2, 3}; System.out.println(arr[1]);?",
-        "options": ["1", "2", "3", "Error"],
+        "options": [
+          "1",
+          "2",
+          "3",
+          "Error"
+        ],
         "correctAnswer": "2"
       },
       {
         "question": "Which operator is used for assignment in Java?",
-        "options": ["=", "==", ":=", "->"],
+        "options": [
+          "=",
+          "==",
+          ":=",
+          "->"
+        ],
         "correctAnswer": "="
       },
       {
         "question": "What is an ArrayList in Java?",
-        "options": ["An immutable sequence", "A mutable dynamic array", "A set of unique elements", "A dictionary"],
+        "options": [
+          "An immutable sequence",
+          "A mutable dynamic array",
+          "A set of unique elements",
+          "A dictionary"
+        ],
         "correctAnswer": "A mutable dynamic array"
       },
       {
         "question": "What is the result of boolean b = (10 > 20); System.out.println(b);?",
-        "options": ["true", "false", "Error", "None"],
+        "options": [
+          "true",
+          "false",
+          "Error",
+          "None"
+        ],
         "correctAnswer": "false"
       }
     ]
@@ -229,52 +429,102 @@
     "questionsJson": [
       {
         "question": "What is the purpose of the 'try-catch' block in Java?",
-        "options": ["Looping", "Exception handling", "Resource management", "String formatting"],
+        "options": [
+          "Looping",
+          "Exception handling",
+          "Resource management",
+          "String formatting"
+        ],
         "correctAnswer": "Exception handling"
       },
       {
         "question": "What is method overloading in Java?",
-        "options": ["A design pattern", "Defining multiple methods with the same name but different parameters", "A loop construct", "A data type"],
+        "options": [
+          "A design pattern",
+          "Defining multiple methods with the same name but different parameters",
+          "A loop construct",
+          "A data type"
+        ],
         "correctAnswer": "Defining multiple methods with the same name but different parameters"
       },
       {
         "question": "Explain the difference between '==' and '.equals()' for String objects.",
-        "options": ["'==' compares content, '.equals()' compares references", "'.equals()' compares content, '==' compares references", "They are the same", "They are not used for String objects"],
+        "options": [
+          "'==' compares content, '.equals()' compares references",
+          "'.equals()' compares content, '==' compares references",
+          "They are the same",
+          "They are not used for String objects"
+        ],
         "correctAnswer": "'.equals()' compares content, '==' compares references"
       },
       {
         "question": "What is the purpose of the 'constructor' in a Java class?",
-        "options": ["To define a destructor", "To initialize an object", "To define a static method", "To define a private method"],
+        "options": [
+          "To define a destructor",
+          "To initialize an object",
+          "To define a static method",
+          "To define a private method"
+        ],
         "correctAnswer": "To initialize an object"
       },
       {
         "question": "How do you implement an interface in Java?",
-        "options": ["Using 'extends'", "Using 'implements'", "Using 'include'", "Using 'inherit'"],
+        "options": [
+          "Using 'extends'",
+          "Using 'implements'",
+          "Using 'include'",
+          "Using 'inherit'"
+        ],
         "correctAnswer": "Using 'implements'"
       },
       {
         "question": "What is the purpose of the 'StringBuilder' class?",
-        "options": ["To filter a list", "To manipulate mutable strings", "To sort a list", "To reverse a list"],
+        "options": [
+          "To filter a list",
+          "To manipulate mutable strings",
+          "To sort a list",
+          "To reverse a list"
+        ],
         "correctAnswer": "To manipulate mutable strings"
       },
       {
         "question": "What is the purpose of the 'final' keyword in Java?",
-        "options": ["To create a loop", "To make a variable or method non-modifiable", "To create a thread", "To create a database connection"],
+        "options": [
+          "To create a loop",
+          "To make a variable or method non-modifiable",
+          "To create a thread",
+          "To create a database connection"
+        ],
         "correctAnswer": "To make a variable or method non-modifiable"
       },
       {
         "question": "What is the purpose of the 'static' keyword?",
-        "options": ["To manage virtual machines", "To create instance specific variables", "To create class level variables/methods", "To create databases"],
+        "options": [
+          "To manage virtual machines",
+          "To create instance specific variables",
+          "To create class level variables/methods",
+          "To create databases"
+        ],
         "correctAnswer": "To create class level variables/methods"
       },
       {
         "question": "What is the difference between abstract classes and interfaces?",
-        "options": ["Abstract classes can have method implementations, interfaces cannot", "Interfaces can have method implementations, abstract classes cannot", "There is no difference", "Abstract classes are for variables, interfaces for methods"],
+        "options": [
+          "Abstract classes can have method implementations, interfaces cannot",
+          "Interfaces can have method implementations, abstract classes cannot",
+          "There is no difference",
+          "Abstract classes are for variables, interfaces for methods"
+        ],
         "correctAnswer": "Abstract classes can have method implementations, interfaces cannot"
       },
       {
         "question": "How to handle file input and output in Java?",
-        "options": ["Using system commands", "Using the 'File' class", "Using the 'FileInputStream' and 'FileOutputStream' classes", "using external libraries"],
+        "options": [
+          "Using system commands",
+          "Using the 'File' class",
+          "Using the 'FileInputStream' and 'FileOutputStream' classes",
+          "using external libraries"
+        ],
         "correctAnswer": "Using the 'FileInputStream' and 'FileOutputStream' classes"
       }
     ]
@@ -285,52 +535,102 @@
     "questionsJson": [
       {
         "question": "Explain the concept of garbage collection in Java.",
-        "options": ["Manual memory management", "Automatic memory management", "A security feature", "A debugging tool"],
+        "options": [
+          "Manual memory management",
+          "Automatic memory management",
+          "A security feature",
+          "A debugging tool"
+        ],
         "correctAnswer": "Automatic memory management"
       },
       {
         "question": "What is the difference between 'synchronized' and 'volatile' keywords?",
-        "options": ["'synchronized' ensures atomicity, 'volatile' ensures visibility", "'volatile' ensures atomicity, 'synchronized' ensures visibility", "They are the same", "They are used for different data types"],
+        "options": [
+          "'synchronized' ensures atomicity, 'volatile' ensures visibility",
+          "'volatile' ensures atomicity, 'synchronized' ensures visibility",
+          "They are the same",
+          "They are used for different data types"
+        ],
         "correctAnswer": "'synchronized' ensures atomicity, 'volatile' ensures visibility"
       },
       {
         "question": "What is a Java Reflection?",
-        "options": ["A way to reflect on code quality", "A way to analyze memory usage", "A way to inspect and modify classes, interfaces, fields, and methods at runtime", "A way to create GUIs"],
+        "options": [
+          "A way to reflect on code quality",
+          "A way to analyze memory usage",
+          "A way to inspect and modify classes, interfaces, fields, and methods at runtime",
+          "A way to create GUIs"
+        ],
         "correctAnswer": "A way to inspect and modify classes, interfaces, fields, and methods at runtime"
       },
       {
         "question": "Explain the concept of Java Generics.",
-        "options": ["Classes that define the behavior of other classes", "Classes that define the behavior of objects", "Classes that allow type parameters to be specified when defining classes, interfaces, and methods", "Classes that define the behavior of functions"],
+        "options": [
+          "Classes that define the behavior of other classes",
+          "Classes that define the behavior of objects",
+          "Classes that allow type parameters to be specified when defining classes, interfaces, and methods",
+          "Classes that define the behavior of functions"
+        ],
         "correctAnswer": "Classes that allow type parameters to be specified when defining classes, interfaces, and methods"
       },
       {
         "question": "What is the purpose of the Java NIO (Non-blocking I/O) API?",
-        "options": ["Memory profiling", "Code profiling", "Network profiling", "Efficient I/O operations using channels and buffers"],
+        "options": [
+          "Memory profiling",
+          "Code profiling",
+          "Network profiling",
+          "Efficient I/O operations using channels and buffers"
+        ],
         "correctAnswer": "Efficient I/O operations using channels and buffers"
       },
       {
         "question": "Explain the concept of design patterns in Java.",
-        "options": ["Patterns that modify parameters", "Reusable solutions to common software design problems", "Patterns that return parameters", "Patterns that filter parameters"],
+        "options": [
+          "Patterns that modify parameters",
+          "Reusable solutions to common software design problems",
+          "Patterns that return parameters",
+          "Patterns that filter parameters"
+        ],
         "correctAnswer": "Reusable solutions to common software design problems"
       },
       {
         "question": "How does Java handle multithreading?",
-        "options": ["Using single thread execution", "Using the 'Thread' class and 'Runnable' interface", "Using external libraries", "Using operating system threads only"],
+        "options": [
+          "Using single thread execution",
+          "Using the 'Thread' class and 'Runnable' interface",
+          "Using external libraries",
+          "Using operating system threads only"
+        ],
         "correctAnswer": "Using the 'Thread' class and 'Runnable' interface"
       },
       {
         "question": "What are Java Annotations and how are they used?",
-        "options": ["To manage loops", "To provide metadata about the code", "To manage exceptions", "To manage threads"],
+        "options": [
+          "To manage loops",
+          "To provide metadata about the code",
+          "To manage exceptions",
+          "To manage threads"
+        ],
         "correctAnswer": "To provide metadata about the code"
       },
       {
         "question": "Explain how to use the Java Stream API.",
-        "options": ["To create GUI applications", "To create mobile apps", "To process collections of objects in a declarative way", "To create web servers"],
+        "options": [
+          "To create GUI applications",
+          "To create mobile apps",
+          "To process collections of objects in a declarative way",
+          "To create web servers"
+        ],
         "correctAnswer": "To process collections of objects in a declarative way"
       },
       {
         "question": "What is the purpose of the Java Memory Model (JMM)?",
-        "options": ["A way to describe java code", "A way to describe java functions", "A way to describe attribute access", "A specification for how threads interact through memory"],
+        "options": [
+          "A way to describe java code",
+          "A way to describe java functions",
+          "A way to describe attribute access",
+          "A specification for how threads interact through memory"
+        ],
         "correctAnswer": "A specification for how threads interact through memory"
       }
     ]
@@ -341,52 +641,102 @@
     "questionsJson": [
       {
         "question": "What is the output of print(2 + 2)?",
-        "options": ["22", "4", "0", "Error"],
+        "options": [
+          "22",
+          "4",
+          "0",
+          "Error"
+        ],
         "correctAnswer": "4"
       },
       {
         "question": "Which keyword is used to define a function in Python?",
-        "options": ["func", "define", "def", "function"],
+        "options": [
+          "func",
+          "define",
+          "def",
+          "function"
+        ],
         "correctAnswer": "def"
       },
       {
         "question": "What is the result of 5 % 2?",
-        "options": ["2.5", "1", "0", "3"],
+        "options": [
+          "2.5",
+          "1",
+          "0",
+          "3"
+        ],
         "correctAnswer": "1"
       },
       {
         "question": "Which data type is used to store a sequence of characters in Python?",
-        "options": ["integer", "float", "string", "boolean"],
+        "options": [
+          "integer",
+          "float",
+          "string",
+          "boolean"
+        ],
         "correctAnswer": "string"
       },
       {
         "question": "How do you write a single-line comment in Python?",
-        "options": ["// Comment", "/* Comment */", "# Comment", "-- Comment"],
+        "options": [
+          "// Comment",
+          "/* Comment */",
+          "# Comment",
+          "-- Comment"
+        ],
         "correctAnswer": "# Comment"
       },
       {
         "question": "What does the 'len()' function do?",
-        "options": ["Adds two numbers", "Returns the length of a sequence", "Prints a message", "Converts to lowercase"],
+        "options": [
+          "Adds two numbers",
+          "Returns the length of a sequence",
+          "Prints a message",
+          "Converts to lowercase"
+        ],
         "correctAnswer": "Returns the length of a sequence"
       },
       {
         "question": "What is the output of [1, 2, 3][1]?",
-        "options": ["1", "2", "3", "Error"],
+        "options": [
+          "1",
+          "2",
+          "3",
+          "Error"
+        ],
         "correctAnswer": "2"
       },
       {
         "question": "Which operator is used for exponentiation in Python?",
-        "options": ["^", "*", "**", "//"],
+        "options": [
+          "^",
+          "*",
+          "**",
+          "//"
+        ],
         "correctAnswer": "**"
       },
       {
         "question": "What is a list in Python?",
-        "options": ["An immutable sequence", "A mutable sequence", "A set of unique elements", "A dictionary"],
+        "options": [
+          "An immutable sequence",
+          "A mutable sequence",
+          "A set of unique elements",
+          "A dictionary"
+        ],
         "correctAnswer": "A mutable sequence"
       },
       {
         "question": "What is the result of bool(0)?",
-        "options": ["True", "False", "Error", "None"],
+        "options": [
+          "True",
+          "False",
+          "Error",
+          "None"
+        ],
         "correctAnswer": "False"
       }
     ]
@@ -397,52 +747,102 @@
     "questionsJson": [
       {
         "question": "What is the purpose of the 'with' statement in Python?",
-        "options": ["Looping", "Exception handling", "Resource management", "String formatting"],
+        "options": [
+          "Looping",
+          "Exception handling",
+          "Resource management",
+          "String formatting"
+        ],
         "correctAnswer": "Resource management"
       },
       {
         "question": "What is a decorator in Python?",
-        "options": ["A design pattern", "A function that modifies another function", "A loop construct", "A data type"],
+        "options": [
+          "A design pattern",
+          "A function that modifies another function",
+          "A loop construct",
+          "A data type"
+        ],
         "correctAnswer": "A function that modifies another function"
       },
       {
         "question": "Explain the difference between a list and a tuple.",
-        "options": ["Lists are immutable, tuples are mutable", "Lists are ordered, tuples are unordered", "Lists are mutable, tuples are immutable", "Lists use parentheses, tuples use square brackets"],
+        "options": [
+          "Lists are immutable, tuples are mutable",
+          "Lists are ordered, tuples are unordered",
+          "Lists are mutable, tuples are immutable",
+          "Lists use parentheses, tuples use square brackets"
+        ],
         "correctAnswer": "Lists are mutable, tuples are immutable"
       },
       {
         "question": "What is the purpose of the '__init__' method in a Python class?",
-        "options": ["To define a destructor", "To define a constructor", "To define a static method", "To define a private method"],
+        "options": [
+          "To define a destructor",
+          "To define a constructor",
+          "To define a static method",
+          "To define a private method"
+        ],
         "correctAnswer": "To define a constructor"
       },
       {
         "question": "How do you handle exceptions in Python?",
-        "options": ["Using 'if' statements", "Using 'try...except' blocks", "Using 'switch' statements", "Using 'while' loops"],
+        "options": [
+          "Using 'if' statements",
+          "Using 'try...except' blocks",
+          "Using 'switch' statements",
+          "Using 'while' loops"
+        ],
         "correctAnswer": "Using 'try...except' blocks"
       },
       {
         "question": "What is the purpose of the 'map()' function?",
-        "options": ["To filter a list", "To apply a function to each item in an iterable", "To sort a list", "To reverse a list"],
+        "options": [
+          "To filter a list",
+          "To apply a function to each item in an iterable",
+          "To sort a list",
+          "To reverse a list"
+        ],
         "correctAnswer": "To apply a function to each item in an iterable"
       },
       {
         "question": "What is a generator in Python?",
-        "options": ["A function that returns a list", "A function that returns an iterator", "A class that creates objects", "A module for random numbers"],
+        "options": [
+          "A function that returns a list",
+          "A function that returns an iterator",
+          "A class that creates objects",
+          "A module for random numbers"
+        ],
         "correctAnswer": "A function that returns an iterator"
       },
       {
         "question": "What is the purpose of the 'virtualenv' module?",
-        "options": ["To manage virtual machines", "To create isolated Python environments", "To create web servers", "To create databases"],
+        "options": [
+          "To manage virtual machines",
+          "To create isolated Python environments",
+          "To create web servers",
+          "To create databases"
+        ],
         "correctAnswer": "To create isolated Python environments"
       },
       {
         "question": "What is the difference between shallow copy and deep copy?",
-        "options": ["Shallow copy creates a new object, deep copy creates a reference", "Shallow copy creates a reference, deep copy creates a new object", "Shallow copy copies only the first level, deep copy copies all levels", "There is no difference"],
+        "options": [
+          "Shallow copy creates a new object, deep copy creates a reference",
+          "Shallow copy creates a reference, deep copy creates a new object",
+          "Shallow copy copies only the first level, deep copy copies all levels",
+          "There is no difference"
+        ],
         "correctAnswer": "Shallow copy copies only the first level, deep copy copies all levels"
       },
       {
         "question": "How to handle file input and output in python?",
-        "options": ["Using system commands", "Using the 'file' class", "Using the 'open()' function", "using external libraries"],
+        "options": [
+          "Using system commands",
+          "Using the 'file' class",
+          "Using the 'open()' function",
+          "using external libraries"
+        ],
         "correctAnswer": "Using the 'open()' function"
       }
     ]
@@ -453,52 +853,102 @@
     "questionsJson": [
       {
         "question": "Explain the Global Interpreter Lock (GIL) in Python.",
-        "options": ["A memory management technique", "A lock that prevents multiple threads from executing Python bytecode in parallel", "A security feature", "A debugging tool"],
+        "options": [
+          "A memory management technique",
+          "A lock that prevents multiple threads from executing Python bytecode in parallel",
+          "A security feature",
+          "A debugging tool"
+        ],
         "correctAnswer": "A lock that prevents multiple threads from executing Python bytecode in parallel"
       },
       {
         "question": "What is asynchronous programming in Python, and how is it implemented?",
-        "options": ["Using multithreading", "Using multiprocessing", "Using the 'asyncio' library", "Using 'subprocess'"],
+        "options": [
+          "Using multithreading",
+          "Using multiprocessing",
+          "Using the 'asyncio' library",
+          "Using 'subprocess'"
+        ],
         "correctAnswer": "Using the 'asyncio' library"
       },
       {
         "question": "What is the difference between 'staticmethod' and 'classmethod'?",
-        "options": ["'staticmethod' receives the instance, 'classmethod' receives the class", "'classmethod' receives the instance, 'staticmethod' receives the class", "'staticmethod' does not receive any arguments, 'classmethod' receives the class", "They are the same"],
+        "options": [
+          "'staticmethod' receives the instance, 'classmethod' receives the class",
+          "'classmethod' receives the instance, 'staticmethod' receives the class",
+          "'staticmethod' does not receive any arguments, 'classmethod' receives the class",
+          "They are the same"
+        ],
         "correctAnswer": "'staticmethod' does not receive any arguments, 'classmethod' receives the class"
       },
       {
         "question": "Explain metaclasses in Python.",
-        "options": ["Classes that define the behavior of other classes", "Classes that define the behavior of objects", "Classes that define the behavior of modules", "Classes that define the behavior of functions"],
+        "options": [
+          "Classes that define the behavior of other classes",
+          "Classes that define the behavior of objects",
+          "Classes that define the behavior of modules",
+          "Classes that define the behavior of functions"
+        ],
         "correctAnswer": "Classes that define the behavior of other classes"
       },
       {
         "question": "What is the purpose of the 'cProfile' module?",
-        "options": ["Memory profiling", "Code profiling", "Network profiling", "Database profiling"],
+        "options": [
+          "Memory profiling",
+          "Code profiling",
+          "Network profiling",
+          "Database profiling"
+        ],
         "correctAnswer": "Code profiling"
       },
       {
         "question": "Explain the concept of decorators with parameters.",
-        "options": ["Decorators that modify parameters", "Decorators that accept arguments", "Decorators that return parameters", "Decorators that filter parameters"],
+        "options": [
+          "Decorators that modify parameters",
+          "Decorators that accept arguments",
+          "Decorators that return parameters",
+          "Decorators that filter parameters"
+        ],
         "correctAnswer": "Decorators that accept arguments"
       },
       {
         "question": "How does Python handle memory management?",
-        "options": ["Manual memory allocation", "Garbage collection", "Reference counting", "Both garbage collection and reference counting"],
+        "options": [
+          "Manual memory allocation",
+          "Garbage collection",
+          "Reference counting",
+          "Both garbage collection and reference counting"
+        ],
         "correctAnswer": "Both garbage collection and reference counting"
       },
       {
         "question": "What are context managers and how are they used?",
-        "options": ["To manage loops", "To manage resources using 'with' statements", "To manage exceptions", "To manage threads"],
+        "options": [
+          "To manage loops",
+          "To manage resources using 'with' statements",
+          "To manage exceptions",
+          "To manage threads"
+        ],
         "correctAnswer": "To manage resources using 'with' statements"
       },
       {
         "question": "Explain how to use cython.",
-        "options": ["To create GUI applications", "To create mobile apps", "To write C extensions for Python", "To create web servers"],
+        "options": [
+          "To create GUI applications",
+          "To create mobile apps",
+          "To write C extensions for Python",
+          "To create web servers"
+        ],
         "correctAnswer": "To write C extensions for Python"
       },
       {
         "question": "What are python descriptors?",
-        "options": ["A way to describe python code", "A way to describe python functions", "A way to describe attribute access", "A way to describe memory allocation"],
+        "options": [
+          "A way to describe python code",
+          "A way to describe python functions",
+          "A way to describe attribute access",
+          "A way to describe memory allocation"
+        ],
         "correctAnswer": "A way to describe attribute access"
       }
     ]
@@ -509,52 +959,102 @@
     "questionsJson": [
       {
         "question": "Which CSS property is used to change the text color of an element?",
-        "options": ["background-color", "font-size", "color", "text-align"],
+        "options": [
+          "background-color",
+          "font-size",
+          "color",
+          "text-align"
+        ],
         "correctAnswer": "color"
       },
       {
         "question": "Which CSS property is used to set the background color of an element?",
-        "options": ["text-color", "border-color", "background-color", "font-color"],
+        "options": [
+          "text-color",
+          "border-color",
+          "background-color",
+          "font-color"
+        ],
         "correctAnswer": "background-color"
       },
       {
         "question": "Which CSS property is used to change the font size of text?",
-        "options": ["text-size", "font-style", "font-size", "text-font"],
+        "options": [
+          "text-size",
+          "font-style",
+          "font-size",
+          "text-font"
+        ],
         "correctAnswer": "font-size"
       },
       {
         "question": "Which of the following is the correct way to select an element with the ID 'myElement' in CSS?",
-        "options": [".myElement", "#myElement", "element.myElement", "myElement"],
+        "options": [
+          ".myElement",
+          "#myElement",
+          "element.myElement",
+          "myElement"
+        ],
         "correctAnswer": "#myElement"
       },
       {
         "question": "Which of the following is the correct way to select all paragraph elements in CSS?",
-        "options": [".paragraph", "#paragraph", "p", "all p"],
+        "options": [
+          ".paragraph",
+          "#paragraph",
+          "p",
+          "all p"
+        ],
         "correctAnswer": "p"
       },
       {
         "question": "What does the CSS property 'margin' control?",
-        "options": ["Element's background color", "Space outside an element's border", "Element's border size", "Space inside an element's border"],
+        "options": [
+          "Element's background color",
+          "Space outside an element's border",
+          "Element's border size",
+          "Space inside an element's border"
+        ],
         "correctAnswer": "Space outside an element's border"
       },
       {
         "question": "What does the CSS property 'padding' control?",
-        "options": ["Element's background color", "Space outside an element's border", "Element's border size", "Space inside an element's border"],
+        "options": [
+          "Element's background color",
+          "Space outside an element's border",
+          "Element's border size",
+          "Space inside an element's border"
+        ],
         "correctAnswer": "Space inside an element's border"
       },
       {
         "question": "Which CSS property is used to make text bold?",
-        "options": ["text-weight", "font-bold", "font-weight", "bold-text"],
+        "options": [
+          "text-weight",
+          "font-bold",
+          "font-weight",
+          "bold-text"
+        ],
         "correctAnswer": "font-weight"
       },
       {
         "question": "Which CSS property is used to align text horizontally?",
-        "options": ["text-align", "vertical-align", "align-text", "horizontal-text"],
+        "options": [
+          "text-align",
+          "vertical-align",
+          "align-text",
+          "horizontal-text"
+        ],
         "correctAnswer": "text-align"
       },
       {
         "question": "Which CSS property is used to add a border to an element?",
-        "options": ["border-size", "border-style", "border", "element-border"],
+        "options": [
+          "border-size",
+          "border-style",
+          "border",
+          "element-border"
+        ],
         "correctAnswer": "border"
       }
     ]
@@ -565,52 +1065,102 @@
     "questionsJson": [
       {
         "question": "What is the purpose of the CSS 'box-sizing' property?",
-        "options": ["To set the size of the box", "To include padding and border in the element's total width and height", "To set the box shadow", "To set the box border color"],
+        "options": [
+          "To set the size of the box",
+          "To include padding and border in the element's total width and height",
+          "To set the box shadow",
+          "To set the box border color"
+        ],
         "correctAnswer": "To include padding and border in the element's total width and height"
       },
       {
         "question": "How do you apply a different style to an element when it is hovered over?",
-        "options": ["element:active", "element:focus", "element:hover", "element:visited"],
+        "options": [
+          "element:active",
+          "element:focus",
+          "element:hover",
+          "element:visited"
+        ],
         "correctAnswer": "element:hover"
       },
       {
         "question": "What does the CSS property 'display: inline-block;' do?",
-        "options": ["Makes an element inline", "Makes an element block", "Makes an element inline but allows setting width and height", "Hides the element"],
+        "options": [
+          "Makes an element inline",
+          "Makes an element block",
+          "Makes an element inline but allows setting width and height",
+          "Hides the element"
+        ],
         "correctAnswer": "Makes an element inline but allows setting width and height"
       },
       {
         "question": "What is the purpose of the CSS 'position: relative;' property?",
-        "options": ["Positions an element relative to its parent", "Positions an element relative to the viewport", "Positions an element relative to its normal position", "Positions an element relative to the first positioned ancestor"],
+        "options": [
+          "Positions an element relative to its parent",
+          "Positions an element relative to the viewport",
+          "Positions an element relative to its normal position",
+          "Positions an element relative to the first positioned ancestor"
+        ],
         "correctAnswer": "Positions an element relative to its normal position"
       },
       {
         "question": "What is the difference between 'position: absolute;' and 'position: fixed;'?",
-        "options": ["Absolute is relative to viewport, fixed is relative to parent", "Absolute is relative to parent, fixed is relative to viewport", "They are the same", "Fixed is only for images, absolute is for text"],
+        "options": [
+          "Absolute is relative to viewport, fixed is relative to parent",
+          "Absolute is relative to parent, fixed is relative to viewport",
+          "They are the same",
+          "Fixed is only for images, absolute is for text"
+        ],
         "correctAnswer": "Absolute is relative to parent, fixed is relative to viewport"
       },
       {
         "question": "What is the purpose of the CSS 'z-index' property?",
-        "options": ["To set the element's transparency", "To set the element's stacking order", "To set the element's size", "To set the element's color"],
+        "options": [
+          "To set the element's transparency",
+          "To set the element's stacking order",
+          "To set the element's size",
+          "To set the element's color"
+        ],
         "correctAnswer": "To set the element's stacking order"
       },
       {
         "question": "What is the purpose of the CSS 'flexbox' layout?",
-        "options": ["To create a grid layout", "To create a flexible layout for items in a container", "To create a fixed layout", "To create a table layout"],
+        "options": [
+          "To create a grid layout",
+          "To create a flexible layout for items in a container",
+          "To create a fixed layout",
+          "To create a table layout"
+        ],
         "correctAnswer": "To create a flexible layout for items in a container"
       },
       {
         "question": "How do you create a media query in CSS?",
-        "options": ["@media (condition) { ... }", "media (condition) { ... }", "if media (condition) { ... }", "condition media { ... }"],
+        "options": [
+          "@media (condition) { ... }",
+          "media (condition) { ... }",
+          "if media (condition) { ... }",
+          "condition media { ... }"
+        ],
         "correctAnswer": "@media (condition) { ... }"
       },
       {
         "question": "What is the purpose of the CSS 'transform' property?",
-        "options": ["To change the element's color", "To change the element's background", "To apply 2D or 3D transformations to an element", "To change the element's font"],
+        "options": [
+          "To change the element's color",
+          "To change the element's background",
+          "To apply 2D or 3D transformations to an element",
+          "To change the element's font"
+        ],
         "correctAnswer": "To apply 2D or 3D transformations to an element"
       },
       {
         "question": "What is the purpose of the CSS 'transition' property?",
-        "options": ["To animate the element's background", "To animate changes in CSS properties", "To animate the element's font", "To animate the element's border"],
+        "options": [
+          "To animate the element's background",
+          "To animate changes in CSS properties",
+          "To animate the element's font",
+          "To animate the element's border"
+        ],
         "correctAnswer": "To animate changes in CSS properties"
       }
     ]
@@ -621,53 +1171,1057 @@
     "questionsJson": [
       {
         "question": "Explain the concept of CSS specificity.",
-        "options": ["How specific a color is", "How specific a selector is in applying styles", "How specific a font is", "How specific a background is"],
+        "options": [
+          "How specific a color is",
+          "How specific a selector is in applying styles",
+          "How specific a font is",
+          "How specific a background is"
+        ],
         "correctAnswer": "How specific a selector is in applying styles"
       },
       {
         "question": "What is the purpose of CSS variables (custom properties)?",
-        "options": ["To store element sizes", "To store font names", "To store reusable values that can be used throughout a stylesheet", "To store image locations"],
+        "options": [
+          "To store element sizes",
+          "To store font names",
+          "To store reusable values that can be used throughout a stylesheet",
+          "To store image locations"
+        ],
         "correctAnswer": "To store reusable values that can be used throughout a stylesheet"
       },
       {
         "question": "What is the purpose of the CSS 'grid' layout?",
-        "options": ["To create a flexible layout for items in a container", "To create a grid-based layout", "To create a fixed layout", "To create a table layout"],
+        "options": [
+          "To create a flexible layout for items in a container",
+          "To create a grid-based layout",
+          "To create a fixed layout",
+          "To create a table layout"
+        ],
         "correctAnswer": "To create a grid-based layout"
       },
       {
         "question": "What is the purpose of the CSS 'clip-path' property?",
-        "options": ["To clip an element's background", "To clip an element to a specific shape", "To clip an element's border", "To clip an element's font"],
+        "options": [
+          "To clip an element's background",
+          "To clip an element to a specific shape",
+          "To clip an element's border",
+          "To clip an element's font"
+        ],
         "correctAnswer": "To clip an element to a specific shape"
       },
       {
         "question": "Explain the concept of CSS 'calc()' function.",
-        "options": ["To calculate font sizes", "To perform calculations to determine CSS property values", "To calculate background colors", "To calculate border sizes"],
+        "options": [
+          "To calculate font sizes",
+          "To perform calculations to determine CSS property values",
+          "To calculate background colors",
+          "To calculate border sizes"
+        ],
         "correctAnswer": "To perform calculations to determine CSS property values"
       },
       {
         "question": "What is the purpose of the CSS 'backdrop-filter' property?",
-        "options": ["To filter the element's background", "To filter the area behind an element", "To filter the element's border", "To filter the element's text"],
+        "options": [
+          "To filter the element's background",
+          "To filter the area behind an element",
+          "To filter the element's border",
+          "To filter the element's text"
+        ],
         "correctAnswer": "To filter the area behind an element"
       },
       {
         "question": "What is the purpose of CSS 'object-fit' property?",
-        "options": ["To fit the element within its parent", "To control how an image or video should be resized to fit its container", "To fit the element's text", "To fit the element's border"],
+        "options": [
+          "To fit the element within its parent",
+          "To control how an image or video should be resized to fit its container",
+          "To fit the element's text",
+          "To fit the element's border"
+        ],
         "correctAnswer": "To control how an image or video should be resized to fit its container"
       },
       {
         "question": "What is the purpose of CSS 'will-change' property?",
-        "options": ["To change the element's text", "To inform the browser of elements that will change", "To change the element's background", "To change the element's border"],
+        "options": [
+          "To change the element's text",
+          "To inform the browser of elements that will change",
+          "To change the element's background",
+          "To change the element's border"
+        ],
         "correctAnswer": "To inform the browser of elements that will change"
       },
       {
         "question": "Explain the concept of CSS logical properties.",
-        "options": ["Properties that change based on logical conditions", "Properties that define the logical structure of an element", "Properties that are based on writing modes and text direction", "Properties that define element's logical color"],
+        "options": [
+          "Properties that change based on logical conditions",
+          "Properties that define the logical structure of an element",
+          "Properties that are based on writing modes and text direction",
+          "Properties that define element's logical color"
+        ],
         "correctAnswer": "Properties that are based on writing modes and text direction"
       },
       {
         "question": "What is the purpose of the CSS 'aspect-ratio' property?",
-        "options": ["To set the element's size", "To set the preferred aspect ratio for an element", "To set the element's color", "To set the element's font"],
+        "options": [
+          "To set the element's size",
+          "To set the preferred aspect ratio for an element",
+          "To set the element's color",
+          "To set the element's font"
+        ],
         "correctAnswer": "To set the preferred aspect ratio for an element"
+      }
+    ]
+  },
+  {
+    "skill": "HTML",
+    "level": "Beginner",
+    "questionsJson": [
+      {
+        "question": "What does HTML stand for?",
+        "options": [
+          "Hyper Text Markup Language",
+          "Home Tool Markup Language",
+          "Hyperlinks and Text Markup Language",
+          "Home Text Made Language"
+        ],
+        "correctAnswer": "Hyper Text Markup Language"
+      },
+      {
+        "question": "Choose the correct HTML element for the largest heading:",
+        "options": [
+          "<heading>",
+          "<h6>",
+          "<head>",
+          "<h1>"
+        ],
+        "correctAnswer": "<h1>"
+      },
+      {
+        "question": "What is the correct HTML element for inserting a line break?",
+        "options": [
+          "<break>",
+          "<lb>",
+          "<br>",
+          "<newline>"
+        ],
+        "correctAnswer": "<br>"
+      },
+      {
+        "question": "Which HTML element is used to define internal CSS styles?",
+        "options": [
+          "<css>",
+          "<style>",
+          "<script>",
+          "<link>"
+        ],
+        "correctAnswer": "<style>"
+      },
+      {
+        "question": "Which HTML attribute is used to define inline styles?",
+        "options": [
+          "styles",
+          "font",
+          "class",
+          "style"
+        ],
+        "correctAnswer": "style"
+      },
+      {
+        "question": "Which HTML tag is used to define an internal link?",
+        "options": [
+          "<link>",
+          "<internal>",
+          "<a href='#...'>",
+          "<url>"
+        ],
+        "correctAnswer": "<a href='#...'>"
+      },
+      {
+        "question": "How can you open a link in a new tab/browser window?",
+        "options": [
+          "<a href='url' target='new'>",
+          "<a href='url' new>",
+          "<a href='url' target='_blank'>",
+          "<a href='url' blank>"
+        ],
+        "correctAnswer": "<a href='url' target='_blank'>"
+      },
+      {
+        "question": "Which input type defines a radio button?",
+        "options": [
+          "<input type='radio'>",
+          "<input type='button'>",
+          "<input type='select'>",
+          "<input type='option'>"
+        ],
+        "correctAnswer": "<input type='radio'>"
+      },
+      {
+        "question": "Which HTML tag is used to display an image?",
+        "options": [
+          "<image>",
+          "<src>",
+          "<img>",
+          "<picture>"
+        ],
+        "correctAnswer": "<img>"
+      },
+      {
+        "question": "In HTML, which attribute is used to specify an image's alternative text, if an image cannot be displayed?",
+        "options": [
+          "alt",
+          "title",
+          "src",
+          "description"
+        ],
+        "correctAnswer": "alt"
+      }
+    ]
+  },
+  {
+    "skill": "HTML",
+    "level": "Intermediate",
+    "questionsJson": [
+      {
+        "question": "What is the purpose of the <meta> tag in HTML?",
+        "options": [
+          "To define a hyperlink",
+          "To define metadata about an HTML document",
+          "To define a navigation bar",
+          "To define a section in an HTML document"
+        ],
+        "correctAnswer": "To define metadata about an HTML document"
+      },
+      {
+        "question": "What is the purpose of the <canvas> element in HTML5?",
+        "options": [
+          "To display video content",
+          "To create a navigation menu",
+          "To draw graphics on the fly, via scripting (usually JavaScript)",
+          "To embed audio files"
+        ],
+        "correctAnswer": "To draw graphics on the fly, via scripting (usually JavaScript)"
+      },
+      {
+        "question": "What is the purpose of the <svg> element in HTML5?",
+        "options": [
+          "To embed video files",
+          "To define a section in a document",
+          "To define scalable vector graphics",
+          "To create a form"
+        ],
+        "correctAnswer": "To define scalable vector graphics"
+      },
+      {
+        "question": "What is the purpose of the <article> element in HTML5?",
+        "options": [
+          "To define a navigation menu",
+          "To define an independent, self-contained content",
+          "To define a sidebar",
+          "To define a footer"
+        ],
+        "correctAnswer": "To define an independent, self-contained content"
+      },
+      {
+        "question": "What is the purpose of the <aside> element in HTML5?",
+        "options": [
+          "To define the main content of the page",
+          "To define content aside from the page content",
+          "To define a navigation menu",
+          "To define a footer"
+        ],
+        "correctAnswer": "To define content aside from the page content"
+      },
+      {
+        "question": "What is the purpose of the <figure> and <figcaption> elements in HTML5?",
+        "options": [
+          "To define a form",
+          "To define a figure and its caption",
+          "To define a navigation menu",
+          "To define a section in a document"
+        ],
+        "correctAnswer": "To define a figure and its caption"
+      },
+      {
+        "question": "What is the purpose of the <details> and <summary> elements in HTML5?",
+        "options": [
+          "To define a summary of a document",
+          "To create a navigation menu",
+          "To define a section in a document",
+          "To create a collapsible content section"
+        ],
+        "correctAnswer": "To create a collapsible content section"
+      },
+      {
+        "question": "What is the purpose of the <template> element in HTML5?",
+        "options": [
+          "To define a reusable HTML fragment",
+          "To define a navigation menu",
+          "To define a section in a document",
+          "To define a hyperlink"
+        ],
+        "correctAnswer": "To define a reusable HTML fragment"
+      },
+      {
+        "question": "What is the purpose of the <datalist> element in HTML5?",
+        "options": [
+          "To define a list of hyperlinks",
+          "To provide an autocomplete feature for <input> elements",
+          "To define a navigation menu",
+          "To define a section in a document"
+        ],
+        "correctAnswer": "To provide an autocomplete feature for <input> elements"
+      },
+      {
+        "question": "What is the purpose of the <meter> element in HTML5?",
+        "options": [
+          "To define a measurement",
+          "To display a scalar measurement within a range",
+          "To define a navigation menu",
+          "To define a section in a document"
+        ],
+        "correctAnswer": "To display a scalar measurement within a range"
+      }
+    ]
+  },
+  {
+    "skill": "HTML",
+    "level": "Advanced",
+    "questionsJson": [
+      {
+        "question": "Explain the concept of Shadow DOM in HTML.",
+        "options": [
+          "A way to create hidden elements",
+          "A way to encapsulate HTML structures, CSS, and JavaScript",
+          "A way to create animations",
+          "A way to create responsive layouts"
+        ],
+        "correctAnswer": "A way to encapsulate HTML structures, CSS, and JavaScript"
+      },
+      {
+        "question": "What are Custom Elements in HTML?",
+        "options": [
+          "Elements that are defined by the browser",
+          "Elements that are defined by the user using JavaScript",
+          "Elements that are defined in CSS",
+          "Elements that are defined in the HTML specification"
+        ],
+        "correctAnswer": "Elements that are defined by the user using JavaScript"
+      },
+      {
+        "question": "What is the purpose of Web Components?",
+        "options": [
+          "To create web servers",
+          "To create reusable UI elements",
+          "To create databases",
+          "To create animations"
+        ],
+        "correctAnswer": "To create reusable UI elements"
+      },
+      {
+        "question": "Explain the concept of HTML Imports.",
+        "options": [
+          "A way to import CSS files",
+          "A way to import JavaScript files",
+          "A way to import HTML documents into another HTML document",
+          "A way to import images"
+        ],
+        "correctAnswer": "A way to import HTML documents into another HTML document"
+      },
+      {
+        "question": "What is the purpose of the 'loading' attribute on the <img> tag?",
+        "options": [
+          "To specify the image size",
+          "To specify the image format",
+          "To enable lazy loading of images",
+          "To specify the image source"
+        ],
+        "correctAnswer": "To enable lazy loading of images"
+      },
+      {
+        "question": "What is the purpose of the 'fetchpriority' attribute on the <img> tag?",
+        "options": [
+          "To specify the image size",
+          "To specify the image format",
+          "To specify the loading priority of the image",
+          "To specify the image source"
+        ],
+        "correctAnswer": "To specify the loading priority of the image"
+      },
+      {
+        "question": "Explain the concept of Server-Sent Events (SSE) in HTML5.",
+        "options": [
+          "A way to send data from the server to the client",
+          "A way to send data from the client to the server",
+          "A way to create animations",
+          "A way to create responsive layouts"
+        ],
+        "correctAnswer": "A way to send data from the server to the client"
+      },
+      {
+        "question": "What is the purpose of the 'contenteditable' attribute in HTML?",
+        "options": [
+          "To make an element read-only",
+          "To make an element editable by the user",
+          "To hide an element",
+          "To disable an element"
+        ],
+        "correctAnswer": "To make an element editable by the user"
+      },
+      {
+        "question": "What is the purpose of the 'nonce' attribute on the <script> tag?",
+        "options": [
+          "To specify the script source",
+          "To specify the script type",
+          "To allow the script to be executed only if it matches a specific cryptographic nonce",
+          "To specify the script version"
+        ],
+        "correctAnswer": "To allow the script to be executed only if it matches a specific cryptographic nonce"
+      },
+      {
+        "question": "Explain the concept of Cross-Origin Resource Sharing (CORS) in the context of HTML.",
+        "options": [
+          "A way to share resources between different websites",
+          "A way to restrict access to resources from different origins",
+          "A way to create animations",
+          "A way to create responsive layouts"
+        ],
+        "correctAnswer": "A way to restrict access to resources from different origins"
+      }
+    ]
+  },
+  {
+    "skill": "CSS",
+    "level": "Beginner",
+    "questionsJson": [
+      {
+        "question": "Which CSS property is used to change the text color of an element?",
+        "options": [
+          "background-color",
+          "font-size",
+          "color",
+          "text-align"
+        ],
+        "correctAnswer": "color"
+      },
+      {
+        "question": "Which CSS property is used to set the background color of an element?",
+        "options": [
+          "text-color",
+          "border-color",
+          "background-color",
+          "font-color"
+        ],
+        "correctAnswer": "background-color"
+      },
+      {
+        "question": "Which CSS property is used to change the font size of text?",
+        "options": [
+          "text-size",
+          "font-style",
+          "font-size",
+          "text-font"
+        ],
+        "correctAnswer": "font-size"
+      },
+      {
+        "question": "Which of the following is the correct way to select an element with the ID 'myElement' in CSS?",
+        "options": [
+          ".myElement",
+          "#myElement",
+          "element.myElement",
+          "myElement"
+        ],
+        "correctAnswer": "#myElement"
+      },
+      {
+        "question": "Which of the following is the correct way to select all paragraph elements in CSS?",
+        "options": [
+          ".paragraph",
+          "#paragraph",
+          "p",
+          "all p"
+        ],
+        "correctAnswer": "p"
+      },
+      {
+        "question": "What does the CSS property 'margin' control?",
+        "options": [
+          "Element's background color",
+          "Space outside an element's border",
+          "Element's border size",
+          "Space inside an element's border"
+        ],
+        "correctAnswer": "Space outside an element's border"
+      },
+      {
+        "question": "What does the CSS property 'padding' control?",
+        "options": [
+          "Element's background color",
+          "Space outside an element's border",
+          "Element's border size",
+          "Space inside an element's border"
+        ],
+        "correctAnswer": "Space inside an element's border"
+      },
+      {
+        "question": "Which CSS property is used to make text bold?",
+        "options": [
+          "text-weight",
+          "font-bold",
+          "font-weight",
+          "bold-text"
+        ],
+        "correctAnswer": "font-weight"
+      },
+      {
+        "question": "Which CSS property is used to align text horizontally?",
+        "options": [
+          "text-align",
+          "vertical-align",
+          "align-text",
+          "horizontal-text"
+        ],
+        "correctAnswer": "text-align"
+      },
+      {
+        "question": "Which CSS property is used to add a border to an element?",
+        "options": [
+          "border-size",
+          "border-style",
+          "border",
+          "element-border"
+        ],
+        "correctAnswer": "border"
+      }
+    ]
+  },
+  {
+    "skill": "CSS",
+    "level": "Intermediate",
+    "questionsJson": [
+      {
+        "question": "What is the purpose of the CSS 'box-sizing' property?",
+        "options": [
+          "To set the size of the box",
+          "To include padding and border in the element's total width and height",
+          "To set the box shadow",
+          "To set the box border color"
+        ],
+        "correctAnswer": "To include padding and border in the element's total width and height"
+      },
+      {
+        "question": "How do you apply a different style to an element when it is hovered over?",
+        "options": [
+          "element:active",
+          "element:focus",
+          "element:hover",
+          "element:visited"
+        ],
+        "correctAnswer": "element:hover"
+      },
+      {
+        "question": "What does the CSS property 'display: inline-block;' do?",
+        "options": [
+          "Makes an element inline",
+          "Makes an element block",
+          "Makes an element inline but allows setting width and height",
+          "Hides the element"
+        ],
+        "correctAnswer": "Makes an element inline but allows setting width and height"
+      },
+      {
+        "question": "What is the purpose of the CSS 'position: relative;' property?",
+        "options": [
+          "Positions an element relative to its parent",
+          "Positions an element relative to the viewport",
+          "Positions an element relative to its normal position",
+          "Positions an element relative to the first positioned ancestor"
+        ],
+        "correctAnswer": "Positions an element relative to its normal position"
+      },
+      {
+        "question": "What is the difference between 'position: absolute;' and 'position: fixed;'?",
+        "options": [
+          "Absolute is relative to viewport, fixed is relative to parent",
+          "Absolute is relative to parent, fixed is relative to viewport",
+          "They are the same",
+          "Fixed is only for images, absolute is for text"
+        ],
+        "correctAnswer": "Absolute is relative to parent, fixed is relative to viewport"
+      },
+      {
+        "question": "What is the purpose of the CSS 'z-index' property?",
+        "options": [
+          "To set the element's transparency",
+          "To set the element's stacking order",
+          "To set the element's size",
+          "To set the element's color"
+        ],
+        "correctAnswer": "To set the element's stacking order"
+      },
+      {
+        "question": "What is the purpose of the CSS 'flexbox' layout?",
+        "options": [
+          "To create a grid layout",
+          "To create a flexible layout for items in a container",
+          "To create a fixed layout",
+          "To create a table layout"
+        ],
+        "correctAnswer": "To create a flexible layout for items in a container"
+      },
+      {
+        "question": "How do you create a media query in CSS?",
+        "options": [
+          "@media (condition) { ... }",
+          "media (condition) { ... }",
+          "if media (condition) { ... }",
+          "condition media { ... }"
+        ],
+        "correctAnswer": "@media (condition) { ... }"
+      },
+      {
+        "question": "What is the purpose of the CSS 'transform' property?",
+        "options": [
+          "To change the element's color",
+          "To change the element's background",
+          "To apply 2D or 3D transformations to an element",
+          "To change the element's font"
+        ],
+        "correctAnswer": "To apply 2D or 3D transformations to an element"
+      },
+      {
+        "question": "What is the purpose of the CSS 'transition' property?",
+        "options": [
+          "To animate the element's background",
+          "To animate changes in CSS properties",
+          "To animate the element's font",
+          "To animate the element's border"
+        ],
+        "correctAnswer": "To animate changes in CSS properties"
+      }
+    ]
+  },
+  {
+    "skill": "CSS",
+    "level": "Advanced",
+    "questionsJson": [
+      {
+        "question": "Explain the concept of CSS specificity.",
+        "options": [
+          "How specific a color is",
+          "How specific a selector is in applying styles",
+          "How specific a font is",
+          "How specific a background is"
+        ],
+        "correctAnswer": "How specific a selector is in applying styles"
+      },
+      {
+        "question": "What is the purpose of CSS variables (custom properties)?",
+        "options": [
+          "To store element sizes",
+          "To store font names",
+          "To store reusable values that can be used throughout a stylesheet",
+          "To store image locations"
+        ],
+        "correctAnswer": "To store reusable values that can be used throughout a stylesheet"
+      },
+      {
+        "question": "What is the purpose of the CSS 'grid' layout?",
+        "options": [
+          "To create a flexible layout for items in a container",
+          "To create a grid-based layout",
+          "To create a fixed layout",
+          "To create a table layout"
+        ],
+        "correctAnswer": "To create a grid-based layout"
+      },
+      {
+        "question": "What is the purpose of the CSS 'clip-path' property?",
+        "options": [
+          "To clip an element's background",
+          "To clip an element to a specific shape",
+          "To clip an element's border",
+          "To clip an element's font"
+        ],
+        "correctAnswer": "To clip an element to a specific shape"
+      },
+      {
+        "question": "Explain the concept of CSS 'calc()' function.",
+        "options": [
+          "To calculate font sizes",
+          "To perform calculations to determine CSS property values",
+          "To calculate background colors",
+          "To calculate border sizes"
+        ],
+        "correctAnswer": "To perform calculations to determine CSS property values"
+      },
+      {
+        "question": "What is the purpose of the CSS 'backdrop-filter' property?",
+        "options": [
+          "To filter the element's background",
+          "To filter the area behind an element",
+          "To filter the element's border",
+          "To filter the element's text"
+        ],
+        "correctAnswer": "To filter the area behind an element"
+      },
+      {
+        "question": "What is the purpose of CSS 'object-fit' property?",
+        "options": [
+          "To fit the element within its parent",
+          "To control how an image or video should be resized to fit its container",
+          "To fit the element's text",
+          "To fit the element's border"
+        ],
+        "correctAnswer": "To control how an image or video should be resized to fit its container"
+      },
+      {
+        "question": "What is the purpose of CSS 'will-change' property?",
+        "options": [
+          "To change the element's text",
+          "To inform the browser of elements that will change",
+          "To change the element's background",
+          "To change the element's border"
+        ],
+        "correctAnswer": "To inform the browser of elements that will change"
+      },
+      {
+        "question": "Explain the concept of CSS logical properties.",
+        "options": [
+          "Properties that change based on logical conditions",
+          "Properties that define the logical structure of an element",
+          "Properties that are based on writing modes and text direction",
+          "Properties that define element's logical color"
+        ],
+        "correctAnswer": "Properties that are based on writing modes and text direction"
+      },
+      {
+        "question": "What is the purpose of the CSS 'aspect-ratio' property?",
+        "options": [
+          "To set the element's size",
+          "To set the preferred aspect ratio for an element",
+          "To set the element's color",
+          "To set the element's font"
+        ],
+        "correctAnswer": "To set the preferred aspect ratio for an element"
+      }
+    ]
+  },
+  {
+    "skill": "JavaScript",
+    "level": "Beginner",
+    "questionsJson": [
+      {
+        "question": "Which keyword is used to declare a variable in JavaScript?",
+        "options": [
+          "string",
+          "var",
+          "int",
+          "variable"
+        ],
+        "correctAnswer": "var"
+      },
+      {
+        "question": "What is the correct way to write a JavaScript array?",
+        "options": [
+          "var colors = 'red', 'green', 'blue'",
+          "var colors = ['red', 'green', 'blue']",
+          "var colors = (red, green, blue)",
+          "var colors = {red, green, blue}"
+        ],
+        "correctAnswer": "var colors = ['red', 'green', 'blue']"
+      },
+      {
+        "question": "How do you write 'Hello World' in an alert box?",
+        "options": [
+          "alertBox('Hello World')",
+          "msg('Hello World')",
+          "alert('Hello World')",
+          "msgBox('Hello World')"
+        ],
+        "correctAnswer": "alert('Hello World')"
+      },
+      {
+        "question": "How do you create a function in JavaScript?",
+        "options": [
+          "function:myFunction()",
+          "function = myFunction()",
+          "function myFunction()",
+          "myFunction function()"
+        ],
+        "correctAnswer": "function myFunction()"
+      },
+      {
+        "question": "How do you call a function named 'myFunction'?",
+        "options": [
+          "call myFunction()",
+          "call function myFunction()",
+          "myFunction()",
+          "function call myFunction()"
+        ],
+        "correctAnswer": "myFunction()"
+      },
+      {
+        "question": "How to write an IF statement in JavaScript?",
+        "options": [
+          "if i == 5 then",
+          "if (i == 5)",
+          "if i = 5",
+          "if i = 5 then"
+        ],
+        "correctAnswer": "if (i == 5)"
+      },
+      {
+        "question": "How to write an IF statement for executing some code if 'i' is NOT equal to 5?",
+        "options": [
+          "if (i != 5)",
+          "if i <> 5",
+          "if (i <> 5)",
+          "if i =! 5 then"
+        ],
+        "correctAnswer": "if (i != 5)"
+      },
+      {
+        "question": "How does a WHILE loop start?",
+        "options": [
+          "while (i <= 10; i++)",
+          "while (i <= 10)",
+          "while i <= 10",
+          "while i <= 10 do"
+        ],
+        "correctAnswer": "while (i <= 10)"
+      },
+      {
+        "question": "How can you add a comment in JavaScript?",
+        "options": [
+          "'This is a comment",
+          "//This is a comment",
+          "<!--This is a comment-->",
+          "*This is a comment*"
+        ],
+        "correctAnswer": "//This is a comment"
+      },
+      {
+        "question": "What is the correct way to write a JavaScript object?",
+        "options": [
+          "var person = {firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue'}",
+          "var person = (firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue')",
+          "var person = {firstName = 'John', lastName = 'Doe', age = 50, eyeColor = 'blue'}",
+          "var person = (firstName = 'John', lastName = 'Doe', age = 50, eyeColor = 'blue')"
+        ],
+        "correctAnswer": "var person = {firstName: 'John', lastName: 'Doe', age: 50, eyeColor: 'blue'}"
+      }
+    ]
+  },
+  {
+    "skill": "JavaScript",
+    "level": "Intermediate",
+    "questionsJson": [
+      {
+        "question": "What is the purpose of the 'this' keyword in JavaScript?",
+        "options": [
+          "Refers to the previous variable",
+          "Refers to the current function",
+          "Refers to the object it belongs to",
+          "Refers to the global scope"
+        ],
+        "correctAnswer": "Refers to the object it belongs to"
+      },
+      {
+        "question": "What is a closure in JavaScript?",
+        "options": [
+          "A function with a loop",
+          "A function inside another function",
+          "A function that has access to the parent scope, even after the parent function has closed",
+          "A function that returns a value"
+        ],
+        "correctAnswer": "A function that has access to the parent scope, even after the parent function has closed"
+      },
+      {
+        "question": "What is the difference between '==' and '===' in JavaScript?",
+        "options": [
+          "'==' compares values, '===' compares values and types",
+          "'===' compares values, '==' compares values and types",
+          "They are the same",
+          "They are not used in JavaScript"
+        ],
+        "correctAnswer": "'==' compares values, '===' compares values and types"
+      },
+      {
+        "question": "What is the purpose of the 'typeof' operator in JavaScript?",
+        "options": [
+          "To check if a variable is defined",
+          "To determine the data type of a variable",
+          "To create a new variable",
+          "To delete a variable"
+        ],
+        "correctAnswer": "To determine the data type of a variable"
+      },
+      {
+        "question": "What is the purpose of the 'addEventListener' method in JavaScript?",
+        "options": [
+          "To remove an event listener from an element",
+          "To add an event listener to an element",
+          "To create a new element",
+          "To modify an existing element"
+        ],
+        "correctAnswer": "To add an event listener to an element"
+      },
+      {
+        "question": "What is the purpose of the 'JSON.stringify()' method in JavaScript?",
+        "options": [
+          "To parse a JSON string",
+          "To convert a JavaScript object into a JSON string",
+          "To create a new JSON object",
+          "To delete a JSON object"
+        ],
+        "correctAnswer": "To convert a JavaScript object into a JSON string"
+      },
+      {
+        "question": "What is the purpose of the 'JSON.parse()' method in JavaScript?",
+        "options": [
+          "To convert a JavaScript object into a JSON string",
+          "To parse a JSON string",
+          "To create a new JSON object",
+          "To delete a JSON object"
+        ],
+        "correctAnswer": "To parse a JSON string"
+      },
+      {
+        "question": "What is the purpose of the 'setInterval()' method in JavaScript?",
+        "options": [
+          "To execute a function once after a specified time",
+          "To execute a function repeatedly at specified intervals",
+          "To stop the execution of a function",
+          "To create a new interval"
+        ],
+        "correctAnswer": "To execute a function repeatedly at specified intervals"
+      },
+      {
+        "question": "What is the purpose of the 'setTimeout()' method in JavaScript?",
+        "options": [
+          "To execute a function repeatedly at specified intervals",
+          "To execute a function once after a specified time",
+          "To stop the execution of a function",
+          "To create a new timeout"
+        ],
+        "correctAnswer": "To execute a function once after a specified time"
+      },
+      {
+        "question": "What is the purpose of the 'map()' method in JavaScript?",
+        "options": [
+          "To filter elements in an array",
+          "To apply a function to each element in an array and return a new array",
+          "To sort elements in an array",
+          "To reduce an array to a single value"
+        ],
+        "correctAnswer": "To apply a function to each element in an array and return a new array"
+      }
+    ]
+  },
+  {
+    "skill": "JavaScript",
+    "level": "Advanced",
+    "questionsJson": [
+      {
+        "question": "Explain the concept of prototypal inheritance in JavaScript.",
+        "options": [
+          "A way to create classes",
+          "A way to inherit properties and methods from another object",
+          "A way to create functions",
+          "A way to create variables"
+        ],
+        "correctAnswer": "A way to inherit properties and methods from another object"
+      },
+      {
+        "question": "What is the purpose of the 'async' and 'await' keywords in JavaScript?",
+        "options": [
+          "To create loops",
+          "To handle asynchronous operations in a more readable way",
+          "To create functions",
+          "To create variables"
+        ],
+        "correctAnswer": "To handle asynchronous operations in a more readable way"
+      },
+      {
+        "question": "What is the purpose of the 'Proxy' object in JavaScript?",
+        "options": [
+          "To create a new object",
+          "To define custom behavior for fundamental operations on an object",
+          "To delete an object",
+          "To modify an object"
+        ],
+        "correctAnswer": "To define custom behavior for fundamental operations on an object"
+      },
+      {
+        "question": "What is the purpose of the 'WeakMap' and 'WeakSet' objects in JavaScript?",
+        "options": [
+          "To store data that can be garbage collected if there are no other references to it",
+          "To store data that cannot be garbage collected",
+          "To store data in a specific order",
+          "To store data with a specific type"
+        ],
+        "correctAnswer": "To store data that can be garbage collected if there are no other references to it"
+      },
+      {
+        "question": "Explain the concept of Service Workers in JavaScript.",
+        "options": [
+          "A way to create web servers",
+          "A way to run scripts in the background, separate from a web page",
+          "A way to create databases",
+          "A way to create animations"
+        ],
+        "correctAnswer": "A way to run scripts in the background, separate from a web page"
+      },
+      {
+        "question": "What is the purpose of the 'requestAnimationFrame()' method in JavaScript?",
+        "options": [
+          "To create animations",
+          "To make network requests",
+          "To modify the DOM",
+          "To handle events"
+        ],
+        "correctAnswer": "To create animations"
+      },
+      {
+        "question": "What is the purpose of the 'WebAssembly' (Wasm) technology?",
+        "options": [
+          "To create web servers",
+          "To run high-performance code in web browsers",
+          "To create databases",
+          "To create animations"
+        ],
+        "correctAnswer": "To run high-performance code in web browsers"
+      },
+      {
+        "question": "Explain the concept of the 'Event Loop' in JavaScript.",
+        "options": [
+          "A loop that handles events in a specific order",
+          "A loop that allows JavaScript to perform non-blocking operations",
+          "A loop that creates animations",
+          "A loop that modifies the DOM"
+        ],
+        "correctAnswer": "A loop that allows JavaScript to perform non-blocking operations"
+      },
+      {
+        "question": "What is the purpose of the 'MutationObserver' API in JavaScript?",
+        "options": [
+          "To observe changes to the DOM",
+          "To observe changes to variables",
+          "To observe changes to functions",
+          "To observe changes to objects"
+        ],
+        "correctAnswer": "To observe changes to the DOM"
+      },
+      {
+        "question": "Explain the concept of JavaScript modules (ES modules).",
+        "options": [
+          "A way to create web servers",
+          "A way to organize JavaScript code into reusable units",
+          "A way to create databases",
+          "A way to create animations"
+        ],
+        "correctAnswer": "A way to organize JavaScript code into reusable units"
       }
     ]
   }
