@@ -46,12 +46,7 @@ const ProjectPropose = () => {
         }
       );
       alert("Project added successfully!");
-      setProjectName("");
-      setDescription("");
-      setSkills(["React.js", "Tailwind", "SQL"]);
-      setTeamSize(4);
-      setScore("Intermediate");
-      router.push("/projects");
+      router.push("/project-explore");
     } catch (error) {
       console.error("Error adding project:", error);
       alert("Failed to add project.");
