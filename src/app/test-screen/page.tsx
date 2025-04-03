@@ -4,7 +4,7 @@ import { useSearchParams } from "next/navigation";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { useRouter } from 'next/navigation';
 import GenAITestPlaceholder from "../components/GenAITestPlaceholder";
-import questionsData from './questions.json';
+import questionsData from "../data/questions.json";
 import { getCurrentUser } from "../services/auth";
 import { saveTestResult } from "../services/skillTest";
 import { updateUserSkillScore } from "../services/users"; 
