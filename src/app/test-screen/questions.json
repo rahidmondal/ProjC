@@ -1,6 +1,6 @@
 [
   {
-    "skill": "C++",
+    "skill": "Cpp",
     "level": "Beginner",
     "questionsJson": [
       {
@@ -56,7 +56,7 @@
     ]
   },
   {
-    "skill": "C++",
+    "skill": "Cpp",
     "level": "Intermediate",
     "questionsJson": [
       {
@@ -112,7 +112,7 @@
     ]
   },
   {
-    "skill": "C++",
+    "skill": "Cpp",
     "level": "Advanced",
     "questionsJson": [
       {
