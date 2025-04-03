@@ -6,7 +6,6 @@ import Image from "next/image";
 import { useTheme } from "next-themes";
 import Link from "next/link";
 
-
 export default function RegisterPage() {
   const [agreed, setAgreed] = useState(false);
 
@@ -133,7 +132,6 @@ export default function RegisterPage() {
           </button>
         </form>
 
-
         <p className="mt-4 text-gray-600 dark:text-gray-300">
           Already a member?{" "}
           <a href="/login" className="text-purple-500 font-semibold">
@@ -142,28 +140,17 @@ export default function RegisterPage() {
         </p>
       </div>
 
-      {/* Right Section (Banner with Curved Shape) */}
-      <div className="w-1/2 relative flex items-center justify-center bg-white dark:bg-gray-900 ">
-        <div className="absolute inset-0 "></div>
+      {/* Right Section (Banner with Solid Background) */}
+      <div className="w-1/2 relative flex items-center justify-center bg-white dark:bg-gray-900">
         <Image
           src="/assets/register_banner.png"
           alt="Register Banner"
-          width={650}
-          height={600}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+          style={{ objectFit: "cover" }} 
           className="relative z-10"
         />
       </div>
-
-      {/* Custom Tailwind CSS for the Ellipse */}
-      <style jsx>{`
-          .clip-custom {
-            background: rgba(162, 64, 204, 255);
-            clip-path: ellipse(75% 100% at 100% 50%);
-            width: 100%;
-            height: 100%;
-            position: absolute;
-          }
-        `}</style>
     </div>
   );
 }
