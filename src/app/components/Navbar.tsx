@@ -88,11 +88,11 @@ const Navbar = () => {
       {/* Logo */}
       <Link href="/home" className="flex items-center flex-shrink-0">
          <Image
-            src={darkMode ? "/assets/Light_logo_projc.png" : "/assets/Dark_logo_projc.png"}
+            src={darkMode ? "/assets/lightLogo.png" : "/assets/darkLogo.png"}
             alt="Proj.C Logo"
             width={150} 
             height={65}
-            style={{ height: 'auto', width: 'auto', maxHeight: '48px' }} 
+            className="h-8 w-auto"
             priority
           />
       </Link>

@@ -38,7 +38,7 @@ export default function LoginPage() {
         };
     }, []);
 
-    const currentLogo = mounted ? ( (theme === 'dark') ? "/assets/Lightlogo.png" : "/assets/Dark_logo_projc_1.png" ) : "/assets/Dark_logo_projc_1.png";
+    const currentLogo = mounted ? ( (theme === 'dark') ? "/assets/lightLogo.png" : "/assets/darkLogo.png" ) : "/assets/darkLogo.png";
 
     async function handleLogin(e: React.FormEvent<HTMLFormElement>) {
         e.preventDefault();
