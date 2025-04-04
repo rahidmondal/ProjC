@@ -1,10 +1,11 @@
-import { databases, ID } from '../appwrite'; // Import Appwrite services
+import { databases, ID } from '../appwrite'; 
 import { Query } from 'appwrite';
 
 const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!;
 const projectsCollectionId = process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!;
 
-export const createProject = async (projectData: any) => {
+
+export const createProject = async (projectData: unknown) => {
     try {
         return await databases.createDocument(databaseId, projectsCollectionId, ID.unique(), projectData);
     } catch (error) {
@@ -22,7 +23,7 @@ export const getProject = async (documentId: string) => {
     }
 };
 
-export const updateProject = async (documentId: string, projectData: any) => {
+export const updateProject = async (documentId: string, projectData: unknown) => {
     try {
         return await databases.updateDocument(databaseId, projectsCollectionId, documentId, projectData);
     } catch (error) {
