@@ -9,6 +9,7 @@ import Image from "next/image";
 import { logout } from "../services/auth";
 import { getUserImageUrl } from "../services/users"; 
 import { useUser } from "../contexts/UserContext"; 
+import { useTheme } from "next-themes";
 
 const Navbar = () => {
   const pathname = usePathname();
@@ -21,6 +22,7 @@ const Navbar = () => {
 
 
   const { profileUser, isLoading, refetchUser } = useUser();
+  const { resolvedTheme, setTheme } = useTheme();
 
   useEffect(() => {
     if (typeof window !== "undefined") {
@@ -58,19 +60,9 @@ const Navbar = () => {
     router.push("/login"); 
   };
 
-  const toggleDarkMode = () => {
-    setDarkMode(prevMode => {
-        const newMode = !prevMode;
-        if (newMode) {
-            document.documentElement.classList.add("dark");
-            localStorage.setItem("theme", "dark");
-        } else {
-            document.documentElement.classList.remove("dark");
-            localStorage.setItem("theme", "light");
-        }
-        return newMode;
-    });
-  };
+  const toggleDarkMode = ()=>{
+    setTheme(resolvedTheme === "dark" ? "light" : "dark");
+  }
 
   const handleMobileLinkClick = () => {
       setMenuOpen(false);
@@ -88,7 +80,7 @@ const Navbar = () => {
       {/* Logo */}
       <Link href="/home" className="flex items-center flex-shrink-0">
          <Image
-            src={darkMode ? "/assets/lightLogo.png" : "/assets/darkLogo.png"}
+            src= {resolvedTheme === "dark" ? "/assets/lightLogo.png" : "/assets/darkLogo.png"}
             alt="Proj.C Logo"
             width={150} 
             height={65}

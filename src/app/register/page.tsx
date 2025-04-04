@@ -15,7 +15,7 @@ export default function RegisterPage() {
   const [error, setError] = useState("");
   const [isRegistering, setIsRegistering] = useState(false); 
   const router = useRouter();
-  const { theme } = useTheme();
+  const { resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
   const { refetchUser } = useUser();
@@ -34,8 +34,7 @@ export default function RegisterPage() {
   }, [router]);
 
 
-  const currentLogo = mounted ? ( (theme === 'dark') ? "/assets/lightLogo.png" : "/assets/darkLogo.png" ) : "/assets/darkLogo.png";
-
+  const currentLogo = mounted ? ( (resolvedTheme === 'dark') ? "/assets/lightLogo.png" : "/assets/darkLogo.png" ) : "/assets/darkLogo.png";
 
   async function handleRegister(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
