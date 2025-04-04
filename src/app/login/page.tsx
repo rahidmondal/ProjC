@@ -15,7 +15,6 @@ export default function LoginPage() {
     const [isLoggingIn, setIsLoggingIn] = useState(false); 
     const router = useRouter();
 
-    // *** 2. Get refetchUser from context ***
     const { refetchUser } = useUser();
 
     const [mounted, setMounted] = useState(false);
@@ -52,23 +51,25 @@ export default function LoginPage() {
             const loggedInUser = await login(email, password);
 
             if (loggedInUser) {
-                 // *** 3. Refetch context data AFTER successful login ***
                  console.log("Login successful, refetching user context data...");
                  await refetchUser();
                  console.log("User context refetched.");
 
-                 // *** 4. Redirect AFTER refetch is complete ***
                  router.push("/user-profile");
             } else {
                  setError("Login seemed successful, but failed to retrieve user data.");
             }
         } catch (err: unknown) { 
             const message = err instanceof Error ? err.message : "An unexpected error occurred.";
-             if (message.includes("Invalid credentials") || (err as any)?.code === 401) {
-                 setError("Invalid email or password.");
-             } else {
-                 setError(`Login failed: ${message}`);
-             }
+
+            if (err instanceof Error && 'code' in err && typeof err.code === 'number' && err.code === 401) {
+                setError("Invalid email or password.");
+            } else if (message.includes("Invalid credentials")) {
+                setError("Invalid email or password.");
+            }
+             else {
+                setError(`Login failed: ${message}`);
+            }
             console.error("Login Page Error:", err);
         } finally {
             setIsLoggingIn(false); 

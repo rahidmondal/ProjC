@@ -1,11 +1,11 @@
 "use client";
 import { useEffect, useState } from "react";
-import { register, getCurrentUser } from "../services/auth"; // Keep auth service import
+import { register, getCurrentUser } from "../services/auth"; 
 import { useRouter } from "next/navigation";
 import Image from "next/image";
-import { useTheme } from "next-themes"; // Assuming you use next-themes
+import { useTheme } from "next-themes";
 import Link from "next/link";
-import { useUser } from "../contexts/UserContext"; // *** 1. Import useUser ***
+import { useUser } from "../contexts/UserContext"; 
 
 export default function RegisterPage() {
   const [agreed, setAgreed] = useState(false);
@@ -13,25 +13,21 @@ export default function RegisterPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
-  const [isRegistering, setIsRegistering] = useState(false); // Add loading state
+  const [isRegistering, setIsRegistering] = useState(false); 
   const router = useRouter();
   const { theme, resolvedTheme } = useTheme();
   const [mounted, setMounted] = useState(false);
 
-  // *** 2. Get refetchUser from context ***
   const { refetchUser } = useUser();
 
   useEffect(() => setMounted(true), []);
 
-  // Effect to redirect if already logged in
   useEffect(() => {
     async function checkUser() {
-      // Consider using useUser here too for consistency, but keep separate for now
-      // if you want this page accessible even if context is loading slowly initially
       const user = await getCurrentUser();
       if (user) {
           console.log("User already logged in, redirecting from register page...");
-          router.push("/user-profile"); // Redirect logged-in users away
+          router.push("/user-profile");
       }
     }
     checkUser();
@@ -39,50 +35,45 @@ export default function RegisterPage() {
 
 
   const lightLogo = "/assets/Lightlogo.png";
-  const darkLogo = "/assets/Dark_logo_projc_1.png"; // Make sure this path is correct
-  // Determine current theme safely after mount
-  const currentLogo = mounted ? ( (theme === 'dark' || resolvedTheme === 'dark') ? lightLogo : darkLogo ) : darkLogo; // Default or based on theme
+  const darkLogo = "/assets/Dark_logo_projc_1.png"; 
+  const currentLogo = mounted ? ( (theme === 'dark' || resolvedTheme === 'dark') ? lightLogo : darkLogo ) : darkLogo;
 
 
   async function handleRegister(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (!agreed || isRegistering) return; // Prevent submit if not agreed or already registering
-
+    if (!agreed || isRegistering) return; 
     setError("");
-    setIsRegistering(true); // Set loading state
+    setIsRegistering(true); 
 
     try {
-      // Call the register service (which creates auth user AND db document)
       const loggedInUser = await register(name, email, password);
 
       if (loggedInUser) {
-          // *** 3. Refetch context data AFTER successful registration/login ***
           console.log("Registration successful, refetching user context data...");
           await refetchUser();
           console.log("User context refetched.");
 
-          // *** 4. Redirect AFTER refetch is complete ***
-          router.push("/user-profile?edit=true"); // Redirect to profile, maybe prompt edit
+          router.push("/user-profile?edit=true"); 
       } else {
-          // This case might occur if register->login internally fails silently
            setError("Registration seemed successful, but failed to log in.");
       }
 
-    } catch (err: unknown) { // Type the error
-        const message = err instanceof Error ? err.message : "An unexpected error occurred.";
-        // Provide more specific feedback if possible (e.g., check for 409 Conflict)
-        if (message.includes("user_already_exists") || (err as any)?.code === 409) {
-             setError("An account with this email already exists. Please login.");
-        } else {
-            setError(`Registration failed: ${message}`);
-        }
-        console.error("Registration Page Error:", err);
+    } catch (err: unknown) { 
+      const message = err instanceof Error ? err.message : "An unexpected error occurred.";
+
+      if (err instanceof Error && 'code' in err && typeof err.code === 'number' && err.code === 409) {
+          setError("An account with this email already exists. Please login.");
+      } else if (message.includes("user_already_exists")) {
+          setError("An account with this email already exists. Please login.");
+      } else {
+          setError(`Registration failed: ${message}`);
+      }
+      console.error("Registration Page Error:", err);
     } finally {
-        setIsRegistering(false); // Reset loading state
+        setIsRegistering(false); 
     }
   }
 
-  // Effect to hide nav/footer (keep as is)
   useEffect(() => {
     document.body.classList.add("hide-nav-footer");
     return () => {
@@ -151,12 +142,12 @@ export default function RegisterPage() {
       {/* Right Section (Banner) */}
       <div className="hidden md:block w-1/2 relative bg-white dark:bg-gray-900">
         <Image
-          src="/assets/register_banner.png" // Ensure this path is correct
+          src="/assets/register_banner.png" 
           alt="Register Banner"
           fill
           sizes="50vw"
           style={{ objectFit: "cover" }}
-          priority // Load banner image early
+          priority 
         />
       </div>
     </div>
