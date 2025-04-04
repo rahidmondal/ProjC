@@ -17,8 +17,9 @@ const ProfileLink: React.FC<{
       const urlObject = new URL(targetUrl);
       displayLink = urlObject.hostname + urlObject.pathname.replace(/\/$/, '');
       displayLink = displayLink.replace(/^www\./, '');
-    } catch (e) {
+    } catch (error) {
       console.warn(`Invalid URL format for ${label}: ${link}`);
+      console.warn(error);
       return (
         <div className="flex items-center justify-between bg-red-50 dark:bg-red-900/50 p-3 rounded-lg border border-red-300 dark:border-red-700 shadow-sm">
           <div className="flex items-center overflow-hidden mr-2"><Icon className="w-5 h-5 text-red-600 dark:text-red-400 mr-3 flex-shrink-0" /><span className="text-sm text-red-700 dark:text-red-300 font-medium truncate">{label}</span></div><span className="text-red-600 dark:text-red-400 text-sm truncate italic" title={link}>Invalid Link</span>
