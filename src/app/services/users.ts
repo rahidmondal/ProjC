@@ -1,11 +1,12 @@
 import { databases, ID, storage } from '../appwrite';
 import { Query } from 'appwrite';
+import { User } from '../types/user';
 
 const databaseId = process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!;
 const usersCollectionId = process.env.NEXT_PUBLIC_APPWRITE_USERS_COLLECTION_ID!;
 const storageId = process.env.NEXT_PUBLIC_APPWRITE_STORAGE_ID!;
 
-export const createUser = async (userData: any, imageId?: string) => {
+export const createUser = async (userData: User, imageId?: string) => {
     try {
         if (imageId) {
             userData.image = imageId;
@@ -41,7 +42,7 @@ export const getUserSkills = async (userId: string) => {
 };
 
 
-export const updateUser = async (documentId: string, userData: any) => {
+export const updateUser = async (documentId: string, userData: User) => {
     try {
         return await databases.updateDocument(databaseId, usersCollectionId, documentId, userData);
     } catch (error) {

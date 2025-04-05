@@ -1,13 +1,20 @@
 "use client";
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useCallback } from "react"; // Added useCallback
 import { useSearchParams } from "next/navigation";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { useRouter } from 'next/navigation';
 import GenAITestPlaceholder from "../components/GenAITestPlaceholder";
-import questionsData from './questions.json';
+import questionsData from "../data/questions.json";
 import { getCurrentUser } from "../services/auth";
 import { saveTestResult } from "../services/skillTest";
-import { updateUserSkillScore } from "../services/users"; 
+import { updateUserSkillScore } from "../services/users";
+
+// Define the interface for a question object
+interface Question {
+  question: string;
+  options: string[];
+  correctAnswer: string | number; // Adjust if correctAnswer can be a number
+}
 
 const TestScreen = () => {
   const searchParams = useSearchParams();
@@ -16,84 +23,65 @@ const TestScreen = () => {
   const type = searchParams.get("type");
   const router = useRouter();
 
-  const [questions, setQuestions] = useState<any[]>([]); 
+  // State variables using the specific Question interface
+  const [questions, setQuestions] = useState<Question[]>([]);
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
-  const [userAnswers, setUserAnswers] = useState<{ [key: number]: string }>({}); 
+  const [userAnswers, setUserAnswers] = useState<{ [key: number]: string }>({});
   const [timer, setTimer] = useState(600); // 10 minutes
   const [showReview, setShowReview] = useState(false);
   const [testFinished, setTestFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [userId, setUserId] = useState<string | null>(null);
 
-
+  // Effect to fetch the current user ID
   useEffect(() => {
     const fetchUser = async () => {
       const user = await getCurrentUser();
       setUserId(user?.$id || null);
     };
     fetchUser();
-  }, []);
+  }, []); // Empty dependency array: runs once on mount
 
+  // Effect to load questions based on skill, level, and type
   useEffect(() => {
     if (skill && level && type !== "GenAI(Experimental)") {
-      const filteredData = questionsData.find( 
+      const filteredData = questionsData.find(
         (item) => item.skill === skill && item.level === level
       );
 
-      if (filteredData?.questionsJson) { 
-        setQuestions(filteredData.questionsJson);
-        setTimer(300);
+      if (filteredData?.questionsJson) {
+        setQuestions(filteredData.questionsJson as Question[]);
+        setTimer(300); 
         setUserAnswers({});
-        setCurrentQuestionIndex(0); 
+        setCurrentQuestionIndex(0);
         setTestFinished(false);
-        setShowReview(false); // Reset review state
+        setShowReview(false); 
       } else {
         console.log(`No questions found for skill: ${skill} and level: ${level}`);
-        setQuestions([]);
+        setQuestions([]); 
       }
     }
   }, [skill, level, type]); 
 
-
-  useEffect(() => {
-    let intervalId: NodeJS.Timeout | null = null;
-
-    if (timer > 0 && !testFinished && questions.length > 0) { 
-      intervalId = setInterval(() => {
-        setTimer((prevTimer) => prevTimer - 1);
-      }, 1000);
-    } else if (timer <= 0 && !testFinished && questions.length > 0) {
-      handleSubmit(); 
-    }
-
-    return () => {
-      if (intervalId) clearInterval(intervalId);
-    };
-  }, [timer, testFinished, questions.length]);
-
-  const handleAnswerChange = (questionIndex: number, answer: string) => {
-    setUserAnswers((prevAnswers) => ({ ...prevAnswers, [questionIndex]: answer }));
-  };
-
-  const calculateScore = () => {
+  const calculateScore = useCallback(() => {
     let correctAnswers = 0;
     questions.forEach((question, index) => {
       if (String(userAnswers[index]) === String(question.correctAnswer)) {
         correctAnswers++;
       }
     });
-    setScore(correctAnswers);
+    setScore(correctAnswers); 
     return correctAnswers;
-  };
+  }, [questions, userAnswers]);
 
-  const handleSubmit = async () => {
-    if (testFinished) return;
+  const handleSubmit = useCallback(async () => {
+    if (testFinished) return; 
 
-    const finalScore = calculateScore();
+    const finalScore = calculateScore(); 
     setTestFinished(true);
     setTimer(0);
 
-    if (userId && skill && level) { 
+    if (userId && skill && level) {
       try {
         await saveTestResult(
           userId,
@@ -101,11 +89,11 @@ const TestScreen = () => {
           level,
           finalScore,
           questions.length,
-          finalScore
+          finalScore 
         );
         console.log("Test result history saved successfully.");
 
-        await updateUserSkillScore(userId, skill, level, finalScore); 
+        await updateUserSkillScore(userId, skill, level, finalScore);
         console.log("User profile skill score updated.");
 
       } catch (error) {
@@ -115,7 +103,34 @@ const TestScreen = () => {
       console.warn("User ID, skill, or level is not available. Cannot save test result or update profile.");
     }
 
-    console.log("Test finished. Score:", finalScore); 
+    console.log("Test finished. Score:", finalScore);
+  }, [
+    testFinished,
+    calculateScore,
+    userId,
+    skill,
+    level,
+    questions
+  ]);
+
+  useEffect(() => {
+    let intervalId: NodeJS.Timeout | null = null;
+
+    if (timer > 0 && !testFinished && questions.length > 0) {
+      intervalId = setInterval(() => {
+        setTimer((prevTimer) => prevTimer - 1);
+      }, 1000);
+    } else if (timer <= 0 && !testFinished && questions.length > 0) {
+      handleSubmit();
+    }
+
+    return () => {
+      if (intervalId) clearInterval(intervalId);
+    };
+  }, [timer, testFinished, questions.length, handleSubmit]); 
+
+  const handleAnswerChange = (questionIndex: number, answer: string) => {
+    setUserAnswers((prevAnswers) => ({ ...prevAnswers, [questionIndex]: answer }));
   };
 
   const goToPreviousQuestion = () => {
@@ -130,13 +145,13 @@ const TestScreen = () => {
 
   const toggleReview = () => {
      if(!testFinished) {
-       calculateScore();
+       calculateScore(); 
      }
     setShowReview((prevShowReview) => !prevShowReview);
   };
 
   const handleReturnToProfile = () => {
-    router.push('/user-profile'); 
+    router.push('/user-profile');
   };
 
   useEffect(() => {
@@ -144,7 +159,8 @@ const TestScreen = () => {
       alert("Please select a skill and level.");
       router.push('/skill-test');
     }
-  }, [router, skill, level]);
+  }, [router, skill, level]); 
+
 
   if (!skill || !level) {
     return <div>Redirecting...</div>;
@@ -154,11 +170,12 @@ const TestScreen = () => {
     return <GenAITestPlaceholder />;
   }
 
-  if (questions.length === 0 && skill && level) { 
-     return <div>No questions available for {skill} - {level}. Please try another test or contact support.</div>;
-  }
+   if (questions.length === 0 && skill && level) {
+     return <div>Checking for questions for {skill} - {level}... If this persists, none may be available.</div>;
+   }
+
    if (questions.length === 0) {
-     return <div>Loading questions...</div>;
+     return <div>Loading...</div>;
    }
 
 
@@ -170,7 +187,7 @@ const TestScreen = () => {
   return (
     <ProtectedRoute>
       <div className="flex flex-col min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-        {/* Timer */}
+        {/* Timer Display */}
         <div className="flex justify-end p-4">
           <div
             className={`rounded-full shadow-md px-4 py-2 text-lg font-semibold ${
@@ -185,12 +202,13 @@ const TestScreen = () => {
           </div>
         </div>
 
-        {/* Content */}
+        {/* Main Content Area */}
         <div className="flex flex-col items-center justify-center flex-grow px-4">
           <h1 className="text-3xl font-extrabold text-gray-800 dark:text-gray-100 mb-8 text-center">
             {skill} - {level} Test
           </h1>
 
+          {/* Test Finished View */}
           {testFinished ? (
             <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl text-center">
               <h2 className="text-2xl font-semibold text-green-700 dark:text-green-400 mb-4">Test Completed!</h2>
@@ -220,17 +238,16 @@ const TestScreen = () => {
                 ></div>
               </div>
 
-              {/* Main Content Area (Question or Review) */}
+              {/* Question/Review Area */}
               <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl min-h-[300px]">
                 {!showReview ? (
+                  // Question View
                  <>
-                  {/* Question Number */}
                    <p className="text-sm font-semibold text-gray-500 dark:text-gray-400 mb-2">
                      Question {currentQuestionIndex + 1} of {questions.length}
                    </p>
-                   {/* Question Text */}
                   <p className="text-gray-800 dark:text-gray-100 text-xl mb-6 font-medium">{currentQuestion?.question}</p>
-                  {/* Options */}
+                  {/* Map through options */}
                   {currentQuestion?.options.map((option: string, index: number) => (
                     <div key={index} className="mb-4">
                       <label
@@ -244,7 +261,7 @@ const TestScreen = () => {
                           name={`question-${currentQuestionIndex}`}
                           value={option}
                           checked={userAnswers[currentQuestionIndex] === option}
-                          onChange={() => handleAnswerChange(currentQuestionIndex, option)}
+                          onChange={() => handleAnswerChange(currentQuestionIndex, option)} 
                         />
                         <span className="text-lg">{option}</span>
                       </label>
@@ -253,15 +270,14 @@ const TestScreen = () => {
                  </>
                     ) : (
                       <>
-                      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Review My Answers</h2> 
+                      <h2 className="text-2xl font-semibold text-gray-800 dark:text-gray-100 mb-6">Review My Answers</h2>
+                      {/* Map through all questions for review */}
                       {questions.map((question, index) => (
                         <div key={`review-${index}`} className="mb-6 pb-4 border-b border-gray-200 dark:border-gray-700 last:border-b-0">
-                          {/* Question Text */}
                           <p className="text-gray-700 dark:text-gray-200 text-lg mb-2 font-medium">
                             {index + 1}. {question.question}
                           </p>
-                          {/* Display User's Selected Answer ONLY */}
-                          <p className="text-base text-gray-800 dark:text-gray-300"> 
+                          <p className="text-base text-gray-800 dark:text-gray-300">
                             Your Answer: {userAnswers[index] || <span className="italic text-gray-500 dark:text-gray-400">Not Answered</span>}
                           </p>
                         </div>
@@ -270,10 +286,9 @@ const TestScreen = () => {
                     )}
               </div>
 
-
               {/* Navigation and Action Buttons */}
              <div className="flex flex-col sm:flex-row justify-between w-full max-w-2xl mb-8 gap-4">
-                 {/* Question Navigation (Only if not reviewing) */}
+                 {/* Question Navigation (Hidden during review) */}
                  {!showReview && (
                      <div className="flex justify-between flex-grow gap-4">
                        <button
@@ -294,18 +309,19 @@ const TestScreen = () => {
                    )}
 
                 {/* Review and Submit Buttons */}
-                <div className={`flex ${showReview ? 'justify-center w-full' : 'justify-end'} gap-4`}>
+                <div className={`flex ${showReview ? 'justify-center w-full' : 'sm:justify-end'} gap-4`}> 
                   <button
                     onClick={toggleReview}
                     className="bg-yellow-500 hover:bg-yellow-600 text-white font-bold py-2 px-6 rounded-lg transition duration-200"
                   >
                     {showReview ? "Back to Test" : "Review"}
                   </button>
-                  {!showReview && ( 
+                  {/* Submit Button (Hidden during review) */}
+                  {!showReview && (
                     <button
-                      onClick={handleSubmit}
+                      onClick={handleSubmit} 
                       className="bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-6 rounded-lg transition duration-200"
-                      disabled={testFinished} 
+                      disabled={testFinished}
                     >
                       Submit
                     </button>
