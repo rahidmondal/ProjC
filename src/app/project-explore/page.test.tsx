@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import ProjectExplore from './page';
+import ProjectExplore from '..project-explore/page';
 import ProtectedRoute from '../components/ProtectedRoute';
 import ProjectExplorePage from '../components/ProjectExplore';
 
