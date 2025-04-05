@@ -13,10 +13,10 @@ export default function Hero() {
       image: "/assets/carousel1.png",
       text: "Coming together is a beginning",
     },
-     /*{
+     {
       image: "/assets/carousel2.png",
       text: "Collaboration makes us stronger",
-    },*/
+    },
     {
       image: "/assets/carousel3.png",
       text: "Build projects, grow together",
@@ -25,10 +25,10 @@ export default function Hero() {
       image: "/assets/carousel4.png",
       text: "Find the right coding partners",
     },
-       /*{
+    {
       image: "/assets/carousel5.png",
       text: "Enhance your skills through teamwork",
-    },*/
+    },
     {
       image: "/assets/carousel6.png",
       text: "Turn ideas into real-world projects",
@@ -54,9 +54,12 @@ export default function Hero() {
               <Image
                 src={slide.image}
                 alt={`Carousel ${index + 1}`}
-                layout="fill"
-                objectFit="contain"
-                objectPosition="right center"
+                fill
+                style={{
+                  objectFit: "contain",
+                  objectPosition: "right center",
+                }}
+                sizes="100vw" 
                 quality={100}
                 priority
               />
