@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import LoginPage from './page';
+import LoginPage from '..login/page';
 import { login, getCurrentUser } from '../services/auth';
 import { useRouter } from 'next/navigation';
 import { useUser } from '../contexts/UserContext';
