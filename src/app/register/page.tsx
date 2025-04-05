@@ -96,9 +96,7 @@ export default function RegisterPage() {
             />
         </Link>
 
-        <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-white mb-4 text-center">
-          Create Your Account
-        </h2>
+        <h1 className="text-2xl font-semibold text-gray-800 dark:text-gray-200 mb-4">Create an account</h1>
         {error && (
           <p className="text-red-500 text-sm text-center mb-2 max-w-xs">{error}</p>
         )}

@@ -107,8 +107,8 @@ export default function LoginPage() {
                         priority
                     />
                 </Link>
-
-                <h2 className="text-2xl md:text-3xl font-semibold text-gray-800 dark:text-gray-200 mb-4 text-center">Login to Your Account</h2>
+                
+                <h1 className="text-2xl font-bold text-gray-900 dark:text-gray-200 mb-4">Welcome Back</h1>
                 {error && <p className="text-red-500 text-sm text-center mb-2 max-w-xs">{error}</p>}
 
                  {/* Form */}
