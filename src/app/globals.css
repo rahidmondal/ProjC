@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Default light mode variables */
+/* Default (Light Mode) */
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+/* Dark mode variables (applied when the .dark class is added to <html>) */
+html.dark {
+  --background: #0a0a0a;
+  --foreground: #ededed;
+}
+/* Dark Mode */
+.dark {
+  --background: #171717; /* Dark background */
+  --foreground: #ffffff; /* Light text */
+}
+
+/* Apply Smooth Transition */
+html {
+  @apply transition-colors duration-300;
+}
+
+/* Apply colors globally */
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Montserrat, 'Arial Narrow Bold', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure navbar does not overlap content */
+main {
+  min-height: 100vh;
+  padding-top: 4rem; /* Adjust this to match navbar height */
+}
+
+.hide-nav-footer nav,
+.hide-nav-footer footer {
+  display: none ;
+}
