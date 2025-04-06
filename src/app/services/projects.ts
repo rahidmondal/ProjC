@@ -58,3 +58,12 @@ export const listProjectsByUser = async (projectProposer: string) => {
         throw error;
     }
 };
+
+export const getUserProjects = async (userId: string) => {
+  const response = await databases.listDocuments(
+    databaseId,
+    projectsCollectionId,
+    [Query.equal("projectProposer", userId)]
+  );
+  return response.documents;
+};
