@@ -1,0 +1,6502 @@
+[
+  {
+    "id": "res_0",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_1",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_2",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_3",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_4",
+    "title": "Learn Django - Beginner Book",
+    "skill": "django",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_5",
+    "title": "Learn React - Intermediate Article",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/hooks-intro.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_6",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_7",
+    "title": "Learn Django - Advanced Video",
+    "skill": "django",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_8",
+    "title": "Learn Html - Advanced Video",
+    "skill": "html",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_9",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_10",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_11",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_12",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_13",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_14",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_15",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_16",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_17",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_18",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_19",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_20",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_21",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_22",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_23",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_24",
+    "title": "Learn Django - Advanced Article",
+    "skill": "django",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_25",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_26",
+    "title": "Learn Html - Beginner Article",
+    "skill": "html",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_27",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_28",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_29",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_30",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_31",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_32",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_33",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_34",
+    "title": "Learn Html - Advanced Book",
+    "skill": "html",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_35",
+    "title": "Learn Nodejs - Advanced Article",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_36",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_37",
+    "title": "Learn Javascript - Advanced Book",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_38",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_39",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_40",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_41",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_42",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_43",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_44",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_45",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_46",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_47",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_48",
+    "title": "Learn Html - Beginner Video",
+    "skill": "html",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_49",
+    "title": "Learn Css - Beginner Video",
+    "skill": "css",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_50",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_51",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_52",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_53",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_54",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_55",
+    "title": "Learn Html - Beginner Article",
+    "skill": "html",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_56",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_57",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_58",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_59",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_60",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_61",
+    "title": "Learn Django - Beginner Book",
+    "skill": "django",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "django",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_62",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_63",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_64",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_65",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_66",
+    "title": "Learn React - Beginner Book",
+    "skill": "react",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_67",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_68",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_69",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_70",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_71",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_72",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_73",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_74",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_75",
+    "title": "Learn Html - Beginner Article",
+    "skill": "html",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_76",
+    "title": "Learn Django - Advanced Video",
+    "skill": "django",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_77",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_78",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_79",
+    "title": "Learn Html - Beginner Video",
+    "skill": "html",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_80",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_81",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_82",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_83",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_84",
+    "title": "Learn Django - Beginner Book",
+    "skill": "django",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_85",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_86",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_87",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_88",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_89",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_90",
+    "title": "Learn Css - Beginner Video",
+    "skill": "css",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_91",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_92",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_93",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_94",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_95",
+    "title": "Learn Html - Advanced Video",
+    "skill": "html",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_96",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_97",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_98",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_99",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_100",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_101",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_102",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_103",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_104",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_105",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_106",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_107",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_108",
+    "title": "Learn Django - Advanced Video",
+    "skill": "django",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_109",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_110",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_111",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_112",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_113",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_114",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_115",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_116",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_117",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_118",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_119",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_120",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_121",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_122",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_123",
+    "title": "Learn Html - Beginner Book",
+    "skill": "html",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_124",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_125",
+    "title": "Learn Nodejs - Intermediate Article",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_126",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_127",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_128",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_129",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_130",
+    "title": "Learn Django - Beginner Video",
+    "skill": "django",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_131",
+    "title": "Learn Html - Advanced Video",
+    "skill": "html",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_132",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_133",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_134",
+    "title": "Learn Django - Intermediate Article",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_135",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_136",
+    "title": "Learn Python - Advanced Article",
+    "skill": "python",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/reference/index.html",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_137",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_138",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_139",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_140",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_141",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_142",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_143",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_144",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_145",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_146",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_147",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_148",
+    "title": "Learn Django - Intermediate Article",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_149",
+    "title": "Learn Javascript - Advanced Book",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_150",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_151",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_152",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_153",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_154",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_155",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_156",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_157",
+    "title": "Learn Html - Advanced Book",
+    "skill": "html",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_158",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_159",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_160",
+    "title": "Learn Django - Beginner Video",
+    "skill": "django",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_161",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_162",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_163",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_164",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_165",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_166",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_167",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_168",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_169",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_170",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_171",
+    "title": "Learn Django - Intermediate Article",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_172",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_173",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_174",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_175",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_176",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_177",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_178",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_179",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_180",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_181",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_182",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_183",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_184",
+    "title": "Learn React - Beginner Book",
+    "skill": "react",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_185",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_186",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_187",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_188",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_189",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_190",
+    "title": "Learn Html - Advanced Book",
+    "skill": "html",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_191",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_192",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_193",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_194",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_195",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_196",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_197",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_198",
+    "title": "Learn React - Intermediate Article",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://reactjs.org/docs/hooks-intro.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_199",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_200",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_201",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_202",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_203",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_204",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_205",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_206",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_207",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_208",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_209",
+    "title": "Learn Nodejs - Intermediate Article",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_210",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_211",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_212",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_213",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_214",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_215",
+    "title": "Learn React - Beginner Book",
+    "skill": "react",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_216",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_217",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_218",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_219",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_220",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_221",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_222",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_223",
+    "title": "Learn Html - Advanced Book",
+    "skill": "html",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_224",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_225",
+    "title": "Learn React - Advanced Article",
+    "skill": "react",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://reactjs.org/docs/code-splitting.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_226",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_227",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_228",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_229",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_230",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_231",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_232",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_233",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_234",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_235",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_236",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_237",
+    "title": "Learn Html - Intermediate Video",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_238",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_239",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_240",
+    "title": "Learn Css - Advanced Article",
+    "skill": "css",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_241",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_242",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_243",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_244",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_245",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_246",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "django",
+      "views"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_247",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_248",
+    "title": "Learn Python - Advanced Article",
+    "skill": "python",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/reference/index.html",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_249",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_250",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_251",
+    "title": "Learn Html - Advanced Book",
+    "skill": "html",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_252",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_253",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_254",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_255",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_256",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_257",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_258",
+    "title": "Learn Nodejs - Intermediate Article",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_259",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_260",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_261",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_262",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_263",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_264",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_265",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_266",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_267",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_268",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_269",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_270",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_271",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_272",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_273",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_274",
+    "title": "Learn Python - Advanced Article",
+    "skill": "python",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://docs.python.org/3/reference/index.html",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_275",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_276",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_277",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_278",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_279",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_280",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_281",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_282",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_283",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_284",
+    "title": "Learn Html - Beginner Article",
+    "skill": "html",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_285",
+    "title": "Learn Css - Advanced Article",
+    "skill": "css",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_286",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_287",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_288",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_289",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_290",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_291",
+    "title": "Learn React - Intermediate Article",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/hooks-intro.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_292",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_293",
+    "title": "Learn Css - Beginner Video",
+    "skill": "css",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_294",
+    "title": "Learn Django - Advanced Video",
+    "skill": "django",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_295",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_296",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_297",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_298",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_299",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_300",
+    "title": "Learn Django - Beginner Video",
+    "skill": "django",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_301",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_302",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_303",
+    "title": "Learn Css - Advanced Article",
+    "skill": "css",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_304",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_305",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_306",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_307",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_308",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_309",
+    "title": "Learn Python - Advanced Article",
+    "skill": "python",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://docs.python.org/3/reference/index.html",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_310",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_311",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_312",
+    "title": "Learn Nodejs - Intermediate Article",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_313",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_314",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_315",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_316",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_317",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_318",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_319",
+    "title": "Learn Nodejs - Intermediate Article",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_320",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_321",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_322",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_323",
+    "title": "Learn React - Advanced Article",
+    "skill": "react",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/code-splitting.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_324",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_325",
+    "title": "Learn Django - Beginner Book",
+    "skill": "django",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_326",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_327",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_328",
+    "title": "Learn Html - Beginner Article",
+    "skill": "html",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_329",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_330",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_331",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_332",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_333",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_334",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_335",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_336",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_337",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_338",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_339",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_340",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_341",
+    "title": "Learn Html - Beginner Book",
+    "skill": "html",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_342",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_343",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_344",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_345",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_346",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_347",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_348",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_349",
+    "title": "Learn Html - Advanced Book",
+    "skill": "html",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_350",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_351",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_352",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_353",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_354",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_355",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_356",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_357",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_358",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_359",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_360",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_361",
+    "title": "Learn Python - Advanced Video",
+    "skill": "python",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=H1elmMBnykA",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_362",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_363",
+    "title": "Learn React - Intermediate Video",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=ZVvn9f-jMF8",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_364",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_365",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_366",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_367",
+    "title": "Learn Css - Advanced Article",
+    "skill": "css",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_368",
+    "title": "Learn Django - Intermediate Article",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "models",
+      "views"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_369",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_370",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_371",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_372",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_373",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_374",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_375",
+    "title": "Learn Javascript - Advanced Book",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_376",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_377",
+    "title": "Learn React - Advanced Article",
+    "skill": "react",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://reactjs.org/docs/code-splitting.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_378",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_379",
+    "title": "Learn Django - Beginner Book",
+    "skill": "django",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_380",
+    "title": "Learn React - Beginner Book",
+    "skill": "react",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_381",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_382",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_383",
+    "title": "Learn React - Advanced Article",
+    "skill": "react",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "react",
+      "components"
+    ],
+    "link": "https://reactjs.org/docs/code-splitting.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_384",
+    "title": "Learn Html - Intermediate Video",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_385",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "dom",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_386",
+    "title": "Learn Django - Intermediate Article",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "django",
+      "views"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_387",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_388",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_389",
+    "title": "Learn Html - Beginner Article",
+    "skill": "html",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "html",
+      "forms"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_390",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_391",
+    "title": "Learn Python - Intermediate Book",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://realpython.com/products/intermediate-python/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_392",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_393",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_394",
+    "title": "Learn Nodejs - Beginner Video",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_395",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_396",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_397",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_398",
+    "title": "Learn Css - Beginner Article",
+    "skill": "css",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_399",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_400",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_401",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_402",
+    "title": "Learn Javascript - Intermediate Book",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_403",
+    "title": "Learn Html - Beginner Book",
+    "skill": "html",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_404",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_405",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_406",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_407",
+    "title": "Learn Python - Intermediate Video",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=HGOBQPFzWKo",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_408",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_409",
+    "title": "Learn Javascript - Beginner Article",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_410",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_411",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_412",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_413",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_414",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_415",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_416",
+    "title": "Learn Html - Beginner Book",
+    "skill": "html",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_417",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_418",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_419",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_420",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "forms",
+      "semantic"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_421",
+    "title": "Learn Css - Beginner Video",
+    "skill": "css",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "flexbox",
+      "grid"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_422",
+    "title": "Learn Html - Beginner Video",
+    "skill": "html",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_423",
+    "title": "Learn Nodejs - Advanced Video",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_424",
+    "title": "Learn Django - Advanced Article",
+    "skill": "django",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_425",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_426",
+    "title": "Learn Python - Advanced Book",
+    "skill": "python",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://www.oreilly.com/library/view/fluent-python/9781491946237/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_427",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_428",
+    "title": "Learn Javascript - Advanced Video",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_429",
+    "title": "Learn Css - Intermediate Video",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_430",
+    "title": "Learn Python - Beginner Video",
+    "skill": "python",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://www.youtube.com/watch?v=_uQrJ0TkZlc",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_431",
+    "title": "Learn React - Beginner Video",
+    "skill": "react",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=Ke90Tje7VS0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_432",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_433",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_434",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_435",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_436",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "html",
+      "semantic"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_437",
+    "title": "Learn React - Intermediate Book",
+    "skill": "react",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.fullstackreact.com/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_438",
+    "title": "Learn Django - Beginner Article",
+    "skill": "django",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_439",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_440",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_441",
+    "title": "Learn Html - Beginner Book",
+    "skill": "html",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_442",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_443",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_444",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "api",
+      "nodejs"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_445",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_446",
+    "title": "Learn Css - Advanced Video",
+    "skill": "css",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "grid",
+      "css"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_447",
+    "title": "Learn Html - Advanced Video",
+    "skill": "html",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_448",
+    "title": "Learn Nodejs - Intermediate Book",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_449",
+    "title": "Learn Nodejs - Beginner Article",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "express",
+      "nodejs"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_450",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_451",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_452",
+    "title": "Learn Javascript - Beginner Book",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_453",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_454",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_455",
+    "title": "Learn Css - Intermediate Book",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "css",
+      "grid"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_456",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "events",
+      "javascript"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_457",
+    "title": "Learn Html - Advanced Video",
+    "skill": "html",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "semantic",
+      "html"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_458",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "oop",
+      "functions"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_459",
+    "title": "Learn Javascript - Beginner Video",
+    "skill": "javascript",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "dom",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_460",
+    "title": "Learn Nodejs - Intermediate Video",
+    "skill": "nodejs",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "nodejs",
+      "api"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_461",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_462",
+    "title": "Learn Django - Beginner Video",
+    "skill": "django",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_463",
+    "title": "Learn React - Beginner Book",
+    "skill": "react",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "hooks",
+      "react"
+    ],
+    "link": "https://www.oreilly.com/library/view/learning-react-2nd/9781492051718/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_464",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_465",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_466",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "oop"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_467",
+    "title": "Learn Javascript - Intermediate Article",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "events",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_468",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_469",
+    "title": "Learn Django - Advanced Book",
+    "skill": "django",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_470",
+    "title": "Learn React - Advanced Video",
+    "skill": "react",
+    "level": "advanced",
+    "type": "video",
+    "tags": [
+      "react",
+      "hooks"
+    ],
+    "link": "https://www.youtube.com/watch?v=F2JCjVSZlG0",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_471",
+    "title": "Learn Django - Intermediate Book",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_472",
+    "title": "Learn Python - Beginner Article",
+    "skill": "python",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "python",
+      "oop"
+    ],
+    "link": "https://docs.python.org/3/tutorial/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_473",
+    "title": "Learn Django - Intermediate Video",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "views",
+      "django"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_474",
+    "title": "Learn Css - Intermediate Article",
+    "skill": "css",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_475",
+    "title": "Learn Python - Advanced Article",
+    "skill": "python",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "oop",
+      "python"
+    ],
+    "link": "https://docs.python.org/3/reference/index.html",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_476",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_477",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_478",
+    "title": "Learn React - Beginner Article",
+    "skill": "react",
+    "level": "beginner",
+    "type": "article",
+    "tags": [
+      "components",
+      "react"
+    ],
+    "link": "https://reactjs.org/docs/getting-started.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_479",
+    "title": "Learn Nodejs - Advanced Article",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "express",
+      "api"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_480",
+    "title": "Learn Css - Advanced Article",
+    "skill": "css",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "flexbox",
+      "css"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_481",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "events"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_482",
+    "title": "Learn Css - Beginner Video",
+    "skill": "css",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_483",
+    "title": "Learn Css - Beginner Video",
+    "skill": "css",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_484",
+    "title": "Learn Django - Advanced Article",
+    "skill": "django",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "views",
+      "models"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_485",
+    "title": "Learn Html - Intermediate Article",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "semantic",
+      "forms"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_486",
+    "title": "Learn React - Advanced Book",
+    "skill": "react",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "hooks",
+      "components"
+    ],
+    "link": "https://www.packtpub.com/product/react-design-patterns-and-best-practices/9781786464538",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_487",
+    "title": "Learn Html - Advanced Article",
+    "skill": "html",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_488",
+    "title": "Learn Python - Intermediate Article",
+    "skill": "python",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "python",
+      "functions"
+    ],
+    "link": "https://realpython.com/tutorials/intermediate/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_489",
+    "title": "Learn Javascript - Intermediate Video",
+    "skill": "javascript",
+    "level": "intermediate",
+    "type": "video",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_490",
+    "title": "Learn Nodejs - Beginner Book",
+    "skill": "nodejs",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "nodejs",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_491",
+    "title": "Learn Html - Intermediate Book",
+    "skill": "html",
+    "level": "intermediate",
+    "type": "book",
+    "tags": [
+      "forms",
+      "html"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_492",
+    "title": "Learn Django - Beginner Video",
+    "skill": "django",
+    "level": "beginner",
+    "type": "video",
+    "tags": [
+      "django",
+      "models"
+    ],
+    "link": "https://www.youtube.com/watch?v=1Rs2ND1ryYc",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_493",
+    "title": "Learn Javascript - Advanced Article",
+    "skill": "javascript",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "javascript",
+      "dom"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_494",
+    "title": "Learn Python - Beginner Book",
+    "skill": "python",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "functions",
+      "python"
+    ],
+    "link": "https://automatetheboringstuff.com/",
+    "image": "https://www.python.org/static/community_logos/python-logo.png"
+  },
+  {
+    "id": "res_495",
+    "title": "Learn Css - Beginner Book",
+    "skill": "css",
+    "level": "beginner",
+    "type": "book",
+    "tags": [
+      "grid",
+      "flexbox"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_496",
+    "title": "Learn React - Advanced Article",
+    "skill": "react",
+    "level": "advanced",
+    "type": "article",
+    "tags": [
+      "components",
+      "hooks"
+    ],
+    "link": "https://reactjs.org/docs/code-splitting.html",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
+  },
+  {
+    "id": "res_497",
+    "title": "Learn Django - Intermediate Article",
+    "skill": "django",
+    "level": "intermediate",
+    "type": "article",
+    "tags": [
+      "models",
+      "django"
+    ],
+    "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_498",
+    "title": "Learn Css - Advanced Book",
+    "skill": "css",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "css",
+      "flexbox"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  },
+  {
+    "id": "res_499",
+    "title": "Learn Nodejs - Advanced Book",
+    "skill": "nodejs",
+    "level": "advanced",
+    "type": "book",
+    "tags": [
+      "api",
+      "express"
+    ],
+    "link": "https://www.freecodecamp.org/news/tag/books/",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
+  }
+]
