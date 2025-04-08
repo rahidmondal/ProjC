@@ -28,7 +28,11 @@ const SkillSelection = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (skill && level) {
-      router.push(`/test-screen?skill=${skill}&level=${level}&type=${type}`);
+      if (type === "GenAI(Experimental)") {
+        router.push(`/smart-skill-test-screen?skill=${skill}&level=${level}`);
+      } else {
+        router.push(`/skill-test-screen?skill=${skill}&level=${level}`);
+      }
     } else {
       alert("Please select a skill and level.");
     }
