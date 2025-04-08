@@ -142,3 +142,21 @@ export const updateUserSkillScore = async (
         throw error;
     }
 };
+
+// services/users.ts
+
+export const getUserById = async (documentId: string) => {
+  try {
+    const userDoc = await databases.getDocument(
+      process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
+      process.env.NEXT_PUBLIC_APPWRITE_USERS_COLLECTION_ID!,
+      documentId // this must be the document ID of your users collection
+    );
+    return userDoc;
+  } catch (error) {
+    console.error("getUserById error:", error);
+    return null;
+  }
+};
+
+
