@@ -9,7 +9,7 @@ export interface Question {
 const API_KEY = process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
-  throw new Error("GOOGLE_API_KEY is not set in environment variables.");
+  throw new Error("GEMINI_API_KEY is not set in environment variables.");
 }
 
 export async function generateQuestionsFromGemini(skill: string, level: string): Promise<Question[]> {
@@ -49,8 +49,15 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
 
     text = text.replace('```json', '').replace('```', '').trim();
 
-    const questions: Question[] = JSON.parse(text);
-    return questions;
+    console.log("Raw Gemini Response:", text); 
+    try {
+        const questions: Question[] = JSON.parse(text);
+        return questions;
+    } catch (parseError) {
+        console.error("Error parsing JSON:", parseError);
+        return [];
+    }
+
   } catch (error) {
     console.error("Error generating questions:", error);
     return [];
