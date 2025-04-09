@@ -1,3 +1,5 @@
+// src/services/gemini.ts
+
 import fetch from 'node-fetch';
 
 export interface Question {
@@ -47,15 +49,28 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
     const data = await response.json();
     let text = data.candidates[0].content.parts[0].text;
 
+    // Remove markdown code block syntax
     text = text.replace('```json', '').replace('```', '').trim();
 
-    console.log("Raw Gemini Response:", text); 
-    try {
-        const questions: Question[] = JSON.parse(text);
+    console.log("Raw Gemini Response:", text); // Log the raw response
+
+    // Find the start and end of the JSON array
+    const jsonStartIndex = text.indexOf('[');
+    const jsonEndIndex = text.lastIndexOf(']');
+
+    if (jsonStartIndex !== -1 && jsonEndIndex !== -1 && jsonStartIndex < jsonEndIndex) {
+      const jsonString = text.substring(jsonStartIndex, jsonEndIndex + 1);
+
+      try {
+        const questions: Question[] = JSON.parse(jsonString);
         return questions;
-    } catch (parseError) {
+      } catch (parseError) {
         console.error("Error parsing JSON:", parseError);
         return [];
+      }
+    } else {
+      console.error("Could not find valid JSON array in response.");
+      return [];
     }
 
   } catch (error) {
