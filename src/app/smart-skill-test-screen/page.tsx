@@ -27,7 +27,7 @@ const SmartSkillTestScreen = () => {
   const [testFinished, setTestFinished] = useState(false);
   const [score, setScore] = useState(0);
   const [userId, setUserId] = useState<string | null>(null);
-  const [loading, setLoading] = useState(true); // Added loading state
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const fetchUser = async () => {
@@ -147,16 +147,42 @@ const SmartSkillTestScreen = () => {
   }, [router, skill, level]);
 
   if (!skill || !level) {
-    return <div>Redirecting...</div>;
+    return (
+      <ProtectedRoute>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+          <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl text-center">
+            <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">Please select a skill and level.</p>
+          </div>
+        </div>
+      </ProtectedRoute>
+    );
   }
 
   if (loading) {
-    return <div>Loading questions...</div>;
+    return (
+      <ProtectedRoute>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+          <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl text-center">
+            <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">Loading questions...</p>
+          </div>
+        </div>
+      </ProtectedRoute>
+    );
   }
 
   if (questions.length === 0) {
-    return <div>No questions available.</div>;
+    return (
+      <ProtectedRoute>
+        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+          <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl text-center">
+            <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">No questions available.</p>
+          </div>
+        </div>
+      </ProtectedRoute>
+    );
   }
+
+
 
   const currentQuestion = questions[currentQuestionIndex];
 
