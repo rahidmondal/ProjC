@@ -31,7 +31,7 @@ const SkillSelection = () => {
       if (type === "GenAI(Experimental)") {
         router.push(`/smart-skill-test-screen?skill=${skill}&level=${level}`);
       } else {
-        router.push(`/skill-test-screen?skill=${skill}&level=${level}`);
+        router.push(`/test-screen?skill=${skill}&level=${level}`);
       }
     } else {
       alert("Please select a skill and level.");
