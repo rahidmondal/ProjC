@@ -1,17 +1,18 @@
 "use client";
 
 import React, { useEffect, useState } from "react";
+import { account, databases } from "../appwrite";
+import { Models } from "appwrite";
 import { Search } from "lucide-react";
 import Card from "../components/Card";
 import Pagination from "../components/Pagination";
-import { databases } from "../appwrite";
-import { Models } from "appwrite";
 import Link from "next/link";
 
 interface Project {
   $id: string;
   projectName: string;
-  projectProposer: string;
+  projectProposerId: string;
+  projectProposerName: string;
   description: string;
   skillsRequired: string[];
   teamSize: number;
@@ -24,8 +25,23 @@ export default function ProjectExplore() {
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedFilter, setSelectedFilter] = useState("");
   const [searchTerm, setSearchTerm] = useState("");
+  const [proposerId, setProposerId] = useState<string>(""); // State to store logged-in user's ID
 
   const itemsPerPage = 6;
+
+  // Fetch the logged-in user's ID
+  useEffect(() => {
+    const fetchLoggedInUser = async () => {
+      try {
+        const user = await account.get();
+        setProposerId(user.$id); // Store the logged-in user's ID in state
+      } catch (error) {
+        console.error("Error fetching logged-in user:", error);
+      }
+    };
+
+    fetchLoggedInUser();
+  }, []);
 
   useEffect(() => {
     const fetchProjects = async () => {
@@ -36,15 +52,19 @@ export default function ProjectExplore() {
         );
 
         if (response?.documents?.length > 0) {
+          // Fetch proposer names for each project
           const projectList = response.documents.map((doc) => ({
             $id: doc.$id,
             projectName: doc.projectName,
-            projectProposer: doc.projectProposer,
+            projectProposerId: doc.projectProposer,
+            projectProposerName: doc.projectProposerName, // ✅ Use directly from database
             description: doc.description,
             skillsRequired: doc.skillsRequired,
             teamSize: doc.teamSize,
             experience: doc.experience,
           }));
+          
+
           setProjects(projectList);
         } else {
           setProjects([]);
@@ -55,8 +75,9 @@ export default function ProjectExplore() {
         setLoading(false);
       }
     };
+
     fetchProjects();
-  }, []);
+  }, [proposerId]); // Re-fetch projects when the proposerId is updated
 
   const filteredProjects = projects.filter((project) => {
     const matchesFilter = selectedFilter

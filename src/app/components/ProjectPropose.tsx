@@ -6,25 +6,29 @@ import { useRouter } from "next/navigation";
 
 const ProjectPropose = () => {
   const [projectName, setProjectName] = useState("");
-  const [proposerName, setProposerName] = useState("");
+  const [proposerName, setProposerName] = useState(""); // for display
+  const [proposerId, setProposerId] = useState(""); // for storing user.$id  
   const [description, setDescription] = useState("");
   const [skills, setSkills] = useState(["React.js", "Tailwind", "SQL"]);
   const [skillInput, setSkillInput] = useState("");
   const [teamSize, setTeamSize] = useState(4);
   const [experience, setExperience] = useState("Experienced");
+  
   const router = useRouter();
 
   useEffect(() => {
     const fetchUser = async () => {
       try {
         const user = await account.get();
-        setProposerName(user.name); // or user.email or user.$id depending on what you store
+        setProposerName(user.name); // Display only
+        setProposerId(user.$id);    // Store in DB
       } catch (error) {
         console.error("Error fetching user:", error);
       }
     };
     fetchUser();
   }, []);
+  
 
   const addSkill = () => {
     if (skillInput.trim() !== "" && !skills.includes(skillInput)) {
@@ -43,13 +47,16 @@ const ProjectPropose = () => {
       return;
     }
     try {
+      const user = await account.get(); // ✅ get logged-in user
+      
       await databases.createDocument(
         process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
         process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!,
         ID.unique(),
         {
           projectName,
-          projectProposer: proposerName,
+          projectProposer: user.$id, // ✅ store user ID
+          projectProposerName: user.name, // ✅ store user name
           description,
           skillsRequired: skills,
           teamSize,

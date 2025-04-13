@@ -198,10 +198,12 @@ const ProfilePage: React.FC = () => {
                  {renderSkillScores(formData.skillScore)}
              </ProfileDisplaySection>
 
-             {/* Projects Section */}
-             <div className="mt-6">
-                 <ProjectsSection />
-             </div>
+             
+            {/* Projects Section */}
+            <div className="flex-1">
+                <ProjectsSection />
+            </div>
+
           </div>
 
         </div>
