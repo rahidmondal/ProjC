@@ -1,0 +1,80 @@
+// src/services/gemini.ts
+
+import fetch from 'node-fetch';
+
+export interface Question {
+  question: string;
+  options: string[];
+  correctAnswer: string;
+}
+
+const API_KEY = process.env.GEMINI_API_KEY;
+
+if (!API_KEY) {
+  throw new Error("GEMINI_API_KEY is not set in environment variables.");
+}
+
+export async function generateQuestionsFromGemini(skill: string, level: string): Promise<Question[]> {
+  console.log(`Generating questions for skill: ${skill}, level: ${level}`);
+
+  const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
+
+  const prompt = `Generate 10 multiple-choice questions for a ${level} level test on ${skill}. Each question should have 4 options and a correct answer. Respond in JSON format, with each question object having the following structure: { "question": "...", "options": ["...", "...", "...", "..."], "correctAnswer": "..." }.`;
+
+  const requestBody = {
+    contents: [
+      {
+        parts: [
+          {
+            text: prompt,
+          },
+        ],
+      },
+    ],
+  };
+
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(requestBody),
+    });
+
+    if (!response.ok) {
+      throw new Error(`HTTP error! status: ${response.status}`);
+    }
+
+    const data = await response.json();
+    let text = data.candidates[0].content.parts[0].text;
+
+    // Remove markdown code block syntax
+    text = text.replace('```json', '').replace('```', '').trim();
+
+    console.log("Raw Gemini Response:", text); // Log the raw response
+
+    // Find the start and end of the JSON array
+    const jsonStartIndex = text.indexOf('[');
+    const jsonEndIndex = text.lastIndexOf(']');
+
+    if (jsonStartIndex !== -1 && jsonEndIndex !== -1 && jsonStartIndex < jsonEndIndex) {
+      const jsonString = text.substring(jsonStartIndex, jsonEndIndex + 1);
+
+      try {
+        const questions: Question[] = JSON.parse(jsonString);
+        return questions;
+      } catch (parseError) {
+        console.error("Error parsing JSON:", parseError);
+        return [];
+      }
+    } else {
+      console.error("Could not find valid JSON array in response.");
+      return [];
+    }
+
+  } catch (error) {
+    console.error("Error generating questions:", error);
+    return [];
+  }
+}
