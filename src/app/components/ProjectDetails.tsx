@@ -14,8 +14,6 @@ export default function ProjectDetails() {
   const [teamedUp, setTeamedUp] = useState(false);
 
 
-
-
   useEffect(() => {
     const fetchProject = async () => {
       try {
@@ -60,14 +58,14 @@ export default function ProjectDetails() {
           className="flex items-center space-x-2 text-blue-400 hover:text-blue-200 transition duration-200"
         >
           <ArrowLeft size={20} />
-          <span>Back to Explore</span>
+          <span>Back</span>
         </button>
 
         <h1 className="text-4xl font-bold text-white">{project.projectName}</h1>
         <p className="text-gray-400 text-lg">
           <span className="font-semibold">Proposed by:</span>{" "}
           
-          {project.projectProposer}
+          {project.projectProposerName}
         </p>
         <p className="text-lg text-gray-300">{project.description}</p>
 
