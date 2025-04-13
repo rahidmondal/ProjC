@@ -6,39 +6,39 @@ import { useRouter } from "next/navigation";
 
 const ProjectPropose = () => {
   const [projectName, setProjectName] = useState("");
-  const [proposerName, setProposerName] = useState(""); // for display
-  const [proposerId, setProposerId] = useState(""); // for storing user.$id  
   const [description, setDescription] = useState("");
   const [skills, setSkills] = useState(["React.js", "Tailwind", "SQL"]);
   const [skillInput, setSkillInput] = useState("");
   const [teamSize, setTeamSize] = useState(4);
   const [experience, setExperience] = useState("Experienced");
-  
+  const [proposerName, setProposerName] = useState("");
+  const [proposerId, setProposerId] = useState(""); 
+
   const router = useRouter();
 
   useEffect(() => {
     const fetchUser = async () => {
       try {
         const user = await account.get();
-        setProposerName(user.name); // Display only
-        setProposerId(user.$id);    // Store in DB
+        setProposerName(user.name);
+        setProposerId(user.$id);
       } catch (error) {
         console.error("Error fetching user:", error);
       }
     };
+
     fetchUser();
   }, []);
-  
 
   const addSkill = () => {
-    if (skillInput.trim() !== "" && !skills.includes(skillInput)) {
+    if (skillInput.trim() && !skills.includes(skillInput)) {
       setSkills([...skills, skillInput]);
       setSkillInput("");
     }
   };
 
-  const removeSkill = (skillToRemove: string) => {
-    setSkills(skills.filter((skill) => skill !== skillToRemove));
+  const removeSkill = (skill: string) => {
+    setSkills(skills.filter((s) => s !== skill));
   };
 
   const handleSubmit = async () => {
@@ -46,23 +46,25 @@ const ProjectPropose = () => {
       alert("Project Name and Description are required");
       return;
     }
+
     try {
-      const user = await account.get(); // ✅ get logged-in user
-      
+      const user = await account.get();
+
       await databases.createDocument(
         process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
         process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!,
         ID.unique(),
         {
           projectName,
-          projectProposer: user.$id, // ✅ store user ID
-          projectProposerName: user.name, // ✅ store user name
+          projectProposer: user.$id,
+          projectProposerName: user.name,
           description,
           skillsRequired: skills,
           teamSize,
           experience,
         }
       );
+
       alert("Project added successfully!");
       router.push("/project-explore");
     } catch (error) {
@@ -76,7 +78,7 @@ const ProjectPropose = () => {
       <h2 className="text-2xl font-bold mb-2">Add Project</h2>
       <hr className="w-full border-t-2 border-gray-400 mb-4" />
 
-      {/* Show proposerName (not editable) */}
+      {/* Proposer Name */}
       <div className="mb-4">
         <label className="block text-gray-700 dark:text-gray-300 font-semibold">
           Proposer Name
@@ -89,8 +91,7 @@ const ProjectPropose = () => {
         />
       </div>
 
-      {/* Rest of the form remains the same... */}
-
+      {/* Project Name */}
       <div className="mb-4">
         <label className="block text-gray-700 dark:text-gray-300 font-semibold">
           Project Name
@@ -103,6 +104,7 @@ const ProjectPropose = () => {
         />
       </div>
 
+      {/* Description */}
       <div className="mb-4">
         <label className="block text-gray-700 dark:text-gray-300 font-semibold">
           Description
@@ -111,9 +113,10 @@ const ProjectPropose = () => {
           value={description}
           onChange={(e) => setDescription(e.target.value)}
           className="w-full border border-gray-400 dark:bg-gray-700 rounded-md px-3 py-2 mt-1 focus:border-black focus:ring-0"
-        ></textarea>
+        />
       </div>
 
+      {/* Skills */}
       <div className="mb-4">
         <label className="block text-gray-700 dark:text-gray-300 font-semibold">
           Skills Required
@@ -150,6 +153,7 @@ const ProjectPropose = () => {
         </div>
       </div>
 
+      {/* Team Size */}
       <div className="mb-4">
         <label className="block text-gray-700 dark:text-gray-300 font-semibold">
           Team Size
@@ -171,6 +175,7 @@ const ProjectPropose = () => {
         </div>
       </div>
 
+      {/* Experience */}
       <div className="mb-4">
         <label className="block text-gray-700 dark:text-gray-300 font-semibold">
           Experience Level
@@ -192,6 +197,7 @@ const ProjectPropose = () => {
         </div>
       </div>
 
+      {/* Submit Button */}
       <div className="mt-6">
         <button
           onClick={handleSubmit}
