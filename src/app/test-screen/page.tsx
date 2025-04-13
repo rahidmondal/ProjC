@@ -1,19 +1,17 @@
 "use client";
-import React, { useState, useEffect, useCallback } from "react"; // Added useCallback
+import React, { useState, useEffect, useCallback } from "react"; 
 import { useSearchParams } from "next/navigation";
 import ProtectedRoute from "../components/ProtectedRoute";
 import { useRouter } from 'next/navigation';
-import GenAITestPlaceholder from "../components/GenAITestPlaceholder";
 import questionsData from "../data/questions.json";
 import { getCurrentUser } from "../services/auth";
 import { saveTestResult } from "../services/skillTest";
 import { updateUserSkillScore } from "../services/users";
 
-// Define the interface for a question object
 interface Question {
   question: string;
   options: string[];
-  correctAnswer: string | number; // Adjust if correctAnswer can be a number
+  correctAnswer: string | number; 
 }
 
 const TestScreen = () => {
@@ -166,9 +164,6 @@ const TestScreen = () => {
     return <div>Redirecting...</div>;
   }
 
-  if (type === "GenAI(Experimental)") {
-    return <GenAITestPlaceholder />;
-  }
 
    if (questions.length === 0 && skill && level) {
      return <div>Checking for questions for {skill} - {level}... If this persists, none may be available.</div>;
