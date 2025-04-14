@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import MagicRecommender from "./MagicRecommender";
 
 interface SkillHubProps {
   userSkills: string[];
@@ -13,12 +12,7 @@ const SkillHub = ({ userSkills, recommendations, loading }: SkillHubProps) => {
     <div className="flex flex-col items-center justify-start min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-white p-6">
       <div className="w-full max-w-6xl mb-4 relative flex items-center justify-center">
         <h1 className="text-3xl md:text-5xl font-bold text-center">📚 Skill Hub</h1>
-
-        <div className="absolute right-0">
-           <MagicRecommender userSkills={userSkills} />
-        </div>
       </div>
-
 
       <p className="text-lg mb-6 text-center">
         {loading
