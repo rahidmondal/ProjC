@@ -201,7 +201,7 @@ const ProfilePage: React.FC = () => {
              
             {/* Projects Section */}
             <div className="flex-1">
-                <ProjectsSection />
+                <ProjectsSection userId={authUser?.$id || ""}/>
             </div>
 
           </div>

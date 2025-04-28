@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { databases } from "../appwrite";
 import { Models } from "appwrite";
 import { ArrowLeft } from "lucide-react";
+import { getProject } from "../services/projects";
+import Link from "next/link";
 
 export default function ProjectDetails() {
   const { id } = useParams();
@@ -17,11 +18,7 @@ export default function ProjectDetails() {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await databases.getDocument(
-          process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
-          process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!,
-          id as string
-        );
+        const response = await getProject(id as string);
         setProject(response);
       } catch (error) {
         console.error("Error fetching project:", error);
@@ -60,15 +57,19 @@ export default function ProjectDetails() {
           <ArrowLeft size={20} />
           <span>Back</span>
         </button>
-
         <h1 className="text-4xl font-bold text-white">{project.projectName}</h1>
         <p className="text-gray-400 text-lg">
           <span className="font-semibold">Proposed by:</span>{" "}
-          
-          {project.projectProposerName}
+          {/* Check if projectProposer exists before creating link */}
+          {project.projectProposer ? (
+             <Link href={`/public-profile/${project.projectProposer}`} className="text-blue-400 hover:underline">
+                {project.projectProposerName || "Unknown User"} {/* Fallback name */}
+             </Link>
+          ) : (
+             <span>{project.projectProposerName || "Unknown User"}</span> /* Display name without link if ID is missing */
+          )}
         </p>
         <p className="text-lg text-gray-300">{project.description}</p>
-
         <div className="bg-zinc-700 p-4 rounded-lg">
           <h3 className="text-xl font-semibold mb-2 text-white">
             Skills Required:
