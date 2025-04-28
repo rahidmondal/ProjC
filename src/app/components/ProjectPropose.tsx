@@ -1,8 +1,10 @@
 "use client";
 
-import { useEffect, useState } from "react";
-import { databases, account, ID } from "../appwrite";
+import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { useUser } from "../contexts/UserContext";
+import { createProject } from "../services/projects";
+
 
 const ProjectPropose = () => {
   const [projectName, setProjectName] = useState("");
@@ -11,24 +13,11 @@ const ProjectPropose = () => {
   const [skillInput, setSkillInput] = useState("");
   const [teamSize, setTeamSize] = useState(4);
   const [experience, setExperience] = useState("Experienced");
-  const [proposerName, setProposerName] = useState("");
-  const [proposerId, setProposerId] = useState(""); 
+  const {profileUser, isLoading} = useUser();
 
   const router = useRouter();
 
-  useEffect(() => {
-    const fetchUser = async () => {
-      try {
-        const user = await account.get();
-        setProposerName(user.name);
-        setProposerId(user.$id);
-      } catch (error) {
-        console.error("Error fetching user:", error);
-      }
-    };
 
-    fetchUser();
-  }, []);
 
   const addSkill = () => {
     if (skillInput.trim() && !skills.includes(skillInput)) {
@@ -41,37 +30,39 @@ const ProjectPropose = () => {
     setSkills(skills.filter((s) => s !== skill));
   };
 
-  const handleSubmit = async () => {
-    if (!projectName || !description) {
-      alert("Project Name and Description are required");
+  const handleSubmit = async () =>{
+    if(!projectName || !description){
+      alert("Please Name and Describe the Project");
       return;
     }
 
-    try {
-      const user = await account.get();
+    if(!profileUser){
+      alert("User information is not available. Please try again later.");
+      return;
+    }
 
-      await databases.createDocument(
-        process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
-        process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!,
-        ID.unique(),
-        {
-          projectName,
-          projectProposer: user.$id,
-          projectProposerName: user.name,
-          description,
-          skillsRequired: skills,
-          teamSize,
-          experience,
-        }
-      );
+    try{
+      const projectData = {
+        projectName,
+        projectProposer: profileUser.id,
+        projectProposerName: profileUser.name,
+        description,
+        skillsRequired: skills,
+        teamSize,
+        experience,
+      }
 
+      await createProject(projectData);
       alert("Project added successfully!");
       router.push("/project-explore");
-    } catch (error) {
-      console.error("Error adding project:", error);
-      alert("Failed to add project.");
+    }catch(error){  
+      console.error("Error creating project:", error);
+      alert("Failed to create project. Please try again later.");
     }
-  };
+  }
+  if(isLoading){
+    return <div>Loading..</div>;
+  }
 
   return (
     <div className="w-full sm:w-2/5 mx-auto m-10 bg-gray-50 dark:bg-gray-800 border border-black dark:border-gray-500 p-5 rounded-lg shadow-lg">
@@ -85,7 +76,7 @@ const ProjectPropose = () => {
         </label>
         <input
           type="text"
-          value={proposerName}
+          value={profileUser?.name || ""}
           disabled
           className="w-full border border-gray-400 dark:bg-gray-700 bg-gray-200 rounded-md px-3 py-2 mt-1 cursor-not-allowed"
         />

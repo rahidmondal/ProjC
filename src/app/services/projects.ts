@@ -43,7 +43,16 @@ export const deleteProject = async (documentId: string) => {
 export const listProjects = async () => {
   try {
     const response = await databases.listDocuments(databaseId, projectsCollectionId);
-    return response.documents;
+    return response.documents.map((project) => ({
+       $id: project.$id,
+       projectName: project.projectName,
+        projectProposerId: project.projectProposer,
+        projectProposerName: project.projectProposerName,
+        description: project.description,
+        skillsRequired: project.skillsRequired,
+        teamSize: project.teamSize,
+        experience: project.experience,
+  }));
   } catch (error) {
     console.error("Error listing projects:", error);
     throw error;

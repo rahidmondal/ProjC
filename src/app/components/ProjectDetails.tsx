@@ -2,9 +2,10 @@
 
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
-import { databases } from "../appwrite";
 import { Models } from "appwrite";
 import { ArrowLeft } from "lucide-react";
+import { getProject } from "../services/projects";
+
 
 export default function ProjectDetails() {
   const { id } = useParams();
@@ -17,11 +18,7 @@ export default function ProjectDetails() {
   useEffect(() => {
     const fetchProject = async () => {
       try {
-        const response = await databases.getDocument(
-          process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
-          process.env.NEXT_PUBLIC_APPWRITE_PROJECTS_COLLECTION_ID!,
-          id as string
-        );
+        const response = await getProject(id as string);
         setProject(response);
       } catch (error) {
         console.error("Error fetching project:", error);
