@@ -62,9 +62,18 @@ export const listProjects = async () => {
 export const listProjectsByUser = async (userId: string) => {
   try {
     const response = await databases.listDocuments(databaseId, projectsCollectionId, [
-      Query.equal("projectProposer", userId),
+      Query.equal("projectProposer", userId), 
     ]);
-    return response.documents;
+    return response.documents.map((project) => ({
+      $id: project.$id,
+      projectName: project.projectName,
+      projectProposer: project.projectProposer,
+      projectProposerName: project.projectProposerName,
+      description: project.description,
+      skillsRequired: project.skillsRequired,
+      teamSize: project.teamSize,
+      experience: project.experience,
+    }));
   } catch (error) {
     console.error("Error listing projects by user:", error);
     throw error;

@@ -44,7 +44,7 @@ const ProjectPropose = () => {
     try{
       const projectData = {
         projectName,
-        projectProposer: profileUser.id,
+        projectProposer: profileUser.userId,
         projectProposerName: profileUser.name,
         description,
         skillsRequired: skills,
