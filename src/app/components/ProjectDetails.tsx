@@ -70,8 +70,6 @@ export default function ProjectDetails() {
           )}
         </p>
         <p className="text-lg text-gray-300">{project.description}</p>
-        <p className="text-lg text-gray-300">{project.description}</p>
-
         <div className="bg-zinc-700 p-4 rounded-lg">
           <h3 className="text-xl font-semibold mb-2 text-white">
             Skills Required:
