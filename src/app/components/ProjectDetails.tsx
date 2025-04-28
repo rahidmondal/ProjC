@@ -14,7 +14,6 @@ export default function ProjectDetails() {
   const [loading, setLoading] = useState(true);
   const [teamedUp, setTeamedUp] = useState(false);
 
-
   useEffect(() => {
     const fetchProject = async () => {
       try {
@@ -32,9 +31,9 @@ export default function ProjectDetails() {
 
   if (loading)
     return (
-      <div className="min-h-screen flex flex-col items-center justify-center bg-black text-white">
+      <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-black text-gray-800 dark:text-white">
         <div className="w-16 h-16 border-4 border-blue-500 border-t-transparent rounded-full animate-spin-slow mb-4"></div>
-        <p className="text-xl text-gray-300 animate-pulse">
+        <p className="text-xl text-gray-600 dark:text-gray-300 animate-pulse">
           Fetching project details...
         </p>
       </div>
@@ -48,46 +47,46 @@ export default function ProjectDetails() {
     );
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-zinc-900 via-zinc-950 to-black text-white px-4 py-20">
-      <div className="max-w-lg mx-auto bg-zinc-800 p-8 rounded-2xl shadow-lg space-y-6">
+    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white dark:from-zinc-900 dark:via-zinc-950 dark:to-black text-gray-800 dark:text-white px-4 py-20">
+      <div className="max-w-lg mx-auto bg-white dark:bg-zinc-800 p-8 rounded-2xl shadow-lg space-y-6">
         <button
           onClick={() => router.back()}
-          className="flex items-center space-x-2 text-blue-400 hover:text-blue-200 transition duration-200"
+          className="flex items-center space-x-2 text-blue-600 dark:text-blue-400 hover:text-blue-800 dark:hover:text-blue-200 transition duration-200"
         >
           <ArrowLeft size={20} />
           <span>Back</span>
         </button>
-        <h1 className="text-4xl font-bold text-white">{project.projectName}</h1>
-        <p className="text-gray-400 text-lg">
+        <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{project.projectName}</h1>
+        <p className="text-gray-600 dark:text-gray-400 text-lg">
           <span className="font-semibold">Proposed by:</span>{" "}
           {/* Check if projectProposer exists before creating link */}
           {project.projectProposer ? (
-             <Link href={`/public-profile/${project.projectProposer}`} className="text-blue-400 hover:underline">
+             <Link href={`/public-profile/${project.projectProposer}`} className="text-blue-600 dark:text-blue-400 hover:underline">
                 {project.projectProposerName || "Unknown User"} {/* Fallback name */}
              </Link>
           ) : (
              <span>{project.projectProposerName || "Unknown User"}</span> /* Display name without link if ID is missing */
           )}
         </p>
-        <p className="text-lg text-gray-300">{project.description}</p>
-        <div className="bg-zinc-700 p-4 rounded-lg">
-          <h3 className="text-xl font-semibold mb-2 text-white">
+        <p className="text-lg text-gray-700 dark:text-gray-300">{project.description}</p>
+        <div className="bg-gray-100 dark:bg-zinc-700 p-4 rounded-lg">
+          <h3 className="text-xl font-semibold mb-2 text-gray-900 dark:text-white">
             Skills Required:
           </h3>
-          <ul className="list-disc list-inside space-y-1 text-gray-300">
+          <ul className="list-disc list-inside space-y-1 text-gray-700 dark:text-gray-300">
             {project.skillsRequired.map((skill: string, i: number) => (
               <li key={i}>{skill}</li>
             ))}
           </ul>
         </div>
 
-        <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-gray-300">
+        <div className="flex flex-col sm:flex-row sm:space-x-10 space-y-4 sm:space-y-0 text-gray-700 dark:text-gray-300">
           <p>
-            <strong className="text-white">Experience Level:</strong>{" "}
+            <strong className="text-gray-900 dark:text-white">Experience Level:</strong>{" "}
             {project.experience}
           </p>
           <p>
-            <strong className="text-white">Team Size:</strong>{" "}
+            <strong className="text-gray-900 dark:text-white">Team Size:</strong>{" "}
             {project.teamSize}
           </p>
         </div>
