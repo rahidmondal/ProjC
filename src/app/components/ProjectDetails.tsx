@@ -5,7 +5,7 @@ import { useParams, useRouter } from "next/navigation";
 import { Models } from "appwrite";
 import { ArrowLeft } from "lucide-react";
 import { getProject } from "../services/projects";
-
+import Link from "next/link";
 
 export default function ProjectDetails() {
   const { id } = useParams();
@@ -57,13 +57,19 @@ export default function ProjectDetails() {
           <ArrowLeft size={20} />
           <span>Back</span>
         </button>
-
         <h1 className="text-4xl font-bold text-white">{project.projectName}</h1>
         <p className="text-gray-400 text-lg">
           <span className="font-semibold">Proposed by:</span>{" "}
-          
-          {project.projectProposerName}
+          {/* Check if projectProposer exists before creating link */}
+          {project.projectProposer ? (
+             <Link href={`/public-profile/${project.projectProposer}`} className="text-blue-400 hover:underline">
+                {project.projectProposerName || "Unknown User"} {/* Fallback name */}
+             </Link>
+          ) : (
+             <span>{project.projectProposerName || "Unknown User"}</span> /* Display name without link if ID is missing */
+          )}
         </p>
+        <p className="text-lg text-gray-300">{project.description}</p>
         <p className="text-lg text-gray-300">{project.description}</p>
 
         <div className="bg-zinc-700 p-4 rounded-lg">
