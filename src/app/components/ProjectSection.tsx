@@ -42,7 +42,7 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ userId }) => {
 
       } catch (err) {
         console.error("[ProjectsSection] Error fetching user projects:", err);
-        setError("Failed to load projects.}"); // Set error message
+        setError("Failed to load projects."); // Set error message
       } finally {
         setLoading(false);
       }
