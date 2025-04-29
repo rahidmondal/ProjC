@@ -31,7 +31,6 @@ export const getUser = async (userId: string) => {
 export const getUserSkills = async (userId: string) => {
     try {
         const user = await getUser(userId);
-        // Filter out empty strings and invalid values from skills
         const skills = Array.isArray(user?.skills) ? user.skills.filter(skill => skill.trim() !== "") : [];
         console.log("Final filtered skills:", skills);
         return skills;
@@ -143,20 +142,5 @@ export const updateUserSkillScore = async (
     }
 };
 
-// services/users.ts
-
-export const getUserById = async (documentId: string) => {
-  try {
-    const userDoc = await databases.getDocument(
-      process.env.NEXT_PUBLIC_APPWRITE_DATABASE_ID!,
-      process.env.NEXT_PUBLIC_APPWRITE_USERS_COLLECTION_ID!,
-      documentId // this must be the document ID of your users collection
-    );
-    return userDoc;
-  } catch (error) {
-    console.error("getUserById error:", error);
-    return null;
-  }
-};
 
 
