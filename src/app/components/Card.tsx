@@ -6,7 +6,8 @@ interface Project {
   $id: string;
   projectName: string;
   description: string;
-  projectProposer: string;
+  projectProposerId: string; // still available if needed
+  projectProposerName: string; // 👈 ADD THIS
   skillsRequired: string[];
   teamSize: number;
 }
@@ -30,9 +31,10 @@ const Card: React.FC<CardProps> = ({ project }) => {
 
       {/* Proposer */}
       <p className="text-sm text-gray-600 dark:text-gray-400 text-left">
-        <span className="font-semibold">Proposed by:</span>{" "}
-        {project.projectProposer}
+        <span className="font-semibold">Proposed by:</span> {project.projectProposerName}
       </p>
+
+
 
       {/* Team Size */}
       <p className="text-sm text-gray-600 dark:text-gray-400 my-2 text-left">

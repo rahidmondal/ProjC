@@ -1,8 +1,8 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { useRouter, usePathname } from "next/navigation";
-import { getCurrentUser } from "../services/auth";
+import { useUser } from "../contexts/UserContext";
 import { User } from "../types/user";
 
 interface ProtectedRouteProps {
@@ -14,37 +14,48 @@ const ProtectedRoute = ({
   children,
   redirectTo = "/login",
 }: ProtectedRouteProps) => {
-  const [user, setUser] = useState<User | null>(null);
-  const [loading, setLoading] = useState(true);
+  const { authUser, profileUser, isLoading } = useUser();
   const router = useRouter();
-  const pathname = usePathname(); // Get current route
+  const pathname = usePathname();
 
   useEffect(() => {
-    const checkAuth = async () => {
-      const userData = await getCurrentUser();
-
-      // If accessing /user-profile and not logged in, redirect to /register
-      if (!userData && pathname === "/user-profile") {
+    if (!isLoading && !authUser) {
+      if (pathname === "/user-profile") {
         router.push("/login");
-      }
-      // Redirect other protected routes to login
-      else if (!userData) {
-        router.push(redirectTo);
       } else {
-        setUser(userData);
+        router.push(redirectTo);
       }
-      setLoading(false);
-    };
+    }
+  }, [authUser, isLoading, router, redirectTo, pathname]);
 
-    checkAuth();
-  }, [router, redirectTo, pathname]);
+  if (isLoading) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl text-center">
+          <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">Loading...</p>
+          <div className="mt-4 w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+            <div className="bg-blue-500 dark:bg-blue-600 h-2.5 rounded-full animate-pulse" style={{ width: '70%' }}></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
-  if (loading) return <p>Loading...</p>;
-
-  if (!user) return null; // Prevents UI flickering before redirect
+  if (!authUser) {
+    return (
+      <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100 dark:bg-gray-900 text-gray-900 dark:text-gray-100">
+        <div className="bg-white dark:bg-gray-800 shadow-xl rounded-2xl p-8 mb-8 w-full max-w-2xl text-center">
+          <p className="text-xl font-semibold text-gray-700 dark:text-gray-300">Redirecting to login...</p>
+          <div className="mt-4 w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+            <div className="bg-blue-500 dark:bg-blue-600 h-2.5 rounded-full animate-pulse" style={{ width: '90%' }}></div>
+          </div>
+        </div>
+      </div>
+    );
+  }
 
   return typeof children === "function" ? (
-    <>{children(user)}</>
+    <>{children(profileUser as User)}</>
   ) : (
     <>{children}</>
   );
