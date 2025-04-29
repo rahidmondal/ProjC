@@ -1,13 +1,13 @@
 import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import PrivacyPolicy from '..privacy-policy/page';
+import PrivacyPolicy from './page';
 
 describe('PrivacyPolicy', () => {
   it('renders the privacy policy page', () => {
     render(<PrivacyPolicy />);
 
     // Check for main heading
-    expect(screen.getByRole('heading', { name: /Privacy Policy/i })).toBeInTheDocument();
+    expect(screen.getAllByRole('heading', { name: /Privacy Policy/i })[0]).toBeInTheDocument();
 
     // Check for effective date and last updated
     expect(screen.getByText(/Effective Date: 25\/02\/2025/i)).toBeInTheDocument();

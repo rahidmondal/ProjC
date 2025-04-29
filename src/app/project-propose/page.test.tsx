@@ -1,5 +1,6 @@
+import '@testing-library/jest-dom';
 import { render, screen } from '@testing-library/react';
-import ProjectPropose from '..project-propose/pages'; // Adjust path as needed
+import ProjectPropose from './page'; // Corrected path to match the actual location
 
 // Mock the ProtectedRoute component to always render children (bypass protection for testing)
 jest.mock('../components/ProtectedRoute', () => ({

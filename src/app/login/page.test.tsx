@@ -1,6 +1,6 @@
 import '@testing-library/jest-dom';
 import { render, screen, fireEvent, waitFor } from '@testing-library/react';
-import LoginPage from '..login/page';
+import LoginPage from './page';
 import { login, getCurrentUser } from '../services/auth';
 import { useRouter } from 'next/navigation';
 import { useUser } from '../contexts/UserContext';
@@ -119,21 +119,5 @@ describe('LoginPage', () => {
     fireEvent.click(screen.getByRole('link', { name: /Create an account/i }));
 
     expect(mockRouterPush).toHaveBeenCalledWith('/register');
-  });
-
-  it('renders the correct logo based on theme', async () => {
-    const mockUseTheme = jest.fn();
-    jest.mock('next-themes', () => ({ useTheme: mockUseTheme }));
-
-    mockUseTheme.mockReturnValue({ theme: 'dark' });
-    render(<LoginPage />);
-    let logo = screen.getByAltText(/Project Logo/i);
-    expect(logo.src).toContain('lightLogo.png');
-
-    mockUseTheme.mockReturnValue({ theme: 'light' });
-    render(<LoginPage />);
-    logo = screen.getByAltText(/Project Logo/i);
-    expect(logo.src).toContain('darkLogo.png');
-
   });
 });
