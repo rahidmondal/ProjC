@@ -3,22 +3,37 @@
 import { useEffect, useState } from "react";
 import { useParams, useRouter } from "next/navigation";
 import { Models } from "appwrite";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, Mail } from "lucide-react";
 import { getProject } from "../services/projects";
+import { getUser } from "../services/users";
+import { useUser } from "../contexts/UserContext";
 import Link from "next/link";
 
 export default function ProjectDetails() {
   const { id } = useParams();
   const router = useRouter();
+  const { profileUser } = useUser();
   const [project, setProject] = useState<Models.Document | null>(null);
   const [loading, setLoading] = useState(true);
   const [teamedUp, setTeamedUp] = useState(false);
+  const [proposerEmail, setProposerEmail] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchProject = async () => {
       try {
         const response = await getProject(id as string);
         setProject(response);
+
+        if (response?.projectProposer) {
+          try {
+            const proposerData = await getUser(response.projectProposer);
+            if (proposerData?.email) {
+              setProposerEmail(proposerData.email);
+            }
+          } catch (err) {
+            console.error("Error fetching proposer details:", err);
+          }
+        }
       } catch (error) {
         console.error("Error fetching project:", error);
       } finally {
@@ -29,6 +44,21 @@ export default function ProjectDetails() {
     if (id) fetchProject();
   }, [id]);
 
+  const handleContactClick = () => {
+    if (!project || !proposerEmail) return;
+
+    const projectNameSafe = project.projectName.replace(/[^\w\s-]/g, '');
+    const subject = encodeURIComponent(`${projectNameSafe} interested`);
+
+    const body = encodeURIComponent(
+      `Hi there,\n\nI want to collaborate with you on this project "${project.projectName}".\n${profileUser?.name ? `\nRegards,\n${profileUser.name}` : ""
+      }`
+    );
+
+    const gmailComposeUrl = `https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=${encodeURIComponent(proposerEmail)}&su=${subject}&body=${body}`;
+
+    window.open(gmailComposeUrl, '_blank', 'noopener,noreferrer');
+  };
   if (loading)
     return (
       <div className="min-h-screen flex flex-col items-center justify-center bg-gray-50 dark:bg-black text-gray-800 dark:text-white">
@@ -59,13 +89,12 @@ export default function ProjectDetails() {
         <h1 className="text-4xl font-bold text-gray-900 dark:text-white">{project.projectName}</h1>
         <p className="text-gray-600 dark:text-gray-400 text-lg">
           <span className="font-semibold">Proposed by:</span>{" "}
-          {/* Check if projectProposer exists before creating link */}
           {project.projectProposer ? (
-             <Link href={`/public-profile/${project.projectProposer}`} className="text-blue-600 dark:text-blue-400 hover:underline">
-                {project.projectProposerName || "Unknown User"} {/* Fallback name */}
-             </Link>
+            <Link href={`/public-profile/${project.projectProposer}`} className="text-blue-600 dark:text-blue-400 hover:underline">
+              {project.projectProposerName || "Unknown User"}
+            </Link>
           ) : (
-             <span>{project.projectProposerName || "Unknown User"}</span> /* Display name without link if ID is missing */
+            <span>{project.projectProposerName || "Unknown User"}</span>
           )}
         </p>
         <p className="text-lg text-gray-700 dark:text-gray-300">{project.description}</p>
@@ -91,34 +120,39 @@ export default function ProjectDetails() {
           </p>
         </div>
 
-        {/* Team Up Button */}
-        <div className="pt-1 flex justify-center">
+        {/* Action Buttons */}
+        {/* Combine both Team Up and Contact into one button */}
+        <div className="pt-1">
           <button
-            onClick={() => setTeamedUp(true)}
-            disabled={teamedUp}
-            className={`w-full text-lg flex items-center justify-center gap-2 text-white font-semibold py-3 px-6 rounded-lg transition-all duration-300
-      ${
-        teamedUp
-          ? "bg-green-600 cursor-not-allowed"
-          : "bg-purple-600 hover:bg-purple-700"
-      }`}
+            onClick={() => {
+              setTeamedUp(true);
+              handleContactClick();
+            }}
+            disabled={teamedUp || !proposerEmail}
+            className={`w-full text-lg flex items-center justify-center gap-3 text-white font-semibold py-4 px-6 rounded-lg transition-all duration-300
+      ${teamedUp
+                ? "bg-green-600 cursor-not-allowed"
+                : proposerEmail
+                  ? "bg-blue-600 hover:bg-blue-700"
+                  : "bg-gray-400 cursor-not-allowed"
+              }`}
+            title={!proposerEmail ? "Email not available" : teamedUp ? "Already contacted" : "Team up and contact"}
           >
             {teamedUp ? (
               <>
                 <span>👍</span>
-                <span>Sent</span>
+                <span>Request Sent</span>
               </>
             ) : (
               <>
                 <span>🤝</span>
-                <span>Team Up</span>
+                <Mail size={20} className="ml-1" />
+                <span>Team Up & Contact</span>
               </>
             )}
           </button>
-          
         </div>
       </div>
     </div>
-    
   );
 }
