@@ -6,6 +6,7 @@ import { useRouter } from 'next/navigation';
 import { getCurrentUser } from "../services/auth";
 import { saveTestResult } from "../services/skillTest";
 import { updateUserSkillScore } from "../services/users";
+import questionsData from "../data/questions.json"; // Add this import for fallback questions
 
 interface Question {
   question: string;
@@ -42,21 +43,44 @@ const SmartSkillTestScreen = () => {
       const fetchQuestions = async () => {
         setLoading(true);
         try {
+          // First try to get AI-generated questions
           const response = await fetch(`/api/genAI/generate-questions?skill=${skill}&level=${level}`);
           if (!response.ok) {
             throw new Error('Failed to fetch questions');
           }
           const data = await response.json();
-          setQuestions(data);
+          
+          // Check if we got valid questions
+          if (data && Array.isArray(data) && data.length > 0) {
+            console.log("Using AI-generated questions");
+            setQuestions(data);
+          } else {
+            // Empty data from AI service, use fallback
+            throw new Error('Received empty questions from AI');
+          }
+          
+        } catch (error) {
+          console.error('Error with AI questions service:', error);
+          
+          // Silently fall back to traditional questions
+          const fallbackData = questionsData.find(
+            (item) => item.skill === skill && item.level === level
+          );
+          
+          if (fallbackData?.questionsJson && Array.isArray(fallbackData.questionsJson) && fallbackData.questionsJson.length > 0) {
+            console.log("Using fallback traditional questions");
+            setQuestions(fallbackData.questionsJson);
+          } else {
+            console.error(`No questions available for ${skill} - ${level}`);
+            setQuestions([]);
+          }
+        } finally {
+          // Common setup regardless of question source
           setTimer(300);
           setUserAnswers({});
           setCurrentQuestionIndex(0);
           setTestFinished(false);
           setShowReview(false);
-        } catch (error) {
-          console.error('Error fetching questions:', error);
-          setQuestions([]);
-        } finally {
           setLoading(false);
         }
       };
@@ -181,8 +205,6 @@ const SmartSkillTestScreen = () => {
       </ProtectedRoute>
     );
   }
-
-
 
   const currentQuestion = questions[currentQuestionIndex];
 

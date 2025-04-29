@@ -8,6 +8,22 @@ export interface Question {
   correctAnswer: string;
 }
 
+interface GeminiResponsePart {
+  text: string;
+}
+
+interface GeminiContent {
+  parts: GeminiResponsePart[];
+}
+
+interface GeminiCandidate {
+  content: GeminiContent;
+}
+
+interface GeminiResponse {
+  candidates: GeminiCandidate[];
+}
+
 const API_KEY = process.env.GEMINI_API_KEY;
 
 if (!API_KEY) {
@@ -46,15 +62,18 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
       throw new Error(`HTTP error! status: ${response.status}`);
     }
 
-    const data = await response.json();
+    const data = await response.json() as GeminiResponse;
+    
+    if (!data.candidates || !data.candidates[0]?.content?.parts?.[0]?.text) {
+      console.error("Invalid or unexpected response format from Gemini API");
+      return [];
+    }
+    
     let text = data.candidates[0].content.parts[0].text;
 
-    // Remove markdown code block syntax
     text = text.replace('```json', '').replace('```', '').trim();
 
-    console.log("Raw Gemini Response:", text); // Log the raw response
-
-    // Find the start and end of the JSON array
+    console.log("Raw Gemini Response:", text); 
     const jsonStartIndex = text.indexOf('[');
     const jsonEndIndex = text.lastIndexOf(']');
 
