@@ -93,7 +93,7 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
     }
 
   } catch (error) {
-    // console.error("Error generating questions:", error);
+    console.error("Error generating questions:", error);
     return [];
   }
 }
