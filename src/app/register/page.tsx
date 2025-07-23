@@ -26,7 +26,7 @@ export default function RegisterPage() {
     async function checkUser() {
       const user = await getCurrentUser();
       if (user) {
-          console.log("User already logged in, redirecting from register page...");
+          // console.log("User already logged in, redirecting from register page...");
           router.push("/user-profile");
       }
     }
@@ -46,9 +46,9 @@ export default function RegisterPage() {
       const loggedInUser = await register(name, email, password);
 
       if (loggedInUser) {
-          console.log("Registration successful, refetching user context data...");
+          // console.log("Registration successful, refetching user context data...");
           await refetchUser();
-          console.log("User context refetched.");
+          // console.log("User context refetched.");
 
           router.push("/user-profile?edit=true"); 
       } else {

@@ -93,16 +93,16 @@ const TestScreen = () => {
     if (userId && skill && level) {
       try {
         await saveTestResult(userId, skill, level, finalScore, questions.length, finalScore);
-        console.log("Test result history saved successfully.");
+        // console.log("Test result history saved successfully.");
         await updateUserSkillScore(userId, skill, level, finalScore);
-        console.log("User profile skill score updated.");
+        // console.log("User profile skill score updated.");
       } catch (error) {
         console.error("Error saving test result or updating profile:", error);
       }
     } else {
       console.warn("User ID, skill, or level is not available. Cannot save test result or update profile.");
     }
-    console.log("Test finished. Score:", finalScore);
+    // console.log("Test finished. Score:", finalScore);
   }, [testFinished, calculateScore, userId, skill, level, questions]);
 
   useEffect(() => {

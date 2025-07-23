@@ -31,7 +31,7 @@ if (!API_KEY) {
 }
 
 export async function generateQuestionsFromGemini(skill: string, level: string): Promise<Question[]> {
-  console.log(`Generating questions for skill: ${skill}, level: ${level}`);
+  // console.log(`Generating questions for skill: ${skill}, level: ${level}`);
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
@@ -73,7 +73,7 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
 
     text = text.replace('```json', '').replace('```', '').trim();
 
-    console.log("Raw Gemini Response:", text); 
+    // console.log("Raw Gemini Response:", text); 
     const jsonStartIndex = text.indexOf('[');
     const jsonEndIndex = text.lastIndexOf(']');
 
@@ -84,11 +84,11 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
         const questions: Question[] = JSON.parse(jsonString);
         return questions;
       } catch (parseError) {
-        console.error("Error parsing JSON:", parseError);
+        // console.error("Error parsing JSON:", parseError);
         return [];
       }
     } else {
-      console.error("Could not find valid JSON array in response.");
+      // console.error("Could not find valid JSON array in response.");
       return [];
     }
 

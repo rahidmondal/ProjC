@@ -21,11 +21,11 @@ const ProjectsSection: React.FC<ProjectsSectionProps> = ({ userId }) => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null); 
 
-  console.log("[ProjectsSection] Received userId prop:", userId);
+  // console.log("[ProjectsSection] Received userId prop:", userId);
 
   useEffect(() => {
     if (!userId) {
-      console.log("[ProjectsSection] No userId provided, skipping fetch.");
+      // console.log("[ProjectsSection] No userId provided, skipping fetch.");
       setLoading(false);
 
       return;

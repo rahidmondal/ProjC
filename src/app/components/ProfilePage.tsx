@@ -54,7 +54,7 @@ const ProfilePage: React.FC = () => {
         });
 
     } else if (!isLoading) {
-        console.log("Profile user data is null after loading.");
+        // console.log("Profile user data is null after loading.");
     }
   }, [profileUser, isLoading, authUser]);
 
@@ -145,7 +145,7 @@ const ProfilePage: React.FC = () => {
 
         // 5. Refresh Context State
         await refetchUser();
-        console.log("Context refetched after save.");
+        // console.log("Context refetched after save.");
         closeModal();
 
     // Catch block with typed error

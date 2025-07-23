@@ -24,7 +24,7 @@ export default function LoginPage() {
         async function checkUser() {
             const user = await getCurrentUser();
             if (user) {
-                console.log("User already logged in, redirecting from login page...");
+                // console.log("User already logged in, redirecting from login page...");
                 router.push("/user-profile");
             }
         }
@@ -51,9 +51,9 @@ export default function LoginPage() {
             const loggedInUser = await login(email, password);
 
             if (loggedInUser) {
-                 console.log("Login successful, refetching user context data...");
+                 // console.log("Login successful, refetching user context data...");
                  await refetchUser();
-                 console.log("User context refetched.");
+                 // console.log("User context refetched.");
 
                  router.push("/user-profile");
             } else {
@@ -70,7 +70,7 @@ export default function LoginPage() {
              else {
                 setError(`Login failed: ${message}`);
             }
-            console.error("Login Page Error:", err);
+            // console.error("Login Page Error:", err);
         } finally {
             setIsLoggingIn(false); 
         }
