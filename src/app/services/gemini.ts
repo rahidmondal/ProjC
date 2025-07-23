@@ -65,7 +65,7 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
     const data = await response.json() as GeminiResponse;
     
     if (!data.candidates || !data.candidates[0]?.content?.parts?.[0]?.text) {
-      // console.error("Invalid or unexpected response format from Gemini API");
+      console.error("Invalid or unexpected response format from Gemini API");
       return [];
     }
     
@@ -92,8 +92,8 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
       return [];
     }
 
-  } catch {
-    // console.error("Error generating questions");
+  } catch (error) {
+    console.error("Error generating questions:", error);
     return [];
   }
 }
