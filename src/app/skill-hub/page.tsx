@@ -46,10 +46,10 @@ const SkillHubPage = () => {
           userSkills.map(s => s.toLowerCase()).includes(skill.toLowerCase())
         )
       );
-      console.log("Filtered Recommendations:", filteredRecommendations);
+      // console.log("Filtered Recommendations:", filteredRecommendations);
       setRecommendations(filteredRecommendations.length > 0 ? filteredRecommendations : defaultRecs);
     } else if (!isSkillsLoading && userSkills.length === 0) {
-      console.log("Using default recommendations:", defaultRecs);
+      // console.log("Using default recommendations:", defaultRecs);
       setRecommendations(defaultRecs);
     }
 

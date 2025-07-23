@@ -32,7 +32,7 @@ export const getUserSkills = async (userId: string) => {
     try {
         const user = await getUser(userId);
         const skills = Array.isArray(user?.skills) ? user.skills.filter(skill => skill.trim() !== "") : [];
-        console.log("Final filtered skills:", skills);
+        // console.log("Final filtered skills:", skills);
         return skills;
     } catch (error) {
         console.error("Error fetching user skills:", error);
@@ -75,7 +75,7 @@ export const getUserImageUrl = (fileId: string) => {
 export const deleteUserImage = async (fileId: string) => {
     try {
         await storage.deleteFile(storageId, fileId);
-        console.log('Image deleted successfully.');
+        // console.log('Image deleted successfully.');
     } catch (error) {
         console.error('Error deleting image:', error);
         throw error;
@@ -118,11 +118,11 @@ export const updateUserSkillScore = async (
         if (existingIndex > -1) {
             // Update the existing entry
             currentSkillScores[existingIndex] = newScoreString;
-            console.log(`Updated skill score for ${skill}: ${newScoreString}`);
+            // console.log(`Updated skill score for ${skill}: ${newScoreString}`);
         } else {
             // Add the new entry
             currentSkillScores.push(newScoreString);
-            console.log(`Added new skill score: ${newScoreString}`);
+            // console.log(`Added new skill score: ${newScoreString}`);
         }
 
         // 6. Update the user document with the modified skillScore array
@@ -133,7 +133,7 @@ export const updateUserSkillScore = async (
             { skillScore: currentSkillScores } 
         );
 
-        console.log(`Skill score updated successfully for user ${userId}`);
+        // console.log(`Skill score updated successfully for user ${userId}`);
         return currentSkillScores; 
 
     } catch (error) {

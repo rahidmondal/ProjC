@@ -31,7 +31,7 @@ if (!API_KEY) {
 }
 
 export async function generateQuestionsFromGemini(skill: string, level: string): Promise<Question[]> {
-  console.log(`Generating questions for skill: ${skill}, level: ${level}`);
+  // console.log(`Generating questions for skill: ${skill}, level: ${level}`);
 
   const url = `https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent?key=${API_KEY}`;
 
@@ -65,7 +65,7 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
     const data = await response.json() as GeminiResponse;
     
     if (!data.candidates || !data.candidates[0]?.content?.parts?.[0]?.text) {
-      console.error("Invalid or unexpected response format from Gemini API");
+      // console.error("Invalid or unexpected response format from Gemini API");
       return [];
     }
     
@@ -73,7 +73,7 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
 
     text = text.replace('```json', '').replace('```', '').trim();
 
-    console.log("Raw Gemini Response:", text); 
+    // console.log("Raw Gemini Response:", text); 
     const jsonStartIndex = text.indexOf('[');
     const jsonEndIndex = text.lastIndexOf(']');
 
@@ -84,16 +84,16 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
         const questions: Question[] = JSON.parse(jsonString);
         return questions;
       } catch (parseError) {
-        console.error("Error parsing JSON:", parseError);
+        // console.error("Error parsing JSON:", parseError);
         return [];
       }
     } else {
-      console.error("Could not find valid JSON array in response.");
+      // console.error("Could not find valid JSON array in response.");
       return [];
     }
 
   } catch (error) {
-    console.error("Error generating questions:", error);
+    // console.error("Error generating questions:", error);
     return [];
   }
 }
