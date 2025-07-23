@@ -47,7 +47,7 @@ export const register = async (name: string, email: string, password: string) =>
         const newUserProfile = await createUser(initialProfileData);
         // console.log("User profile document created:", newUserProfile.$id);
     } catch (dbError: unknown) {
-        // console.error("Failed to create user profile document after registration:", dbError);
+        console.error("Failed to create user profile document after registration:", dbError);
 
     }
 
