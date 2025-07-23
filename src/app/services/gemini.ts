@@ -83,8 +83,8 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
       try {
         const questions: Question[] = JSON.parse(jsonString);
         return questions;
-      } catch (parseError) {
-        // console.error("Error parsing JSON:", parseError);
+      } catch {
+        // console.error("Error parsing JSON");
         return [];
       }
     } else {
@@ -92,8 +92,8 @@ export async function generateQuestionsFromGemini(skill: string, level: string):
       return [];
     }
 
-  } catch (error) {
-    // console.error("Error generating questions:", error);
+  } catch {
+    // console.error("Error generating questions");
     return [];
   }
 }
